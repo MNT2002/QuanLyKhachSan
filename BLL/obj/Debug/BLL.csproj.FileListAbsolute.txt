@@ -1,0 +1,6 @@
+D:\QL KhachSan\QuanLyKhachSan\BLL\bin\Debug\BLL.dll
+D:\QL KhachSan\QuanLyKhachSan\BLL\bin\Debug\BLL.pdb
+D:\QL KhachSan\QuanLyKhachSan\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+D:\QL KhachSan\QuanLyKhachSan\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+D:\QL KhachSan\QuanLyKhachSan\BLL\obj\Debug\BLL.dll
+D:\QL KhachSan\QuanLyKhachSan\BLL\obj\Debug\BLL.pdb
