@@ -4,3 +4,6 @@ D:\QL KhachSan\QuanLyKhachSan\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
 D:\QL KhachSan\QuanLyKhachSan\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
 D:\QL KhachSan\QuanLyKhachSan\BLL\obj\Debug\BLL.dll
 D:\QL KhachSan\QuanLyKhachSan\BLL\obj\Debug\BLL.pdb
+D:\QL KhachSan\QuanLyKhachSan\BLL\bin\Debug\DAL.dll
+D:\QL KhachSan\QuanLyKhachSan\BLL\bin\Debug\DAL.pdb
+D:\QL KhachSan\QuanLyKhachSan\BLL\obj\Debug\BLL.csproj.Up2Date

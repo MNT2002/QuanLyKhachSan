@@ -7,3 +7,10 @@ D:\QL KhachSan\QuanLyKhachSan\GUI\obj\Debug\GUI.csproj.GenerateResource.cache
 D:\QL KhachSan\QuanLyKhachSan\GUI\obj\Debug\GUI.csproj.CoreCompileInputs.cache
 D:\QL KhachSan\QuanLyKhachSan\GUI\obj\Debug\GUI.exe
 D:\QL KhachSan\QuanLyKhachSan\GUI\obj\Debug\GUI.pdb
+D:\QL KhachSan\QuanLyKhachSan\GUI\bin\Debug\BLL.dll
+D:\QL KhachSan\QuanLyKhachSan\GUI\bin\Debug\DAL.dll
+D:\QL KhachSan\QuanLyKhachSan\GUI\bin\Debug\Guna.UI2.dll
+D:\QL KhachSan\QuanLyKhachSan\GUI\bin\Debug\BLL.pdb
+D:\QL KhachSan\QuanLyKhachSan\GUI\bin\Debug\DAL.pdb
+D:\QL KhachSan\QuanLyKhachSan\GUI\obj\Debug\GUI.csproj.Up2Date
+D:\QL KhachSan\QuanLyKhachSan\GUI\obj\Debug\GUI.Login.resources

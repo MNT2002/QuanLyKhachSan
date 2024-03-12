@@ -1,0 +1,6 @@
+D:\QL KhachSan\QuanLyKhachSan\DAL\bin\Debug\DAL.dll
+D:\QL KhachSan\QuanLyKhachSan\DAL\bin\Debug\DAL.pdb
+D:\QL KhachSan\QuanLyKhachSan\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+D:\QL KhachSan\QuanLyKhachSan\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+D:\QL KhachSan\QuanLyKhachSan\DAL\obj\Debug\DAL.dll
+D:\QL KhachSan\QuanLyKhachSan\DAL\obj\Debug\DAL.pdb
