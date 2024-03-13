@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="guna2TextBox2.IconLeft" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="txtPassword.IconLeft" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAABGdBTUEAALGPC/xhBQAAKSZJREFUeF7t
         3QuUbFdZJ3Ae4eUSRR6+eAoKEkDFESIqiqKYUVAUZFw64+io+JjljBpRAzNQ2rVP9U0WAcOoiYyKIBhv
@@ -299,7 +299,7 @@
         AAAAAAAAAAAAAAAAAAAAAAAAAADArrrFLf4/8/B0aC6o0q4AAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="guna2TextBox1.IconLeft" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="txtUsername.IconLeft" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAABGdBTUEAALGPC/xhBQAARRpJREFUeF7t
         3QmcHGWd/3EORcULUVl1PddzPVDUZdX1AHXdP7oeq0Z3hekZ7jOQ9AREPOjucN+EZKo6Uz3hFoMIIqAo

@@ -14,3 +14,4 @@ D:\QL KhachSan\QuanLyKhachSan\GUI\bin\Debug\BLL.pdb
 D:\QL KhachSan\QuanLyKhachSan\GUI\bin\Debug\DAL.pdb
 D:\QL KhachSan\QuanLyKhachSan\GUI\obj\Debug\GUI.csproj.Up2Date
 D:\QL KhachSan\QuanLyKhachSan\GUI\obj\Debug\GUI.Login.resources
+D:\QL KhachSan\QuanLyKhachSan\GUI\obj\Debug\GUI.DashBoard.resources
