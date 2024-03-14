@@ -31,5 +31,18 @@ namespace GUI
         {
             Application.Exit();
         }
+
+        private void btnAddroom_Click(object sender, EventArgs e)
+        {
+            MovingPanel.Left = btnAddroom.Left + 50;
+            uC_AddRoom1.Visible = true;
+            uC_AddRoom1.BringToFront();
+        }
+
+        private void DashBoard_Load(object sender, EventArgs e)
+        {
+            uC_AddRoom1.Visible=false;
+            btnAddroom.PerformClick();
+        }
     }
 }

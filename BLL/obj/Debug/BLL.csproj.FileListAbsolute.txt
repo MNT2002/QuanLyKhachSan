@@ -7,3 +7,12 @@ D:\QL KhachSan\QuanLyKhachSan\BLL\obj\Debug\BLL.pdb
 D:\QL KhachSan\QuanLyKhachSan\BLL\bin\Debug\DAL.dll
 D:\QL KhachSan\QuanLyKhachSan\BLL\bin\Debug\DAL.pdb
 D:\QL KhachSan\QuanLyKhachSan\BLL\obj\Debug\BLL.csproj.Up2Date
+D:\visual studio\Windows Form\QLKhachSan\QuanLyKhachSan\BLL\bin\Debug\BLL.dll
+D:\visual studio\Windows Form\QLKhachSan\QuanLyKhachSan\BLL\bin\Debug\BLL.pdb
+D:\visual studio\Windows Form\QLKhachSan\QuanLyKhachSan\BLL\bin\Debug\DAL.dll
+D:\visual studio\Windows Form\QLKhachSan\QuanLyKhachSan\BLL\bin\Debug\DAL.pdb
+D:\visual studio\Windows Form\QLKhachSan\QuanLyKhachSan\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+D:\visual studio\Windows Form\QLKhachSan\QuanLyKhachSan\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+D:\visual studio\Windows Form\QLKhachSan\QuanLyKhachSan\BLL\obj\Debug\BLL.csproj.CopyComplete
+D:\visual studio\Windows Form\QLKhachSan\QuanLyKhachSan\BLL\obj\Debug\BLL.dll
+D:\visual studio\Windows Form\QLKhachSan\QuanLyKhachSan\BLL\obj\Debug\BLL.pdb
