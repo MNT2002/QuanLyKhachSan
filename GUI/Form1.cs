@@ -52,5 +52,22 @@ namespace GUI
         {
             Application.Exit();
         }
+
+        private void txtUsername_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyData == Keys.Enter)
+            {
+                this.guna2Button1_Click(sender, e);
+            }
+            
+        }
+
+        private void txtPassword_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyData == Keys.Enter)
+            {
+                this.guna2Button1_Click(sender, e);
+            }
+        }
     }
 }

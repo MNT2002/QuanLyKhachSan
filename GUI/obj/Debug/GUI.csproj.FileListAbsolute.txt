@@ -34,3 +34,6 @@ D:\visual studio\Windows Form\QLKhachSan\QuanLyKhachSan\GUI\obj\Debug\GUI.csproj
 D:\visual studio\Windows Form\QLKhachSan\QuanLyKhachSan\GUI\obj\Debug\GUI.csproj.CopyComplete
 D:\visual studio\Windows Form\QLKhachSan\QuanLyKhachSan\GUI\obj\Debug\GUI.exe
 D:\visual studio\Windows Form\QLKhachSan\QuanLyKhachSan\GUI\obj\Debug\GUI.pdb
+D:\visual studio\Windows Form\QLKhachSan\QuanLyKhachSan\GUI\bin\Debug\db_hotel.mdf
+D:\visual studio\Windows Form\QLKhachSan\QuanLyKhachSan\GUI\bin\Debug\db_hotel_log.ldf
+D:\visual studio\Windows Form\QLKhachSan\QuanLyKhachSan\GUI\bin\Debug\DAL.dll.config
