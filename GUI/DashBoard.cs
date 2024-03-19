@@ -32,6 +32,14 @@ namespace GUI
             Application.Exit();
         }
 
+
+        private void DashBoard_Load(object sender, EventArgs e)
+        {
+            uC_AddRoom1.Visible = false;
+            uC_CustomerRes1.Visible = false;
+            btnAddroom.PerformClick();
+        }
+
         private void btnAddroom_Click(object sender, EventArgs e)
         {
             MovingPanel.Left = btnAddroom.Left + 50;
@@ -39,10 +47,17 @@ namespace GUI
             uC_AddRoom1.BringToFront();
         }
 
-        private void DashBoard_Load(object sender, EventArgs e)
+
+        private void btnCustomerRes_Click(object sender, EventArgs e)
         {
-            uC_AddRoom1.Visible=false;
-            btnAddroom.PerformClick();
+            MovingPanel.Left = btnAddroom.Left + 50;
+            uC_CustomerRes1.Visible = true;
+            uC_CustomerRes1.BringToFront();
+        }
+
+        private void uC_CustomerRes1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
