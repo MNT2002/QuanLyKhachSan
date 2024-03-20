@@ -36,3 +36,23 @@ D:\visual studio\Windows Form\QLKhachSan\QuanLyKhachSan\GUI\obj\Debug\GUI.exe
 D:\visual studio\Windows Form\QLKhachSan\QuanLyKhachSan\GUI\obj\Debug\GUI.pdb
 D:\visual studio\Windows Form\QLKhachSan\QuanLyKhachSan\GUI\bin\Debug\DAL.dll.config
 D:\visual studio\Windows Form\QLKhachSan\QuanLyKhachSan\GUI\obj\Debug\GUI.All_User_Control.UC_CustomerRes.resources
+C:\Users\l_min\Downloads\QuanLyKhachSan-main\QuanLyKhachSan-main\GUI\bin\Debug\GUI.exe.config
+C:\Users\l_min\Downloads\QuanLyKhachSan-main\QuanLyKhachSan-main\GUI\bin\Debug\GUI.exe
+C:\Users\l_min\Downloads\QuanLyKhachSan-main\QuanLyKhachSan-main\GUI\bin\Debug\GUI.pdb
+C:\Users\l_min\Downloads\QuanLyKhachSan-main\QuanLyKhachSan-main\GUI\bin\Debug\BLL.dll
+C:\Users\l_min\Downloads\QuanLyKhachSan-main\QuanLyKhachSan-main\GUI\bin\Debug\DAL.dll
+C:\Users\l_min\Downloads\QuanLyKhachSan-main\QuanLyKhachSan-main\GUI\bin\Debug\Guna.UI2.dll
+C:\Users\l_min\Downloads\QuanLyKhachSan-main\QuanLyKhachSan-main\GUI\bin\Debug\BLL.pdb
+C:\Users\l_min\Downloads\QuanLyKhachSan-main\QuanLyKhachSan-main\GUI\bin\Debug\DAL.pdb
+C:\Users\l_min\Downloads\QuanLyKhachSan-main\QuanLyKhachSan-main\GUI\bin\Debug\DAL.dll.config
+C:\Users\l_min\Downloads\QuanLyKhachSan-main\QuanLyKhachSan-main\GUI\obj\Debug\GUI.csproj.AssemblyReference.cache
+C:\Users\l_min\Downloads\QuanLyKhachSan-main\QuanLyKhachSan-main\GUI\obj\Debug\BLL.All_User_Control.UC_AddRoom.resources
+C:\Users\l_min\Downloads\QuanLyKhachSan-main\QuanLyKhachSan-main\GUI\obj\Debug\GUI.All_User_Control.UC_CustomerRes.resources
+C:\Users\l_min\Downloads\QuanLyKhachSan-main\QuanLyKhachSan-main\GUI\obj\Debug\GUI.DashBoard.resources
+C:\Users\l_min\Downloads\QuanLyKhachSan-main\QuanLyKhachSan-main\GUI\obj\Debug\GUI.Login.resources
+C:\Users\l_min\Downloads\QuanLyKhachSan-main\QuanLyKhachSan-main\GUI\obj\Debug\GUI.Properties.Resources.resources
+C:\Users\l_min\Downloads\QuanLyKhachSan-main\QuanLyKhachSan-main\GUI\obj\Debug\GUI.csproj.GenerateResource.cache
+C:\Users\l_min\Downloads\QuanLyKhachSan-main\QuanLyKhachSan-main\GUI\obj\Debug\GUI.csproj.CoreCompileInputs.cache
+C:\Users\l_min\Downloads\QuanLyKhachSan-main\QuanLyKhachSan-main\GUI\obj\Debug\GUI.csproj.Up2Date
+C:\Users\l_min\Downloads\QuanLyKhachSan-main\QuanLyKhachSan-main\GUI\obj\Debug\GUI.exe
+C:\Users\l_min\Downloads\QuanLyKhachSan-main\QuanLyKhachSan-main\GUI\obj\Debug\GUI.pdb

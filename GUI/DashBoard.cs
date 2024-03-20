@@ -42,7 +42,7 @@ namespace GUI
 
         private void btnAddroom_Click(object sender, EventArgs e)
         {
-            MovingPanel.Left = btnAddroom.Left + 50;
+            MovingPanel.Left = btnAddroom.Left ;
             uC_AddRoom1.Visible = true;
             uC_AddRoom1.BringToFront();
         }
@@ -50,7 +50,7 @@ namespace GUI
 
         private void btnCustomerRes_Click(object sender, EventArgs e)
         {
-            MovingPanel.Left = btnAddroom.Left + 50;
+            MovingPanel.Left = btnAddroom.Left + 320;
             uC_CustomerRes1.Visible = true;
             uC_CustomerRes1.BringToFront();
         }

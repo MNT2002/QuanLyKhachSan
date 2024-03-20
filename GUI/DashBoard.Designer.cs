@@ -234,7 +234,7 @@
             this.MovingPanel.BackColor = System.Drawing.Color.Red;
             this.MovingPanel.Location = new System.Drawing.Point(39, 163);
             this.MovingPanel.Name = "MovingPanel";
-            this.MovingPanel.Size = new System.Drawing.Size(300, 7);
+            this.MovingPanel.Size = new System.Drawing.Size(240, 7);
             this.MovingPanel.TabIndex = 6;
             // 
             // guna2Elipse1

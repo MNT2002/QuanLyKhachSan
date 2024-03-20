@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?><Database Name="QuanLyKhachSan" Class="QuanLyKhachSanDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
-  <Connection Mode="AppSettings" ConnectionString="Data Source=.;Initial Catalog=QuanLyKhachSan;Persist Security Info=True;User ID=sa" SettingsObjectName="DAL.Properties.Settings" SettingsPropertyName="QuanLyKhachSanConnectionString" Provider="System.Data.SqlClient" />
+  <Connection Mode="AppSettings" ConnectionString="Data Source=Minh;Initial Catalog=QuanLyKhachSan;User ID=sa;Trust Server Certificate=True" SettingsObjectName="DAL.Properties.Settings" SettingsPropertyName="QuanLyKhachSanConnectionString1" Provider="System.Data.SqlClient" />
   <Table Name="dbo.rooms" Member="rooms">
     <Type Name="room">
       <Column Name="roomid" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
@@ -8,6 +8,24 @@
       <Column Name="bed" Type="System.String" DbType="VarChar(250) NOT NULL" CanBeNull="false" />
       <Column Name="price" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
       <Column Name="booked" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Association Name="room_customer" Member="customers" ThisKey="roomid" OtherKey="roomid" Type="customer" />
+    </Type>
+  </Table>
+  <Table Name="dbo.customer" Member="customers">
+    <Type Name="customer">
+      <Column Name="cid" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="cname" Type="System.String" DbType="VarChar(250) NOT NULL" CanBeNull="false" />
+      <Column Name="mobile" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="nationality" Type="System.String" DbType="VarChar(250) NOT NULL" CanBeNull="false" />
+      <Column Name="gender" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="dob" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="idproof" Type="System.String" DbType="VarChar(250) NOT NULL" CanBeNull="false" />
+      <Column Name="address" Type="System.String" DbType="VarChar(350) NOT NULL" CanBeNull="false" />
+      <Column Name="checkin" Type="System.String" DbType="VarChar(250) NOT NULL" CanBeNull="false" />
+      <Column Name="checkout" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="chekout" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="roomid" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="room_customer" Member="room" ThisKey="roomid" OtherKey="roomid" Type="room" IsForeignKey="true" />
     </Type>
   </Table>
 </Database>

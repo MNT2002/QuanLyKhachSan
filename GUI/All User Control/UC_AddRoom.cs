@@ -68,5 +68,10 @@ namespace BLL.All_User_Control
         {
             UC_AddRoom_Load(this, null);
         }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

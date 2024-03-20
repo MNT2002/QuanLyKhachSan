@@ -2,11 +2,24 @@
 <ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="QuanLyKhachSan">
   <DataContextMoniker Name="/QuanLyKhachSanDataContext" />
   <nestedChildShapes>
-    <classShape Id="ac4e69cc-ca1e-410a-87e1-141e52e228b3" absoluteBounds="3.375, 2.25, 2, 1.9631982421875">
+    <classShape Id="211b5e5f-b54b-4428-a1fa-2d3f535c7717" absoluteBounds="6.375, 4, 2, 1.9631982421875">
       <DataClassMoniker Name="/QuanLyKhachSanDataContext/room" />
       <nestedChildShapes>
-        <elementListCompartment Id="50574688-e910-4b42-a468-5f5c7aff5d8f" absoluteBounds="3.3899999999999997, 2.71, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="bf14cb59-bdc5-44be-abdf-ac01c2d93f3b" absoluteBounds="6.39, 4.46, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
+    <classShape Id="27de6c63-79a4-4f56-a54d-761f872b5fff" absoluteBounds="1.125, 3.375, 2, 3.1170068359375">
+      <DataClassMoniker Name="/QuanLyKhachSanDataContext/customer" />
+      <nestedChildShapes>
+        <elementListCompartment Id="127b03f4-e4c5-437e-aba8-67216f5ef2eb" absoluteBounds="1.1400000000000001, 3.835, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(6.375 : 4.98159912109375); (3.125 : 4.98159912109375)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/QuanLyKhachSanDataContext/room/room_customer" />
+      <nodes>
+        <classShapeMoniker Id="211b5e5f-b54b-4428-a1fa-2d3f535c7717" />
+        <classShapeMoniker Id="27de6c63-79a4-4f56-a54d-761f872b5fff" />
+      </nodes>
+    </associationConnector>
   </nestedChildShapes>
 </ordesignerObjectsDiagram>
