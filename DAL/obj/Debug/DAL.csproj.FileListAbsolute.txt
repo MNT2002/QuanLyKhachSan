@@ -11,10 +11,3 @@ D:\visual studio\Windows Form\QLKhachSan\QuanLyKhachSan\DAL\obj\Debug\DAL.csproj
 D:\visual studio\Windows Form\QLKhachSan\QuanLyKhachSan\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
 D:\visual studio\Windows Form\QLKhachSan\QuanLyKhachSan\DAL\obj\Debug\DAL.dll
 D:\visual studio\Windows Form\QLKhachSan\QuanLyKhachSan\DAL\obj\Debug\DAL.pdb
-C:\Users\l_min\Downloads\QuanLyKhachSan-main\QuanLyKhachSan-main\DAL\bin\Debug\DAL.dll.config
-C:\Users\l_min\Downloads\QuanLyKhachSan-main\QuanLyKhachSan-main\DAL\bin\Debug\DAL.dll
-C:\Users\l_min\Downloads\QuanLyKhachSan-main\QuanLyKhachSan-main\DAL\bin\Debug\DAL.pdb
-C:\Users\l_min\Downloads\QuanLyKhachSan-main\QuanLyKhachSan-main\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
-C:\Users\l_min\Downloads\QuanLyKhachSan-main\QuanLyKhachSan-main\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
-C:\Users\l_min\Downloads\QuanLyKhachSan-main\QuanLyKhachSan-main\DAL\obj\Debug\DAL.dll
-C:\Users\l_min\Downloads\QuanLyKhachSan-main\QuanLyKhachSan-main\DAL\obj\Debug\DAL.pdb

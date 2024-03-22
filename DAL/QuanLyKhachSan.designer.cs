@@ -39,7 +39,7 @@ namespace DAL
     #endregion
 		
 		public QuanLyKhachSanDataContext() : 
-				base(global::DAL.Properties.Settings.Default.QuanLyKhachSanConnectionString1, mappingSource)
+				base(global::DAL.Properties.Settings.Default.QuanLyKhachSanConnectionString, mappingSource)
 		{
 			OnCreated();
 		}
@@ -383,7 +383,7 @@ namespace DAL
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_cname", DbType="VarChar(250) NOT NULL", CanBeNull=false)]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_cname", DbType="NVarChar(250) NOT NULL", CanBeNull=false)]
 		public string cname
 		{
 			get
@@ -423,7 +423,7 @@ namespace DAL
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_nationality", DbType="VarChar(250) NOT NULL", CanBeNull=false)]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_nationality", DbType="NVarChar(250) NOT NULL", CanBeNull=false)]
 		public string nationality
 		{
 			get
@@ -443,7 +443,7 @@ namespace DAL
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_gender", DbType="VarChar(50) NOT NULL", CanBeNull=false)]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_gender", DbType="NVarChar(50) NOT NULL", CanBeNull=false)]
 		public string gender
 		{
 			get
@@ -503,7 +503,7 @@ namespace DAL
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_address", DbType="VarChar(350) NOT NULL", CanBeNull=false)]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_address", DbType="NVarChar(350) NOT NULL", CanBeNull=false)]
 		public string address
 		{
 			get

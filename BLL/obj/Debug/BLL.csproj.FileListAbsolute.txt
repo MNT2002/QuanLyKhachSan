@@ -17,13 +17,3 @@ D:\visual studio\Windows Form\QLKhachSan\QuanLyKhachSan\BLL\obj\Debug\BLL.csproj
 D:\visual studio\Windows Form\QLKhachSan\QuanLyKhachSan\BLL\obj\Debug\BLL.dll
 D:\visual studio\Windows Form\QLKhachSan\QuanLyKhachSan\BLL\obj\Debug\BLL.pdb
 D:\visual studio\Windows Form\QLKhachSan\QuanLyKhachSan\BLL\bin\Debug\DAL.dll.config
-C:\Users\l_min\Downloads\QuanLyKhachSan-main\QuanLyKhachSan-main\BLL\bin\Debug\BLL.dll
-C:\Users\l_min\Downloads\QuanLyKhachSan-main\QuanLyKhachSan-main\BLL\bin\Debug\BLL.pdb
-C:\Users\l_min\Downloads\QuanLyKhachSan-main\QuanLyKhachSan-main\BLL\bin\Debug\DAL.dll
-C:\Users\l_min\Downloads\QuanLyKhachSan-main\QuanLyKhachSan-main\BLL\bin\Debug\DAL.pdb
-C:\Users\l_min\Downloads\QuanLyKhachSan-main\QuanLyKhachSan-main\BLL\bin\Debug\DAL.dll.config
-C:\Users\l_min\Downloads\QuanLyKhachSan-main\QuanLyKhachSan-main\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
-C:\Users\l_min\Downloads\QuanLyKhachSan-main\QuanLyKhachSan-main\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
-C:\Users\l_min\Downloads\QuanLyKhachSan-main\QuanLyKhachSan-main\BLL\obj\Debug\BLL.csproj.Up2Date
-C:\Users\l_min\Downloads\QuanLyKhachSan-main\QuanLyKhachSan-main\BLL\obj\Debug\BLL.dll
-C:\Users\l_min\Downloads\QuanLyKhachSan-main\QuanLyKhachSan-main\BLL\obj\Debug\BLL.pdb

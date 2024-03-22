@@ -49,7 +49,7 @@
             this.txt_checkin = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.txt_bed_type = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.txt_room = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.txt_room_type = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label11 = new System.Windows.Forms.Label();
             this.txt_room_no = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label12 = new System.Windows.Forms.Label();
@@ -143,7 +143,7 @@
             this.txt_phone_number.SelectedText = "";
             this.txt_phone_number.Size = new System.Drawing.Size(458, 64);
             this.txt_phone_number.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
-            this.txt_phone_number.TabIndex = 2;
+            this.txt_phone_number.TabIndex = 3;
             // 
             // label4
             // 
@@ -174,7 +174,7 @@
             this.txt_nationality.SelectedText = "";
             this.txt_nationality.Size = new System.Drawing.Size(458, 64);
             this.txt_nationality.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
-            this.txt_nationality.TabIndex = 2;
+            this.txt_nationality.TabIndex = 4;
             // 
             // txt_gender
             // 
@@ -194,7 +194,7 @@
             this.txt_gender.Name = "txt_gender";
             this.txt_gender.Size = new System.Drawing.Size(458, 36);
             this.txt_gender.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
-            this.txt_gender.TabIndex = 4;
+            this.txt_gender.TabIndex = 5;
             // 
             // label5
             // 
@@ -229,7 +229,7 @@
             this.txt_dob.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.txt_dob.Name = "txt_dob";
             this.txt_dob.Size = new System.Drawing.Size(458, 64);
-            this.txt_dob.TabIndex = 5;
+            this.txt_dob.TabIndex = 6;
             this.txt_dob.Value = new System.DateTime(2024, 3, 19, 22, 4, 34, 249);
             // 
             // txt_address
@@ -282,7 +282,7 @@
             this.txt_id.SelectedText = "";
             this.txt_id.Size = new System.Drawing.Size(458, 64);
             this.txt_id.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
-            this.txt_id.TabIndex = 9;
+            this.txt_id.TabIndex = 7;
             // 
             // label8
             // 
@@ -316,7 +316,7 @@
             this.txt_checkin.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.txt_checkin.Name = "txt_checkin";
             this.txt_checkin.Size = new System.Drawing.Size(458, 64);
-            this.txt_checkin.TabIndex = 5;
+            this.txt_checkin.TabIndex = 9;
             this.txt_checkin.Value = new System.DateTime(2024, 3, 19, 22, 4, 34, 249);
             // 
             // txt_bed_type
@@ -331,12 +331,13 @@
             this.txt_bed_type.ItemHeight = 30;
             this.txt_bed_type.Items.AddRange(new object[] {
             "Don",
-            "Doi"});
+            "Doi",
+            "Ba"});
             this.txt_bed_type.Location = new System.Drawing.Point(1228, 133);
             this.txt_bed_type.Name = "txt_bed_type";
             this.txt_bed_type.Size = new System.Drawing.Size(458, 36);
             this.txt_bed_type.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
-            this.txt_bed_type.TabIndex = 11;
+            this.txt_bed_type.TabIndex = 10;
             this.txt_bed_type.SelectedIndexChanged += new System.EventHandler(this.txt_bed_type_SelectedIndexChanged);
             // 
             // label10
@@ -349,25 +350,25 @@
             this.label10.TabIndex = 10;
             this.label10.Text = "Loại Giường";
             // 
-            // txt_room
+            // txt_room_type
             // 
-            this.txt_room.BackColor = System.Drawing.Color.Transparent;
-            this.txt_room.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.txt_room.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.txt_room.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_room.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_room.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.txt_room.ForeColor = System.Drawing.Color.Black;
-            this.txt_room.ItemHeight = 30;
-            this.txt_room.Items.AddRange(new object[] {
+            this.txt_room_type.BackColor = System.Drawing.Color.Transparent;
+            this.txt_room_type.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.txt_room_type.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.txt_room_type.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_room_type.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_room_type.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.txt_room_type.ForeColor = System.Drawing.Color.Black;
+            this.txt_room_type.ItemHeight = 30;
+            this.txt_room_type.Items.AddRange(new object[] {
             "Ac",
             "None-Ac"});
-            this.txt_room.Location = new System.Drawing.Point(1228, 261);
-            this.txt_room.Name = "txt_room";
-            this.txt_room.Size = new System.Drawing.Size(458, 36);
-            this.txt_room.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
-            this.txt_room.TabIndex = 13;
-            this.txt_room.SelectedIndexChanged += new System.EventHandler(this.txt_room_SelectedIndexChanged);
+            this.txt_room_type.Location = new System.Drawing.Point(1228, 261);
+            this.txt_room_type.Name = "txt_room_type";
+            this.txt_room_type.Size = new System.Drawing.Size(458, 36);
+            this.txt_room_type.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
+            this.txt_room_type.TabIndex = 11;
+            this.txt_room_type.SelectedIndexChanged += new System.EventHandler(this.txt_room_type_SelectedIndexChanged);
             // 
             // label11
             // 
@@ -393,7 +394,7 @@
             this.txt_room_no.Name = "txt_room_no";
             this.txt_room_no.Size = new System.Drawing.Size(458, 36);
             this.txt_room_no.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
-            this.txt_room_no.TabIndex = 15;
+            this.txt_room_no.TabIndex = 12;
             this.txt_room_no.SelectedIndexChanged += new System.EventHandler(this.txt_room_no_SelectedIndexChanged);
             // 
             // label12
@@ -426,7 +427,7 @@
             this.txt_price.SelectedText = "";
             this.txt_price.Size = new System.Drawing.Size(458, 64);
             this.txt_price.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
-            this.txt_price.TabIndex = 17;
+            this.txt_price.TabIndex = 13;
             // 
             // label13
             // 
@@ -457,6 +458,7 @@
             this.btn_add_customer.Size = new System.Drawing.Size(180, 66);
             this.btn_add_customer.TabIndex = 18;
             this.btn_add_customer.Text = "Thêm khách hàng";
+            this.btn_add_customer.Click += new System.EventHandler(this.btn_add_customer_Click);
             // 
             // guna2Elipse1
             // 
@@ -472,7 +474,7 @@
             this.Controls.Add(this.label13);
             this.Controls.Add(this.txt_room_no);
             this.Controls.Add(this.label12);
-            this.Controls.Add(this.txt_room);
+            this.Controls.Add(this.txt_room_type);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.txt_bed_type);
             this.Controls.Add(this.label10);
@@ -522,7 +524,7 @@
         private Guna.UI2.WinForms.Guna2DateTimePicker txt_checkin;
         private Guna.UI2.WinForms.Guna2ComboBox txt_bed_type;
         private System.Windows.Forms.Label label10;
-        private Guna.UI2.WinForms.Guna2ComboBox txt_room;
+        private Guna.UI2.WinForms.Guna2ComboBox txt_room_type;
         private System.Windows.Forms.Label label11;
         private Guna.UI2.WinForms.Guna2ComboBox txt_room_no;
         private System.Windows.Forms.Label label12;
