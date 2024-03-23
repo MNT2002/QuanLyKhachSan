@@ -45,6 +45,7 @@ namespace GUI
         {
             MovingPanel.Left = btnAddroom.Left - 25;
             uC_AddRoom1.Visible = true;
+            uC_AddRoom1.UC_AddRoom_Load(sender,e);
             uC_AddRoom1.BringToFront();
         }
 

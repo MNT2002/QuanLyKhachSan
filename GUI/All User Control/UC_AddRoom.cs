@@ -19,7 +19,7 @@ namespace BLL.All_User_Control
             InitializeComponent();
         }
 
-        private void UC_AddRoom_Load(object sender, EventArgs e)
+        public void UC_AddRoom_Load(object sender, EventArgs e)
         {
             dgv_rooms.DataSource = room.LoadRoom();
         }

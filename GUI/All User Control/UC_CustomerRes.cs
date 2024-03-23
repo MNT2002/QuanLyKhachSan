@@ -14,18 +14,16 @@ namespace GUI.All_User_Control
 {
     public partial class UC_CustomerRes : UserControl
     {
-        BLL_Room room = new BLL_Room();
+        BLL_Room bll_room = new BLL_Room();
         BLL_customer bll_customer = new BLL_customer();
-        //function fn = new function();
-        string query;
 
         public UC_CustomerRes()
         {
             InitializeComponent();
         }
-        public void setCombobox(String query1, string query2, ComboBox combo)
+        public void setCombobox(String roomType, string bedType, ComboBox combo)
         {
-            var listroom = room.GetListRoom(query1, query2);
+            var listroom = bll_room.GetListRoom(roomType, bedType);
             if (listroom != null)
             {
                 for (int i = 0; i < listroom.Count; i++)
@@ -62,10 +60,10 @@ namespace GUI.All_User_Control
 
         private void txt_room_no_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (room.GetRoomByRoomNo(txt_room_no.Text) != null)
+            if (bll_room.GetRoomByRoomNo(txt_room_no.Text) != null)
             {
-                txt_price.Text = room.GetRoomByRoomNo(txt_room_no.Text).price.ToString();
-                roomId = room.GetRoomByRoomNo(txt_room_no.Text).roomid;
+                txt_price.Text = bll_room.GetRoomByRoomNo(txt_room_no.Text).price.ToString();
+                roomId = bll_room.GetRoomByRoomNo(txt_room_no.Text).roomid;
             } else
             {
                 txt_price.Text = "";
@@ -92,6 +90,10 @@ namespace GUI.All_User_Control
 
 
                 bll_customer.AddCustomer(name, phoneNumber, nationality, gender, dob, id, address, checkin, roomId);
+                if (bll_room.GetRoomByRoomNo(txt_room_no.Text) != null)
+                {
+                    bll_room.SetRoomState(txt_room_no.Text);
+                }
                 MessageBox.Show("Đăng kí khách hàng thành công tại số phòng " + txt_room_no.Text, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 clearAllText();
             }

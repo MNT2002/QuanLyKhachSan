@@ -23,6 +23,7 @@ namespace BLL
             r.roomType = RoomType;
             r.bed = Bed;
             r.price = Price;
+            r.booked = "NO";
 
             try
             {
@@ -35,12 +36,24 @@ namespace BLL
         }
         public List<room> GetListRoom(string RoomType, string RoomBed)
         {
-            var room = DB.rooms.Where(r => r.roomType == RoomType && r.bed == RoomBed).ToList();
+            var room = DB.rooms.Where(r => r.roomType == RoomType && r.bed == RoomBed && r.booked == "NO").ToList();
             return room;
         }
         public room GetRoomByRoomNo(string RoomNo)
         {
             return DB.rooms.Where(r => r.roomNo == RoomNo).FirstOrDefault();
+        }
+        public void SetRoomState(string RoomNo)
+        {
+            room room = DB.rooms.Where(r => r.roomNo == RoomNo).FirstOrDefault();
+            if (room.booked == "NO")
+            {
+                room.booked = "YES";
+            } else
+            {
+                room.booked = "NO";
+            }
+            DB.SubmitChanges();
         }
     }
 }

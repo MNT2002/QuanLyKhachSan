@@ -78,6 +78,7 @@
             this.txt_search_name.Size = new System.Drawing.Size(874, 85);
             this.txt_search_name.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.txt_search_name.TabIndex = 2;
+            this.txt_search_name.TextChanged += new System.EventHandler(this.txt_search_name_TextChanged);
             // 
             // guna2HtmlLabel1
             // 
@@ -139,6 +140,7 @@
             this.guna2DataGridView1.ThemeStyle.RowsStyle.Height = 22;
             this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.guna2DataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.guna2DataGridView1_CellContentClick);
             // 
             // guna2HtmlLabel2
             // 
@@ -249,6 +251,7 @@
             this.btn_checkout.Size = new System.Drawing.Size(180, 63);
             this.btn_checkout.TabIndex = 10;
             this.btn_checkout.Text = "Thanh Toán";
+            this.btn_checkout.Click += new System.EventHandler(this.btn_checkout_Click);
             // 
             // guna2Elipse1
             // 
@@ -272,6 +275,8 @@
             this.Controls.Add(this.label1);
             this.Name = "UC_CheckOut";
             this.Size = new System.Drawing.Size(1882, 852);
+            this.Load += new System.EventHandler(this.UC_CheckOut_Load);
+            this.Leave += new System.EventHandler(this.UC_CheckOut_Leave);
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

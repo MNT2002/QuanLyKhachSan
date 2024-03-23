@@ -7,14 +7,70 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BLL;
 
 namespace GUI.All_User_Control
 {
     public partial class UC_CheckOut : UserControl
     {
+
+        BLL_customer bLL_Customer = new BLL_customer();
+        BLL_Room bll_room = new BLL_Room();
         public UC_CheckOut()
         {
             InitializeComponent();
+        }
+
+        private void UC_CheckOut_Load(object sender, EventArgs e)
+        {
+            guna2DataGridView1.DataSource = bLL_Customer.LoadCustomer();
+        }
+
+        private void txt_search_name_TextChanged(object sender, EventArgs e)
+        {
+            guna2DataGridView1.DataSource = bLL_Customer.GetCustomerByName(txt_search_name.Text);
+        }
+
+        int id;
+        private void guna2DataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (guna2DataGridView1.Rows[e.RowIndex].Cells[e.RowIndex].Value != null)
+            {
+                id = int.Parse(guna2DataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString());
+                txt_name.Text = guna2DataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString();
+                txt_room_no.Text = guna2DataGridView1.Rows[e.RowIndex].Cells[9].Value.ToString();
+            }
+        }
+
+        private void btn_checkout_Click(object sender, EventArgs e)
+        {
+            if (txt_name.Text != "")
+            {
+                if (MessageBox.Show("Bạn có chắc chắn không?", "Xác nhận", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning) == DialogResult.OK)
+                {
+                    String cdate = txt_checkout_date.Text;
+                    bLL_Customer.UpdateCustomerCheckout(id, cdate);
+                    bll_room.SetRoomState(txt_room_no.Text);
+                    MessageBox.Show("Thanh toán thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    UC_CheckOut_Load(this, null);
+                    clearAll();
+                }
+            } else
+            {
+                MessageBox.Show("Đang không chọn khách hàng nào!", "Thông tin", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+        public void clearAll()
+        {
+            txt_search_name.Clear();
+            txt_name.Clear();
+            txt_room_no.Clear();
+            txt_checkout_date.ResetText();
+        }
+
+        private void UC_CheckOut_Leave(object sender, EventArgs e)
+        {
+            clearAll();
         }
     }
 }

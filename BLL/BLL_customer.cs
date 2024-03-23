@@ -11,6 +11,38 @@ namespace BLL
     {
         QuanLyKhachSanDataContext DB = new QuanLyKhachSanDataContext();
 
+       public object LoadCustomer()
+    {
+        var query = from customer in DB.customers
+                    join room in DB.rooms
+                    on customer.roomid equals room.roomid
+                    where customer.chekout == "NO"
+                    select new 
+                    
+                    {
+                        cid = customer.cid,
+                        cname = customer.cname,
+                        mobile = customer.mobile,
+                        nationality = customer.nationality,
+                        gender = customer.gender,
+                        dob = customer.dob,
+                        idproof = customer.idproof,
+                        address = customer.address,
+                        checkin = customer.checkin,
+                        roomNo = room.roomNo,
+                        roomType = room.roomType,
+                        bed = room.bed,
+                        price = room.price
+                    };
+
+        return query.ToList();
+    }
+
+        public List<customer> GetCustomerByName(string CName)
+        {
+            return DB.customers.Where(cus => cus.cname.Contains(CName) && cus.chekout == "NO").ToList();
+        }
+
         public void AddCustomer(string Name, int PhoneNumber, string Nationality, string Gender, string Dob, string Id, string Address, string Checkin, int RoomId)
         {
             customer cus = new customer();
@@ -23,6 +55,8 @@ namespace BLL
             cus.address = Address;
             cus.checkin = Checkin;
             cus.roomid = RoomId;
+            cus.chekout = "NO";
+            cus.checkout = "NO";
 
             try
             {
@@ -33,6 +67,13 @@ namespace BLL
             {
 
             }
+        }
+        public void UpdateCustomerCheckout(int id, string cdate)
+        {
+            customer cus = DB.customers.Where(r => r.cid == id).FirstOrDefault();
+            cus.chekout = "YES";
+            cus.checkout = cdate;
+            DB.SubmitChanges();
         }
     }
 }
