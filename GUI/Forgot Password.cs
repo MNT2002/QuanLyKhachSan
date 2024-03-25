@@ -46,7 +46,8 @@ namespace GUI
             {
                 try
                 {
-                    mail.Body = "N"+"Mật khẩu tài khoản của bạn là: "+emp.password;
+                    mail.Body = "Mật khẩu tài khoản của bạn là: "+emp.password;
+                    mail.BodyEncoding = Encoding.UTF8;
                     smtp.Send(mail);
                     MessageBox.Show("Email sent successfully", "Email", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     this.Close();
