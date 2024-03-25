@@ -1,22 +1,35 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\QL KhachSan\\QuanLyKhachSan\\GUI\\",
+  "WorkspaceRootPath": "C:\\Users\\TueMinh\\Desktop\\.Net\\QuanLyKhachSan\\GUI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DA68F437-4135-430E-A5D3-391BF087A072}|GUI.csproj|d:\\ql khachsan\\quanlykhachsan\\gui\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{DA68F437-4135-430E-A5D3-391BF087A072}|GUI.csproj|C:\\Users\\TueMinh\\Desktop\\.Net\\QuanLyKhachSan\\GUI\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA68F437-4135-430E-A5D3-391BF087A072}|GUI.csproj|solutionrelative:dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA68F437-4135-430E-A5D3-391BF087A072}|GUI.csproj|c:\\users\\tueminh\\desktop\\.net\\quanlykhachsan\\gui\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{DA68F437-4135-430E-A5D3-391BF087A072}|GUI.csproj|solutionrelative:dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DA68F437-4135-430E-A5D3-391BF087A072}|GUI.csproj|d:\\ql khachsan\\quanlykhachsan\\gui\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DA68F437-4135-430E-A5D3-391BF087A072}|GUI.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DA68F437-4135-430E-A5D3-391BF087A072}|GUI.csproj|C:\\Users\\TueMinh\\Desktop\\.Net\\QuanLyKhachSan\\GUI\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{DA68F437-4135-430E-A5D3-391BF087A072}|GUI.csproj|solutionrelative:login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DA68F437-4135-430E-A5D3-391BF087A072}|GUI.csproj|d:\\ql khachsan\\quanlykhachsan\\gui\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{DA68F437-4135-430E-A5D3-391BF087A072}|GUI.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{DA68F437-4135-430E-A5D3-391BF087A072}|GUI.csproj|C:\\Users\\TueMinh\\Desktop\\.Net\\QuanLyKhachSan\\GUI\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA68F437-4135-430E-A5D3-391BF087A072}|GUI.csproj|solutionrelative:login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DA68F437-4135-430E-A5D3-391BF087A072}|GUI.csproj|d:\\ql khachsan\\quanlykhachsan\\gui\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DA68F437-4135-430E-A5D3-391BF087A072}|GUI.csproj|solutionrelative:dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DA68F437-4135-430E-A5D3-391BF087A072}|GUI.csproj|C:\\Users\\TueMinh\\Desktop\\.Net\\QuanLyKhachSan\\GUI\\forgot password.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{DA68F437-4135-430E-A5D3-391BF087A072}|GUI.csproj|solutionrelative:forgot password.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3BC5D0F6-5406-452D-8CFA-802226BFBF08}|..\\BLL\\BLL.csproj|c:\\users\\tueminh\\desktop\\.net\\quanlykhachsan\\bll\\bll_employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3BC5D0F6-5406-452D-8CFA-802226BFBF08}|..\\BLL\\BLL.csproj|c:\\users\\tueminh\\desktop\\.net\\quanlykhachsan\\bll\\bll_room.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3BC5D0F6-5406-452D-8CFA-802226BFBF08}|..\\BLL\\BLL.csproj|c:\\users\\tueminh\\desktop\\.net\\quanlykhachsan\\bll\\bll_customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,62 +39,106 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 0,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "DashBoard.cs",
-              "DocumentMoniker": "D:\\QL KhachSan\\QuanLyKhachSan\\GUI\\DashBoard.cs",
+              "DocumentMoniker": "C:\\Users\\TueMinh\\Desktop\\.Net\\QuanLyKhachSan\\GUI\\DashBoard.cs",
               "RelativeDocumentMoniker": "DashBoard.cs",
-              "ToolTip": "D:\\QL KhachSan\\QuanLyKhachSan\\GUI\\DashBoard.cs",
+              "ToolTip": "C:\\Users\\TueMinh\\Desktop\\.Net\\QuanLyKhachSan\\GUI\\DashBoard.cs",
               "RelativeToolTip": "DashBoard.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAqwB8AAAAfAAAA",
+              "ViewState": "AQIAACoAAAAAAAAAAAAmwFEAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-13T14:44:15.061Z",
+              "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Form1.cs",
-              "DocumentMoniker": "D:\\QL KhachSan\\QuanLyKhachSan\\GUI\\Form1.cs",
-              "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "D:\\QL KhachSan\\QuanLyKhachSan\\GUI\\Form1.cs",
-              "RelativeToolTip": "Form1.cs",
-              "ViewState": "AQIAACEAAAAAAAAAAAAiwDQAAAAfAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-13T14:36:01.413Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
               "Title": "DashBoard.cs [Design]",
-              "DocumentMoniker": "D:\\QL KhachSan\\QuanLyKhachSan\\GUI\\DashBoard.cs",
+              "DocumentMoniker": "C:\\Users\\TueMinh\\Desktop\\.Net\\QuanLyKhachSan\\GUI\\DashBoard.cs",
               "RelativeDocumentMoniker": "DashBoard.cs",
-              "ToolTip": "D:\\QL KhachSan\\QuanLyKhachSan\\GUI\\DashBoard.cs [Design]",
+              "ToolTip": "C:\\Users\\TueMinh\\Desktop\\.Net\\QuanLyKhachSan\\GUI\\DashBoard.cs [Design]",
               "RelativeToolTip": "DashBoard.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-13T14:02:34.642Z",
+              "WhenOpened": "2024-03-25T10:05:02.411Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "BLL_Room.cs",
+              "DocumentMoniker": "C:\\Users\\TueMinh\\Desktop\\.Net\\QuanLyKhachSan\\BLL\\BLL_Room.cs",
+              "RelativeDocumentMoniker": "..\\BLL\\BLL_Room.cs",
+              "ToolTip": "C:\\Users\\TueMinh\\Desktop\\.Net\\QuanLyKhachSan\\BLL\\BLL_Room.cs",
+              "RelativeToolTip": "..\\BLL\\BLL_Room.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAQwA4AAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-25T09:24:14.042Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "BLL_employee.cs",
+              "DocumentMoniker": "C:\\Users\\TueMinh\\Desktop\\.Net\\QuanLyKhachSan\\BLL\\BLL_employee.cs",
+              "RelativeDocumentMoniker": "..\\BLL\\BLL_employee.cs",
+              "ToolTip": "C:\\Users\\TueMinh\\Desktop\\.Net\\QuanLyKhachSan\\BLL\\BLL_employee.cs",
+              "RelativeToolTip": "..\\BLL\\BLL_employee.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABQAAABRAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-25T08:57:39.856Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Forgot Password.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\TueMinh\\Desktop\\.Net\\QuanLyKhachSan\\GUI\\Forgot Password.cs",
+              "RelativeDocumentMoniker": "Forgot Password.cs",
+              "ToolTip": "C:\\Users\\TueMinh\\Desktop\\.Net\\QuanLyKhachSan\\GUI\\Forgot Password.cs [Design]",
+              "RelativeToolTip": "Forgot Password.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-25T08:22:18.648Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Login.cs",
+              "DocumentMoniker": "C:\\Users\\TueMinh\\Desktop\\.Net\\QuanLyKhachSan\\GUI\\Login.cs",
+              "RelativeDocumentMoniker": "Login.cs",
+              "ToolTip": "C:\\Users\\TueMinh\\Desktop\\.Net\\QuanLyKhachSan\\GUI\\Login.cs",
+              "RelativeToolTip": "Login.cs",
+              "ViewState": "AQIAAB0AAAAAAAAAAAA2wC4AAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-25T07:07:11.974Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "BLL_customer.cs",
+              "DocumentMoniker": "C:\\Users\\TueMinh\\Desktop\\.Net\\QuanLyKhachSan\\BLL\\BLL_customer.cs",
+              "RelativeDocumentMoniker": "..\\BLL\\BLL_customer.cs",
+              "ToolTip": "C:\\Users\\TueMinh\\Desktop\\.Net\\QuanLyKhachSan\\BLL\\BLL_customer.cs",
+              "RelativeToolTip": "..\\BLL\\BLL_customer.cs",
+              "ViewState": "AQIAACoAAAAAAAAAAAAowE4AAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-25T08:57:55.838Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "D:\\QL KhachSan\\QuanLyKhachSan\\GUI\\Form1.cs",
-              "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "D:\\QL KhachSan\\QuanLyKhachSan\\GUI\\Form1.cs [Design]",
-              "RelativeToolTip": "Form1.cs [Design]",
+              "Title": "Login.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\TueMinh\\Desktop\\.Net\\QuanLyKhachSan\\GUI\\Login.cs",
+              "RelativeDocumentMoniker": "Login.cs",
+              "ToolTip": "C:\\Users\\TueMinh\\Desktop\\.Net\\QuanLyKhachSan\\GUI\\Login.cs [Design]",
+              "RelativeToolTip": "Login.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-12T15:38:08.536Z",
               "EditorCaption": " [Design]"

@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.forgot_pass = new System.Windows.Forms.LinkLabel();
             this.label2 = new System.Windows.Forms.Label();
             this.labelError = new System.Windows.Forms.Label();
             this.btnLogin = new Guna.UI2.WinForms.Guna2Button();
@@ -45,6 +46,7 @@
             // guna2Panel1
             // 
             this.guna2Panel1.BackColor = System.Drawing.Color.AliceBlue;
+            this.guna2Panel1.Controls.Add(this.forgot_pass);
             this.guna2Panel1.Controls.Add(this.label2);
             this.guna2Panel1.Controls.Add(this.labelError);
             this.guna2Panel1.Controls.Add(this.btnLogin);
@@ -57,6 +59,18 @@
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(1112, 550);
             this.guna2Panel1.TabIndex = 0;
+            // 
+            // forgot_pass
+            // 
+            this.forgot_pass.AutoSize = true;
+            this.forgot_pass.Location = new System.Drawing.Point(824, 443);
+            this.forgot_pass.Name = "forgot_pass";
+            this.forgot_pass.Size = new System.Drawing.Size(89, 13);
+            this.forgot_pass.TabIndex = 8;
+            this.forgot_pass.TabStop = true;
+            this.forgot_pass.Text = "Quên mật khẩu ?";
+            this.forgot_pass.Visible = false;
+            this.forgot_pass.Click += new System.EventHandler(this.forgot_pass_Click);
             // 
             // label2
             // 
@@ -73,7 +87,7 @@
             this.labelError.AutoSize = true;
             this.labelError.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelError.ForeColor = System.Drawing.Color.IndianRed;
-            this.labelError.Location = new System.Drawing.Point(681, 450);
+            this.labelError.Location = new System.Drawing.Point(659, 471);
             this.labelError.Name = "labelError";
             this.labelError.Size = new System.Drawing.Size(414, 25);
             this.labelError.TabIndex = 6;
@@ -221,6 +235,7 @@
         private System.Windows.Forms.Label labelError;
         private Guna.UI2.WinForms.Guna2Button btnLogin;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.LinkLabel forgot_pass;
     }
 }
 

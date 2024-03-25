@@ -39,7 +39,7 @@ namespace DAL
     #endregion
 		
 		public QuanLyKhachSanDataContext() : 
-				base(global::DAL.Properties.Settings.Default.QuanLyKhachSanConnectionString, mappingSource)
+				base(global::DAL.Properties.Settings.Default.QuanLyKhachSanConnectionString1, mappingSource)
 		{
 			OnCreated();
 		}
@@ -81,6 +81,14 @@ namespace DAL
 			get
 			{
 				return this.GetTable<customer>();
+			}
+		}
+		
+		public System.Data.Linq.Table<employee> employees
+		{
+			get
+			{
+				return this.GetTable<employee>();
 			}
 		}
 	}
@@ -658,6 +666,159 @@ namespace DAL
 			if ((this.PropertyChanged != null))
 			{
 				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.employee")]
+	public partial class employee
+	{
+		
+		private int _nvid;
+		
+		private string _username;
+		
+		private string _password;
+		
+		private string _email;
+		
+		private int _role;
+		
+		private string _fullname;
+		
+		private System.DateTime _dateofbirth;
+		
+		private string _address;
+		
+		public employee()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_nvid", AutoSync=AutoSync.Always, DbType="Int NOT NULL IDENTITY", IsDbGenerated=true)]
+		public int nvid
+		{
+			get
+			{
+				return this._nvid;
+			}
+			set
+			{
+				if ((this._nvid != value))
+				{
+					this._nvid = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_username", DbType="NChar(32) NOT NULL", CanBeNull=false)]
+		public string username
+		{
+			get
+			{
+				return this._username;
+			}
+			set
+			{
+				if ((this._username != value))
+				{
+					this._username = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_password", DbType="NChar(32) NOT NULL", CanBeNull=false)]
+		public string password
+		{
+			get
+			{
+				return this._password;
+			}
+			set
+			{
+				if ((this._password != value))
+				{
+					this._password = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_email", DbType="NChar(32) NOT NULL", CanBeNull=false)]
+		public string email
+		{
+			get
+			{
+				return this._email;
+			}
+			set
+			{
+				if ((this._email != value))
+				{
+					this._email = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_role", DbType="Int NOT NULL")]
+		public int role
+		{
+			get
+			{
+				return this._role;
+			}
+			set
+			{
+				if ((this._role != value))
+				{
+					this._role = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_fullname", DbType="NVarChar(50) NOT NULL", CanBeNull=false)]
+		public string fullname
+		{
+			get
+			{
+				return this._fullname;
+			}
+			set
+			{
+				if ((this._fullname != value))
+				{
+					this._fullname = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_dateofbirth", DbType="Date NOT NULL")]
+		public System.DateTime dateofbirth
+		{
+			get
+			{
+				return this._dateofbirth;
+			}
+			set
+			{
+				if ((this._dateofbirth != value))
+				{
+					this._dateofbirth = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_address", DbType="NVarChar(50)")]
+		public string address
+		{
+			get
+			{
+				return this._address;
+			}
+			set
+			{
+				if ((this._address != value))
+				{
+					this._address = value;
+				}
 			}
 		}
 	}

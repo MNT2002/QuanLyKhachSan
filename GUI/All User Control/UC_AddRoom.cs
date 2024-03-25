@@ -45,6 +45,12 @@ namespace BLL.All_User_Control
                 MessageBox.Show("Thiếu thông tin", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
+            if (room.GetRoomByRoomNo(txt_room_no.Text) != null)
+            {
+                MessageBox.Show("Số phòng đã tồn tại", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txt_room_no.Clear();
+                return;
+            }
 
             string roomNo = txt_room_no.Text;
             string roomType = txt_room_type.Text;

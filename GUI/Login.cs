@@ -4,10 +4,15 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Net.Mail;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using System.Net;
+using System.Net.Mail;
+using System.Windows.Forms;
+using BLL;
 namespace GUI
 {
     public partial class Login : Form
@@ -29,17 +34,32 @@ namespace GUI
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-            if (txtUsername.Text == "abc" && txtPassword.Text == "123")
+            BLL_employee emp = new BLL_employee();
+            var employ = emp.GetEmployeeByUsername(txtUsername.Text);
+            if (employ != null) 
             {
-
-                labelError.Visible = false;
-                DashBoard ds = new DashBoard();
-                this.Hide();
-                ds.Show();
+                if(employ.username.Trim()==txtUsername.Text&&employ.password.Trim()==txtPassword.Text)
+                {
+                    MessageBox.Show(" Login successfully", "Login", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    DashBoard ds = new DashBoard();
+                    
+                    this.Hide();
+                    ds.ReceivedData(txtUsername.Text);
+                    ds.Show();
+                    
+                }
+                else
+                {
+                    MessageBox.Show("Tài khoản hoặc mật khẩu không đúng.", "Login", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    txtPassword.Clear();
+                    txtPassword.Focus();
+                    return;
+                }
             }
             else
             {
                 labelError.Visible = true;
+                forgot_pass.Visible = true;
             }
         }
 
@@ -69,5 +89,12 @@ namespace GUI
                 this.guna2Button1_Click(sender, e);
             }
         }
+
+        private void forgot_pass_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            ForgotPassword forgotPassword = new ForgotPassword();
+            forgotPassword.Show();
+        }
     }
-}
+    }

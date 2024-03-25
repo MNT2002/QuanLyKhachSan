@@ -208,6 +208,8 @@
             // 
             // dgv_rooms
             // 
+            this.dgv_rooms.AllowUserToResizeColumns = false;
+            this.dgv_rooms.AllowUserToResizeRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
             this.dgv_rooms.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgv_rooms.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
@@ -219,8 +221,7 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgv_rooms.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dgv_rooms.ColumnHeadersHeight = 4;
-            this.dgv_rooms.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.dgv_rooms.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Century", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -232,7 +233,9 @@
             this.dgv_rooms.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgv_rooms.Location = new System.Drawing.Point(64, 114);
             this.dgv_rooms.Name = "dgv_rooms";
+            this.dgv_rooms.ReadOnly = true;
             this.dgv_rooms.RowHeadersVisible = false;
+            this.dgv_rooms.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
             this.dgv_rooms.Size = new System.Drawing.Size(864, 564);
             this.dgv_rooms.TabIndex = 7;
             this.dgv_rooms.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
@@ -246,9 +249,9 @@
             this.dgv_rooms.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.dgv_rooms.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Century", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dgv_rooms.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.dgv_rooms.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.dgv_rooms.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_rooms.ThemeStyle.HeaderStyle.Height = 4;
-            this.dgv_rooms.ThemeStyle.ReadOnly = false;
+            this.dgv_rooms.ThemeStyle.ReadOnly = true;
             this.dgv_rooms.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
             this.dgv_rooms.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dgv_rooms.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Century", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
