@@ -72,5 +72,10 @@ namespace GUI.All_User_Control
         {
             clearAll();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

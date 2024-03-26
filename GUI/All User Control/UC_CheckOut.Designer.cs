@@ -53,9 +53,10 @@
             this.label1.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(18, 25);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(250, 28);
+            this.label1.Size = new System.Drawing.Size(122, 28);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Đăng kí khách hàng";
+            this.label1.Text = "Trả Phòng";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // txt_search_name
             // 

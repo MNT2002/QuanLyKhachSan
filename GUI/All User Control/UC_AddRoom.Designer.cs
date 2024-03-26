@@ -276,7 +276,7 @@
             this.ForeColor = System.Drawing.Color.Black;
             this.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.Name = "UC_AddRoom";
-            this.Size = new System.Drawing.Size(4630, 1864);
+            this.Size = new System.Drawing.Size(1882, 852);
             this.Load += new System.EventHandler(this.UC_AddRoom_Load);
             this.Enter += new System.EventHandler(this.UC_AddRoom_Enter);
             this.Leave += new System.EventHandler(this.UC_AddRoom_Leave);
