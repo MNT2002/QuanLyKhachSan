@@ -40,7 +40,7 @@ namespace GUI
             {
                 if(employ.username.Trim()==txtUsername.Text&&employ.password.Trim()==txtPassword.Text)
                 {
-                    MessageBox.Show(" Login successfully", "Login", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show(" Đăng nhập thành công.","Đăng nhập",MessageBoxButtons.OK,MessageBoxIcon.Information)  ;
                     DashBoard ds = new DashBoard();
                     
                     this.Hide();
@@ -50,9 +50,11 @@ namespace GUI
                 }
                 else
                 {
-                    MessageBox.Show("Tài khoản hoặc mật khẩu không đúng.", "Login", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("Tài khoản hoặc mật khẩu không đúng.", "Đăng nhập", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     txtPassword.Clear();
                     txtPassword.Focus();
+                    labelError.Visible = true;
+                    forgot_pass.Visible = true;
                     return;
                 }
             }

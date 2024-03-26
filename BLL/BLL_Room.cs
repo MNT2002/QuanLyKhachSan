@@ -43,6 +43,26 @@ namespace BLL
         {
             return DB.rooms.Where(r => r.roomNo == RoomNo).FirstOrDefault();
         }
+        public room GetRoomByRoomID(int roomID)
+        {
+            return DB.rooms.Where(r => r.roomid == roomID).FirstOrDefault();
+        }
+        public void XoaRoom(int IDHang)
+        {
+            room roomcanxoa = DB.rooms.Where(mh => mh.roomid == IDHang).FirstOrDefault();
+            DB.rooms.DeleteOnSubmit(roomcanxoa);
+            DB.SubmitChanges();
+
+        }
+        public void Update(string roomNo, string roomType,string bed, Int64 Price)
+        {
+            room phong = DB.rooms.Where(timmh => timmh.roomNo == roomNo).FirstOrDefault();
+            phong.roomNo=roomNo;
+            phong.roomType=roomType;
+            phong.bed=bed;
+            phong.price = Price;
+            DB.SubmitChanges();
+        }
         public void SetRoomState(string RoomNo)
         {
             room room = DB.rooms.Where(r => r.roomNo == RoomNo).FirstOrDefault();

@@ -36,10 +36,13 @@ namespace DAL
     partial void Insertcustomer(customer instance);
     partial void Updatecustomer(customer instance);
     partial void Deletecustomer(customer instance);
+    partial void Insertemployee(employee instance);
+    partial void Updateemployee(employee instance);
+    partial void Deleteemployee(employee instance);
     #endregion
 		
 		public QuanLyKhachSanDataContext() : 
-				base(global::DAL.Properties.Settings.Default.QuanLyKhachSanConnectionString1, mappingSource)
+				base(global::DAL.Properties.Settings.Default.QuanLyKhachSanConnectionString2, mappingSource)
 		{
 			OnCreated();
 		}
@@ -671,8 +674,10 @@ namespace DAL
 	}
 	
 	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.employee")]
-	public partial class employee
+	public partial class employee : INotifyPropertyChanging, INotifyPropertyChanged
 	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
 		
 		private int _nvid;
 		
@@ -686,15 +691,38 @@ namespace DAL
 		
 		private string _fullname;
 		
-		private System.DateTime _dateofbirth;
+		private System.DateTime _date_of_birth;
 		
 		private string _address;
 		
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnnvidChanging(int value);
+    partial void OnnvidChanged();
+    partial void OnusernameChanging(string value);
+    partial void OnusernameChanged();
+    partial void OnpasswordChanging(string value);
+    partial void OnpasswordChanged();
+    partial void OnemailChanging(string value);
+    partial void OnemailChanged();
+    partial void OnroleChanging(int value);
+    partial void OnroleChanged();
+    partial void OnfullnameChanging(string value);
+    partial void OnfullnameChanged();
+    partial void Ondate_of_birthChanging(System.DateTime value);
+    partial void Ondate_of_birthChanged();
+    partial void OnaddressChanging(string value);
+    partial void OnaddressChanged();
+    #endregion
+		
 		public employee()
 		{
+			OnCreated();
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_nvid", AutoSync=AutoSync.Always, DbType="Int NOT NULL IDENTITY", IsDbGenerated=true)]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_nvid", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
 		public int nvid
 		{
 			get
@@ -705,12 +733,16 @@ namespace DAL
 			{
 				if ((this._nvid != value))
 				{
+					this.OnnvidChanging(value);
+					this.SendPropertyChanging();
 					this._nvid = value;
+					this.SendPropertyChanged("nvid");
+					this.OnnvidChanged();
 				}
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_username", DbType="NChar(32) NOT NULL", CanBeNull=false)]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_username", DbType="NChar(10) NOT NULL", CanBeNull=false)]
 		public string username
 		{
 			get
@@ -721,12 +753,16 @@ namespace DAL
 			{
 				if ((this._username != value))
 				{
+					this.OnusernameChanging(value);
+					this.SendPropertyChanging();
 					this._username = value;
+					this.SendPropertyChanged("username");
+					this.OnusernameChanged();
 				}
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_password", DbType="NChar(32) NOT NULL", CanBeNull=false)]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_password", DbType="NChar(10) NOT NULL", CanBeNull=false)]
 		public string password
 		{
 			get
@@ -737,12 +773,16 @@ namespace DAL
 			{
 				if ((this._password != value))
 				{
+					this.OnpasswordChanging(value);
+					this.SendPropertyChanging();
 					this._password = value;
+					this.SendPropertyChanged("password");
+					this.OnpasswordChanged();
 				}
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_email", DbType="NChar(32) NOT NULL", CanBeNull=false)]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_email", DbType="NVarChar(50) NOT NULL", CanBeNull=false)]
 		public string email
 		{
 			get
@@ -753,7 +793,11 @@ namespace DAL
 			{
 				if ((this._email != value))
 				{
+					this.OnemailChanging(value);
+					this.SendPropertyChanging();
 					this._email = value;
+					this.SendPropertyChanged("email");
+					this.OnemailChanged();
 				}
 			}
 		}
@@ -769,7 +813,11 @@ namespace DAL
 			{
 				if ((this._role != value))
 				{
+					this.OnroleChanging(value);
+					this.SendPropertyChanging();
 					this._role = value;
+					this.SendPropertyChanged("role");
+					this.OnroleChanged();
 				}
 			}
 		}
@@ -785,28 +833,36 @@ namespace DAL
 			{
 				if ((this._fullname != value))
 				{
+					this.OnfullnameChanging(value);
+					this.SendPropertyChanging();
 					this._fullname = value;
+					this.SendPropertyChanged("fullname");
+					this.OnfullnameChanged();
 				}
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_dateofbirth", DbType="Date NOT NULL")]
-		public System.DateTime dateofbirth
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_date_of_birth", DbType="Date NOT NULL")]
+		public System.DateTime date_of_birth
 		{
 			get
 			{
-				return this._dateofbirth;
+				return this._date_of_birth;
 			}
 			set
 			{
-				if ((this._dateofbirth != value))
+				if ((this._date_of_birth != value))
 				{
-					this._dateofbirth = value;
+					this.Ondate_of_birthChanging(value);
+					this.SendPropertyChanging();
+					this._date_of_birth = value;
+					this.SendPropertyChanged("date_of_birth");
+					this.Ondate_of_birthChanged();
 				}
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_address", DbType="NVarChar(50)")]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_address", DbType="NVarChar(50) NOT NULL", CanBeNull=false)]
 		public string address
 		{
 			get
@@ -817,8 +873,32 @@ namespace DAL
 			{
 				if ((this._address != value))
 				{
+					this.OnaddressChanging(value);
+					this.SendPropertyChanging();
 					this._address = value;
+					this.SendPropertyChanged("address");
+					this.OnaddressChanged();
 				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
 			}
 		}
 	}

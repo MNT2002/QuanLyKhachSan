@@ -18,3 +18,10 @@ C:\Users\TueMinh\Desktop\.Net\QuanLyKhachSan\DAL\obj\Debug\DAL.csproj.AssemblyRe
 C:\Users\TueMinh\Desktop\.Net\QuanLyKhachSan\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
 C:\Users\TueMinh\Desktop\.Net\QuanLyKhachSan\DAL\obj\Debug\DAL.dll
 C:\Users\TueMinh\Desktop\.Net\QuanLyKhachSan\DAL\obj\Debug\DAL.pdb
+D:\QuanLyKhachSan\QuanLyKhachSan\DAL\bin\Debug\DAL.dll.config
+D:\QuanLyKhachSan\QuanLyKhachSan\DAL\bin\Debug\DAL.dll
+D:\QuanLyKhachSan\QuanLyKhachSan\DAL\bin\Debug\DAL.pdb
+D:\QuanLyKhachSan\QuanLyKhachSan\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+D:\QuanLyKhachSan\QuanLyKhachSan\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+D:\QuanLyKhachSan\QuanLyKhachSan\DAL\obj\Debug\DAL.dll
+D:\QuanLyKhachSan\QuanLyKhachSan\DAL\obj\Debug\DAL.pdb

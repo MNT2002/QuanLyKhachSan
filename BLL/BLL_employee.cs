@@ -11,7 +11,10 @@ namespace BLL
     {
         QuanLyKhachSanDataContext DB = new QuanLyKhachSanDataContext();
 
-      
+        public employee GetEmployeeByID(int ID)
+        {
+            return DB.employees.Where(r => r.nvid == ID).FirstOrDefault();
+        }
         public employee GetEmployeeByMail(string EName)
         {
            return DB.employees.Where(r=>r.email == EName).FirstOrDefault();

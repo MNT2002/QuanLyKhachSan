@@ -77,8 +77,8 @@ namespace GUI
         {
             this.Close();
             Login login = new Login();
-            login.ShowDialog();
             MessageBox.Show("Đăng Xuất Thành Công", "Đăng xuất");
+            login.ShowDialog();
         }
     }
 }
