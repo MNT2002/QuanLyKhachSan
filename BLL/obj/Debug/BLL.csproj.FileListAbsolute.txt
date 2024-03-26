@@ -17,3 +17,23 @@ D:\visual studio\Windows Form\QLKhachSan\QuanLyKhachSan\BLL\obj\Debug\BLL.csproj
 D:\visual studio\Windows Form\QLKhachSan\QuanLyKhachSan\BLL\obj\Debug\BLL.dll
 D:\visual studio\Windows Form\QLKhachSan\QuanLyKhachSan\BLL\obj\Debug\BLL.pdb
 D:\visual studio\Windows Form\QLKhachSan\QuanLyKhachSan\BLL\bin\Debug\DAL.dll.config
+C:\Users\TueMinh\Desktop\.Net\QuanLyKhachSan\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+C:\Users\TueMinh\Desktop\.Net\QuanLyKhachSan\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+C:\Users\TueMinh\Desktop\.Net\QuanLyKhachSan\BLL\obj\Debug\BLL.dll
+C:\Users\TueMinh\Desktop\.Net\QuanLyKhachSan\BLL\obj\Debug\BLL.pdb
+C:\Users\TueMinh\Desktop\.Net\QuanLyKhachSan\BLL\bin\Debug\BLL.dll
+C:\Users\TueMinh\Desktop\.Net\QuanLyKhachSan\BLL\bin\Debug\BLL.pdb
+C:\Users\TueMinh\Desktop\.Net\QuanLyKhachSan\BLL\bin\Debug\DAL.dll
+C:\Users\TueMinh\Desktop\.Net\QuanLyKhachSan\BLL\bin\Debug\DAL.pdb
+C:\Users\TueMinh\Desktop\.Net\QuanLyKhachSan\BLL\bin\Debug\DAL.dll.config
+C:\Users\TueMinh\Desktop\.Net\QuanLyKhachSan\BLL\obj\Debug\BLL.csproj.Up2Date
+D:\QuanLyKhachSan\QuanLyKhachSan\BLL\bin\Debug\BLL.dll
+D:\QuanLyKhachSan\QuanLyKhachSan\BLL\bin\Debug\BLL.pdb
+D:\QuanLyKhachSan\QuanLyKhachSan\BLL\bin\Debug\DAL.dll
+D:\QuanLyKhachSan\QuanLyKhachSan\BLL\bin\Debug\DAL.pdb
+D:\QuanLyKhachSan\QuanLyKhachSan\BLL\bin\Debug\DAL.dll.config
+D:\QuanLyKhachSan\QuanLyKhachSan\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+D:\QuanLyKhachSan\QuanLyKhachSan\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+D:\QuanLyKhachSan\QuanLyKhachSan\BLL\obj\Debug\BLL.csproj.Up2Date
+D:\QuanLyKhachSan\QuanLyKhachSan\BLL\obj\Debug\BLL.dll
+D:\QuanLyKhachSan\QuanLyKhachSan\BLL\obj\Debug\BLL.pdb

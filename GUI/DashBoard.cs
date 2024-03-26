@@ -15,8 +15,12 @@ namespace GUI
         public DashBoard()
         {
             InitializeComponent();
+            
         }
-
+        public void ReceivedData(string receivedData)
+        {
+            label_username.Text = receivedData;
+        }
         private void guna2Button4_Click(object sender, EventArgs e)
         {
 
@@ -67,6 +71,14 @@ namespace GUI
             MovingPanel.Left = btnCheckout.Left - 25;
             uC_CheckOut1.Visible = true;
             uC_CheckOut1.BringToFront();
+        }
+
+        private void logout_label_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            this.Close();
+            Login login = new Login();
+            MessageBox.Show("Đăng Xuất Thành Công", "Đăng xuất");
+            login.ShowDialog();
         }
     }
 }
