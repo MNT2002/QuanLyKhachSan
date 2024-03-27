@@ -30,7 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.btn_Sua = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
@@ -51,6 +50,12 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.dgv_rooms = new System.Windows.Forms.DataGridView();
+            this.roomidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.roomNoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.roomTypeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bedDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.priceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bookedDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.roomsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.quanLyKhachSanDataSet = new GUI.QuanLyKhachSanDataSet();
             this.label5 = new System.Windows.Forms.Label();
@@ -64,12 +69,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.roomsTableAdapter = new GUI.QuanLyKhachSanDataSetTableAdapters.roomsTableAdapter();
             this.guna2ContextMenuStrip1 = new Guna.UI2.WinForms.Guna2ContextMenuStrip();
-            this.roomidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.roomNoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.roomTypeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.bedDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.priceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.bookedDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_rooms)).BeginInit();
@@ -144,6 +143,7 @@
             this.txt_roomid_Sua.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.txt_roomid_Sua.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txt_roomid_Sua.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_roomid_Sua.Enabled = false;
             this.txt_roomid_Sua.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_roomid_Sua.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txt_roomid_Sua.ForeColor = System.Drawing.Color.White;
@@ -152,7 +152,6 @@
             this.txt_roomid_Sua.Name = "txt_roomid_Sua";
             this.txt_roomid_Sua.PasswordChar = '\0';
             this.txt_roomid_Sua.PlaceholderText = "";
-            this.txt_roomid_Sua.ReadOnly = true;
             this.txt_roomid_Sua.SelectedText = "";
             this.txt_roomid_Sua.Size = new System.Drawing.Size(203, 36);
             this.txt_roomid_Sua.TabIndex = 21;
@@ -347,7 +346,7 @@
             this.dgv_rooms.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -362,14 +361,6 @@
             this.priceDataGridViewTextBoxColumn,
             this.bookedDataGridViewTextBoxColumn});
             this.dgv_rooms.DataSource = this.roomsBindingSource;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgv_rooms.DefaultCellStyle = dataGridViewCellStyle2;
             this.dgv_rooms.GridColor = System.Drawing.SystemColors.Control;
             this.dgv_rooms.Location = new System.Drawing.Point(128, 78);
             this.dgv_rooms.MultiSelect = false;
@@ -381,6 +372,48 @@
             this.dgv_rooms.TabIndex = 11;
             this.dgv_rooms.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_rooms_CellClick);
             this.dgv_rooms.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_rooms_CellContentClick_1);
+            // 
+            // roomidDataGridViewTextBoxColumn
+            // 
+            this.roomidDataGridViewTextBoxColumn.DataPropertyName = "roomid";
+            this.roomidDataGridViewTextBoxColumn.HeaderText = "roomid";
+            this.roomidDataGridViewTextBoxColumn.Name = "roomidDataGridViewTextBoxColumn";
+            this.roomidDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // roomNoDataGridViewTextBoxColumn
+            // 
+            this.roomNoDataGridViewTextBoxColumn.DataPropertyName = "roomNo";
+            this.roomNoDataGridViewTextBoxColumn.HeaderText = "roomNo";
+            this.roomNoDataGridViewTextBoxColumn.Name = "roomNoDataGridViewTextBoxColumn";
+            this.roomNoDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // roomTypeDataGridViewTextBoxColumn
+            // 
+            this.roomTypeDataGridViewTextBoxColumn.DataPropertyName = "roomType";
+            this.roomTypeDataGridViewTextBoxColumn.HeaderText = "roomType";
+            this.roomTypeDataGridViewTextBoxColumn.Name = "roomTypeDataGridViewTextBoxColumn";
+            this.roomTypeDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // bedDataGridViewTextBoxColumn
+            // 
+            this.bedDataGridViewTextBoxColumn.DataPropertyName = "bed";
+            this.bedDataGridViewTextBoxColumn.HeaderText = "bed";
+            this.bedDataGridViewTextBoxColumn.Name = "bedDataGridViewTextBoxColumn";
+            this.bedDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // priceDataGridViewTextBoxColumn
+            // 
+            this.priceDataGridViewTextBoxColumn.DataPropertyName = "price";
+            this.priceDataGridViewTextBoxColumn.HeaderText = "price";
+            this.priceDataGridViewTextBoxColumn.Name = "priceDataGridViewTextBoxColumn";
+            this.priceDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // bookedDataGridViewTextBoxColumn
+            // 
+            this.bookedDataGridViewTextBoxColumn.DataPropertyName = "booked";
+            this.bookedDataGridViewTextBoxColumn.HeaderText = "booked";
+            this.bookedDataGridViewTextBoxColumn.Name = "bookedDataGridViewTextBoxColumn";
+            this.bookedDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // roomsBindingSource
             // 
@@ -548,48 +581,6 @@
             this.guna2ContextMenuStrip1.RenderStyle.SeparatorColor = System.Drawing.Color.Gainsboro;
             this.guna2ContextMenuStrip1.RenderStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
             this.guna2ContextMenuStrip1.Size = new System.Drawing.Size(61, 4);
-            // 
-            // roomidDataGridViewTextBoxColumn
-            // 
-            this.roomidDataGridViewTextBoxColumn.DataPropertyName = "roomid";
-            this.roomidDataGridViewTextBoxColumn.HeaderText = "roomid";
-            this.roomidDataGridViewTextBoxColumn.Name = "roomidDataGridViewTextBoxColumn";
-            this.roomidDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // roomNoDataGridViewTextBoxColumn
-            // 
-            this.roomNoDataGridViewTextBoxColumn.DataPropertyName = "roomNo";
-            this.roomNoDataGridViewTextBoxColumn.HeaderText = "roomNo";
-            this.roomNoDataGridViewTextBoxColumn.Name = "roomNoDataGridViewTextBoxColumn";
-            this.roomNoDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // roomTypeDataGridViewTextBoxColumn
-            // 
-            this.roomTypeDataGridViewTextBoxColumn.DataPropertyName = "roomType";
-            this.roomTypeDataGridViewTextBoxColumn.HeaderText = "roomType";
-            this.roomTypeDataGridViewTextBoxColumn.Name = "roomTypeDataGridViewTextBoxColumn";
-            this.roomTypeDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // bedDataGridViewTextBoxColumn
-            // 
-            this.bedDataGridViewTextBoxColumn.DataPropertyName = "bed";
-            this.bedDataGridViewTextBoxColumn.HeaderText = "bed";
-            this.bedDataGridViewTextBoxColumn.Name = "bedDataGridViewTextBoxColumn";
-            this.bedDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // priceDataGridViewTextBoxColumn
-            // 
-            this.priceDataGridViewTextBoxColumn.DataPropertyName = "price";
-            this.priceDataGridViewTextBoxColumn.HeaderText = "price";
-            this.priceDataGridViewTextBoxColumn.Name = "priceDataGridViewTextBoxColumn";
-            this.priceDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // bookedDataGridViewTextBoxColumn
-            // 
-            this.bookedDataGridViewTextBoxColumn.DataPropertyName = "booked";
-            this.bookedDataGridViewTextBoxColumn.HeaderText = "booked";
-            this.bookedDataGridViewTextBoxColumn.Name = "bookedDataGridViewTextBoxColumn";
-            this.bookedDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // UC_AddRoom
             // 

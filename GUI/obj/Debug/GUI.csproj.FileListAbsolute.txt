@@ -82,3 +82,5 @@ D:\QuanLyKhachSan\QuanLyKhachSan\GUI\obj\Debug\GUI.csproj.Up2Date
 D:\QuanLyKhachSan\QuanLyKhachSan\GUI\obj\Debug\GUI.exe
 D:\QuanLyKhachSan\QuanLyKhachSan\GUI\obj\Debug\GUI.pdb
 D:\visual studio\Windows Form\QLKhachSan\QuanLyKhachSan\GUI\obj\Debug\GUI.ForgotPassword.resources
+D:\QuanLyKhachSan\QuanLyKhachSan\GUI\obj\Debug\GUI.All_User_Control.UC_CustomerDetail.resources
+D:\QuanLyKhachSan\QuanLyKhachSan\GUI\obj\Debug\GUI.All_User_Control.UC_EmployeeDetail.resources
