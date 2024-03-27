@@ -164,6 +164,7 @@
             this.panel2.Controls.Add(this.btnCheckout);
             this.panel2.Controls.Add(this.btnCustomerRes);
             this.panel2.Controls.Add(this.btnAddroom);
+            this.panel2.Cursor = System.Windows.Forms.Cursors.Default;
             this.panel2.Location = new System.Drawing.Point(20, 12);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1616, 145);
@@ -173,6 +174,7 @@
             // 
             this.btnEmployee.BorderRadius = 18;
             this.btnEmployee.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.btnEmployee.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnEmployee.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnEmployee.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnEmployee.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -190,6 +192,7 @@
             // 
             this.btnCustomerDetail.BorderRadius = 18;
             this.btnCustomerDetail.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.btnCustomerDetail.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCustomerDetail.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnCustomerDetail.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnCustomerDetail.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -207,6 +210,7 @@
             // 
             this.btnCheckout.BorderRadius = 18;
             this.btnCheckout.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.btnCheckout.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCheckout.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnCheckout.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnCheckout.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -224,6 +228,7 @@
             // 
             this.btnCustomerRes.BorderRadius = 18;
             this.btnCustomerRes.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.btnCustomerRes.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCustomerRes.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnCustomerRes.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnCustomerRes.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -241,6 +246,7 @@
             // 
             this.btnAddroom.BorderRadius = 18;
             this.btnAddroom.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.btnAddroom.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAddroom.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnAddroom.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnAddroom.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -287,6 +293,7 @@
             // logout_label
             // 
             this.logout_label.AutoSize = true;
+            this.logout_label.Cursor = System.Windows.Forms.Cursors.Hand;
             this.logout_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.logout_label.LinkColor = System.Drawing.Color.Black;
             this.logout_label.Location = new System.Drawing.Point(1711, 87);

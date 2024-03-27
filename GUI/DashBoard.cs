@@ -67,7 +67,7 @@ namespace GUI
 
         private void logout_label_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            if (MessageBox.Show("Bạn có chắc chắn muốn đăng xuất!", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question,
+            if (MessageBox.Show("Bạn có chắc chắn muốn đăng xuất!", "Thông báo",  MessageBoxButtons.YesNo, MessageBoxIcon.Question,
             MessageBoxDefaultButton.Button2) == DialogResult.Yes)
             {
                 this.Close();

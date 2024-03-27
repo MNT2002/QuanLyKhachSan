@@ -23,6 +23,7 @@ namespace GUI.All_User_Control
 
         public void UC_CheckOut_Load(object sender, EventArgs e)
         {
+            BLL_customer bLL_Customer = new BLL_customer();
             guna2DataGridView1.DataSource = bLL_Customer.LoadCustomer();
         }
 

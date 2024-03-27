@@ -322,7 +322,7 @@
             this.txt_bed_type.Items.AddRange(new object[] {
             "Don",
             "Doi",
-            "Ba"});
+            "Queen"});
             this.txt_bed_type.Location = new System.Drawing.Point(1228, 133);
             this.txt_bed_type.Name = "txt_bed_type";
             this.txt_bed_type.Size = new System.Drawing.Size(458, 36);
@@ -436,6 +436,7 @@
             this.btn_add_customer.BorderThickness = 1;
             this.btn_add_customer.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(118)))), ((int)(((byte)(221)))));
             this.btn_add_customer.CheckedState.ForeColor = System.Drawing.Color.White;
+            this.btn_add_customer.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_add_customer.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btn_add_customer.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btn_add_customer.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));

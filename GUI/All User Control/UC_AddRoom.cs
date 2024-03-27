@@ -23,6 +23,7 @@ namespace BLL.All_User_Control
 
         public void UC_AddRoom_Load(object sender, EventArgs e)
         {
+            BLL_Room room = new BLL_Room();
             dgv_rooms.DataSource = room.LoadRoom();
         }
 
@@ -100,8 +101,8 @@ namespace BLL.All_User_Control
             txt_bed_Sua.SelectedIndex=-1;
             txt_room_type_Sua.SelectedIndex=-1;
             txt_price.Clear();
-            txt_room_type.Items.Clear();
-            txt_bed.Items.Clear();
+            txt_room_type.SelectedIndex = -1;
+            txt_bed.SelectedIndex = -1;
         }
 
         private void UC_AddRoom_Enter(object sender, EventArgs e)
@@ -142,10 +143,7 @@ namespace BLL.All_User_Control
                     room.DeleteRoom(int.Parse(txt_Xoa.Text));
                     MessageBox.Show("Xóa Thành Công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     dgv_rooms.DataSource = room.LoadRoom();
-                    txt_Xoa.Clear();
-                    txt_roomno_Sua.Clear();
-                    txt_room_type_Sua.Items.Clear();
-                    txt_room_type_Sua.Items.Clear();
+                    clear();
                 }
                 else
                 {
@@ -159,6 +157,14 @@ namespace BLL.All_User_Control
             }
         }
 
+        public void clear()
+        {
+            txt_roomno_Sua.Clear();
+            txt_room_type_Sua.SelectedIndex = -1;
+            txt_bed_Sua.SelectedIndex = -1;
+            txt_price_Sua.Clear();
+            txt_Xoa.Clear();
+        }
         private void btn_Sua_Click(object sender, EventArgs e)
         {
             if (txt_roomno_Sua.Text == "" || txt_room_type_Sua.Text == "" || txt_price_Sua.Text == "" || txt_bed_Sua.Text == "")
@@ -192,11 +198,7 @@ namespace BLL.All_User_Control
                 MessageBox.Show("Sửa Phòng thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 //Load lại dagtagridview NhanVien
                 dgv_rooms.DataSource = room.LoadRoom();
-                txt_roomno_Sua.Clear();
-                txt_room_type_Sua.SelectedIndex = -1;
-                txt_bed_Sua.SelectedIndex = -1;
-                txt_price_Sua.Clear() ;
-                txt_Xoa.Clear();
+                clear();
             }
         }
 
@@ -220,9 +222,5 @@ namespace BLL.All_User_Control
 
         }
 
-        private void dgv_rooms_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
     }
 }
