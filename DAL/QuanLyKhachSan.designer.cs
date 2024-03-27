@@ -30,15 +30,15 @@ namespace DAL
 		
     #region Extensibility Method Definitions
     partial void OnCreated();
-    partial void Insertcustomer(customer instance);
-    partial void Updatecustomer(customer instance);
-    partial void Deletecustomer(customer instance);
     partial void Insertroom(room instance);
     partial void Updateroom(room instance);
     partial void Deleteroom(room instance);
     partial void Insertemployee(employee instance);
     partial void Updateemployee(employee instance);
     partial void Deleteemployee(employee instance);
+    partial void Insertcustomer(customer instance);
+    partial void Updatecustomer(customer instance);
+    partial void Deletecustomer(customer instance);
     #endregion
 		
 		public QuanLyKhachSanDataContext() : 
@@ -71,14 +71,6 @@ namespace DAL
 			OnCreated();
 		}
 		
-		public System.Data.Linq.Table<customer> customers
-		{
-			get
-			{
-				return this.GetTable<customer>();
-			}
-		}
-		
 		public System.Data.Linq.Table<room> rooms
 		{
 			get
@@ -94,371 +86,12 @@ namespace DAL
 				return this.GetTable<employee>();
 			}
 		}
-	}
-	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.customer")]
-	public partial class customer : INotifyPropertyChanging, INotifyPropertyChanged
-	{
 		
-		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
-		
-		private int _cid;
-		
-		private string _cname;
-		
-		private long _mobile;
-		
-		private string _nationality;
-		
-		private string _gender;
-		
-		private string _dob;
-		
-		private string _idproof;
-		
-		private string _address;
-		
-		private string _checkin;
-		
-		private string _checkout;
-		
-		private string _chekout;
-		
-		private int _roomid;
-		
-		private EntityRef<room> _room;
-		
-    #region Extensibility Method Definitions
-    partial void OnLoaded();
-    partial void OnValidate(System.Data.Linq.ChangeAction action);
-    partial void OnCreated();
-    partial void OncidChanging(int value);
-    partial void OncidChanged();
-    partial void OncnameChanging(string value);
-    partial void OncnameChanged();
-    partial void OnmobileChanging(long value);
-    partial void OnmobileChanged();
-    partial void OnnationalityChanging(string value);
-    partial void OnnationalityChanged();
-    partial void OngenderChanging(string value);
-    partial void OngenderChanged();
-    partial void OndobChanging(string value);
-    partial void OndobChanged();
-    partial void OnidproofChanging(string value);
-    partial void OnidproofChanged();
-    partial void OnaddressChanging(string value);
-    partial void OnaddressChanged();
-    partial void OncheckinChanging(string value);
-    partial void OncheckinChanged();
-    partial void OncheckoutChanging(string value);
-    partial void OncheckoutChanged();
-    partial void OnchekoutChanging(string value);
-    partial void OnchekoutChanged();
-    partial void OnroomidChanging(int value);
-    partial void OnroomidChanged();
-    #endregion
-		
-		public customer()
-		{
-			this._room = default(EntityRef<room>);
-			OnCreated();
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_cid", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
-		public int cid
+		public System.Data.Linq.Table<customer> customers
 		{
 			get
 			{
-				return this._cid;
-			}
-			set
-			{
-				if ((this._cid != value))
-				{
-					this.OncidChanging(value);
-					this.SendPropertyChanging();
-					this._cid = value;
-					this.SendPropertyChanged("cid");
-					this.OncidChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_cname", DbType="NVarChar(250) NOT NULL", CanBeNull=false)]
-		public string cname
-		{
-			get
-			{
-				return this._cname;
-			}
-			set
-			{
-				if ((this._cname != value))
-				{
-					this.OncnameChanging(value);
-					this.SendPropertyChanging();
-					this._cname = value;
-					this.SendPropertyChanged("cname");
-					this.OncnameChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_mobile", DbType="BigInt NOT NULL")]
-		public long mobile
-		{
-			get
-			{
-				return this._mobile;
-			}
-			set
-			{
-				if ((this._mobile != value))
-				{
-					this.OnmobileChanging(value);
-					this.SendPropertyChanging();
-					this._mobile = value;
-					this.SendPropertyChanged("mobile");
-					this.OnmobileChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_nationality", DbType="NVarChar(250) NOT NULL", CanBeNull=false)]
-		public string nationality
-		{
-			get
-			{
-				return this._nationality;
-			}
-			set
-			{
-				if ((this._nationality != value))
-				{
-					this.OnnationalityChanging(value);
-					this.SendPropertyChanging();
-					this._nationality = value;
-					this.SendPropertyChanged("nationality");
-					this.OnnationalityChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_gender", DbType="NVarChar(50) NOT NULL", CanBeNull=false)]
-		public string gender
-		{
-			get
-			{
-				return this._gender;
-			}
-			set
-			{
-				if ((this._gender != value))
-				{
-					this.OngenderChanging(value);
-					this.SendPropertyChanging();
-					this._gender = value;
-					this.SendPropertyChanged("gender");
-					this.OngenderChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_dob", DbType="VarChar(50) NOT NULL", CanBeNull=false)]
-		public string dob
-		{
-			get
-			{
-				return this._dob;
-			}
-			set
-			{
-				if ((this._dob != value))
-				{
-					this.OndobChanging(value);
-					this.SendPropertyChanging();
-					this._dob = value;
-					this.SendPropertyChanged("dob");
-					this.OndobChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_idproof", DbType="VarChar(250) NOT NULL", CanBeNull=false)]
-		public string idproof
-		{
-			get
-			{
-				return this._idproof;
-			}
-			set
-			{
-				if ((this._idproof != value))
-				{
-					this.OnidproofChanging(value);
-					this.SendPropertyChanging();
-					this._idproof = value;
-					this.SendPropertyChanged("idproof");
-					this.OnidproofChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_address", DbType="NVarChar(350) NOT NULL", CanBeNull=false)]
-		public string address
-		{
-			get
-			{
-				return this._address;
-			}
-			set
-			{
-				if ((this._address != value))
-				{
-					this.OnaddressChanging(value);
-					this.SendPropertyChanging();
-					this._address = value;
-					this.SendPropertyChanged("address");
-					this.OnaddressChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_checkin", DbType="VarChar(250) NOT NULL", CanBeNull=false)]
-		public string checkin
-		{
-			get
-			{
-				return this._checkin;
-			}
-			set
-			{
-				if ((this._checkin != value))
-				{
-					this.OncheckinChanging(value);
-					this.SendPropertyChanging();
-					this._checkin = value;
-					this.SendPropertyChanged("checkin");
-					this.OncheckinChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_checkout", DbType="VarChar(250)")]
-		public string checkout
-		{
-			get
-			{
-				return this._checkout;
-			}
-			set
-			{
-				if ((this._checkout != value))
-				{
-					this.OncheckoutChanging(value);
-					this.SendPropertyChanging();
-					this._checkout = value;
-					this.SendPropertyChanged("checkout");
-					this.OncheckoutChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_chekout", DbType="VarChar(250)")]
-		public string chekout
-		{
-			get
-			{
-				return this._chekout;
-			}
-			set
-			{
-				if ((this._chekout != value))
-				{
-					this.OnchekoutChanging(value);
-					this.SendPropertyChanging();
-					this._chekout = value;
-					this.SendPropertyChanged("chekout");
-					this.OnchekoutChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_roomid", DbType="Int NOT NULL")]
-		public int roomid
-		{
-			get
-			{
-				return this._roomid;
-			}
-			set
-			{
-				if ((this._roomid != value))
-				{
-					if (this._room.HasLoadedOrAssignedValue)
-					{
-						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
-					}
-					this.OnroomidChanging(value);
-					this.SendPropertyChanging();
-					this._roomid = value;
-					this.SendPropertyChanged("roomid");
-					this.OnroomidChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="room_customer", Storage="_room", ThisKey="roomid", OtherKey="roomid", IsForeignKey=true)]
-		public room room
-		{
-			get
-			{
-				return this._room.Entity;
-			}
-			set
-			{
-				room previousValue = this._room.Entity;
-				if (((previousValue != value) 
-							|| (this._room.HasLoadedOrAssignedValue == false)))
-				{
-					this.SendPropertyChanging();
-					if ((previousValue != null))
-					{
-						this._room.Entity = null;
-						previousValue.customers.Remove(this);
-					}
-					this._room.Entity = value;
-					if ((value != null))
-					{
-						value.customers.Add(this);
-						this._roomid = value.roomid;
-					}
-					else
-					{
-						this._roomid = default(int);
-					}
-					this.SendPropertyChanged("room");
-				}
-			}
-		}
-		
-		public event PropertyChangingEventHandler PropertyChanging;
-		
-		public event PropertyChangedEventHandler PropertyChanged;
-		
-		protected virtual void SendPropertyChanging()
-		{
-			if ((this.PropertyChanging != null))
-			{
-				this.PropertyChanging(this, emptyChangingEventArgs);
-			}
-		}
-		
-		protected virtual void SendPropertyChanged(String propertyName)
-		{
-			if ((this.PropertyChanged != null))
-			{
-				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+				return this.GetTable<customer>();
 			}
 		}
 	}
@@ -878,6 +511,373 @@ namespace DAL
 					this._address = value;
 					this.SendPropertyChanged("address");
 					this.OnaddressChanged();
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.customer")]
+	public partial class customer : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private int _cid;
+		
+		private string _cname;
+		
+		private long _mobile;
+		
+		private string _nationality;
+		
+		private string _gender;
+		
+		private string _dob;
+		
+		private string _idproof;
+		
+		private string _address;
+		
+		private string _checkin;
+		
+		private string _checkout;
+		
+		private string _chekout;
+		
+		private int _roomid;
+		
+		private EntityRef<room> _room;
+		
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OncidChanging(int value);
+    partial void OncidChanged();
+    partial void OncnameChanging(string value);
+    partial void OncnameChanged();
+    partial void OnmobileChanging(long value);
+    partial void OnmobileChanged();
+    partial void OnnationalityChanging(string value);
+    partial void OnnationalityChanged();
+    partial void OngenderChanging(string value);
+    partial void OngenderChanged();
+    partial void OndobChanging(string value);
+    partial void OndobChanged();
+    partial void OnidproofChanging(string value);
+    partial void OnidproofChanged();
+    partial void OnaddressChanging(string value);
+    partial void OnaddressChanged();
+    partial void OncheckinChanging(string value);
+    partial void OncheckinChanged();
+    partial void OncheckoutChanging(string value);
+    partial void OncheckoutChanged();
+    partial void OnchekoutChanging(string value);
+    partial void OnchekoutChanged();
+    partial void OnroomidChanging(int value);
+    partial void OnroomidChanged();
+    #endregion
+		
+		public customer()
+		{
+			this._room = default(EntityRef<room>);
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_cid", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		public int cid
+		{
+			get
+			{
+				return this._cid;
+			}
+			set
+			{
+				if ((this._cid != value))
+				{
+					this.OncidChanging(value);
+					this.SendPropertyChanging();
+					this._cid = value;
+					this.SendPropertyChanged("cid");
+					this.OncidChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_cname", DbType="NVarChar(250) NOT NULL", CanBeNull=false)]
+		public string cname
+		{
+			get
+			{
+				return this._cname;
+			}
+			set
+			{
+				if ((this._cname != value))
+				{
+					this.OncnameChanging(value);
+					this.SendPropertyChanging();
+					this._cname = value;
+					this.SendPropertyChanged("cname");
+					this.OncnameChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_mobile", DbType="BigInt NOT NULL")]
+		public long mobile
+		{
+			get
+			{
+				return this._mobile;
+			}
+			set
+			{
+				if ((this._mobile != value))
+				{
+					this.OnmobileChanging(value);
+					this.SendPropertyChanging();
+					this._mobile = value;
+					this.SendPropertyChanged("mobile");
+					this.OnmobileChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_nationality", DbType="NVarChar(250) NOT NULL", CanBeNull=false)]
+		public string nationality
+		{
+			get
+			{
+				return this._nationality;
+			}
+			set
+			{
+				if ((this._nationality != value))
+				{
+					this.OnnationalityChanging(value);
+					this.SendPropertyChanging();
+					this._nationality = value;
+					this.SendPropertyChanged("nationality");
+					this.OnnationalityChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_gender", DbType="NVarChar(50) NOT NULL", CanBeNull=false)]
+		public string gender
+		{
+			get
+			{
+				return this._gender;
+			}
+			set
+			{
+				if ((this._gender != value))
+				{
+					this.OngenderChanging(value);
+					this.SendPropertyChanging();
+					this._gender = value;
+					this.SendPropertyChanged("gender");
+					this.OngenderChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_dob", DbType="VarChar(50) NOT NULL", CanBeNull=false)]
+		public string dob
+		{
+			get
+			{
+				return this._dob;
+			}
+			set
+			{
+				if ((this._dob != value))
+				{
+					this.OndobChanging(value);
+					this.SendPropertyChanging();
+					this._dob = value;
+					this.SendPropertyChanged("dob");
+					this.OndobChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_idproof", DbType="VarChar(250) NOT NULL", CanBeNull=false)]
+		public string idproof
+		{
+			get
+			{
+				return this._idproof;
+			}
+			set
+			{
+				if ((this._idproof != value))
+				{
+					this.OnidproofChanging(value);
+					this.SendPropertyChanging();
+					this._idproof = value;
+					this.SendPropertyChanged("idproof");
+					this.OnidproofChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_address", DbType="NVarChar(350) NOT NULL", CanBeNull=false)]
+		public string address
+		{
+			get
+			{
+				return this._address;
+			}
+			set
+			{
+				if ((this._address != value))
+				{
+					this.OnaddressChanging(value);
+					this.SendPropertyChanging();
+					this._address = value;
+					this.SendPropertyChanged("address");
+					this.OnaddressChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_checkin", DbType="VarChar(250) NOT NULL", CanBeNull=false)]
+		public string checkin
+		{
+			get
+			{
+				return this._checkin;
+			}
+			set
+			{
+				if ((this._checkin != value))
+				{
+					this.OncheckinChanging(value);
+					this.SendPropertyChanging();
+					this._checkin = value;
+					this.SendPropertyChanged("checkin");
+					this.OncheckinChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_checkout", DbType="VarChar(250)")]
+		public string checkout
+		{
+			get
+			{
+				return this._checkout;
+			}
+			set
+			{
+				if ((this._checkout != value))
+				{
+					this.OncheckoutChanging(value);
+					this.SendPropertyChanging();
+					this._checkout = value;
+					this.SendPropertyChanged("checkout");
+					this.OncheckoutChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_chekout", DbType="VarChar(250)")]
+		public string chekout
+		{
+			get
+			{
+				return this._chekout;
+			}
+			set
+			{
+				if ((this._chekout != value))
+				{
+					this.OnchekoutChanging(value);
+					this.SendPropertyChanging();
+					this._chekout = value;
+					this.SendPropertyChanged("chekout");
+					this.OnchekoutChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_roomid", DbType="Int NOT NULL")]
+		public int roomid
+		{
+			get
+			{
+				return this._roomid;
+			}
+			set
+			{
+				if ((this._roomid != value))
+				{
+					if (this._room.HasLoadedOrAssignedValue)
+					{
+						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
+					}
+					this.OnroomidChanging(value);
+					this.SendPropertyChanging();
+					this._roomid = value;
+					this.SendPropertyChanged("roomid");
+					this.OnroomidChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="room_customer", Storage="_room", ThisKey="roomid", OtherKey="roomid", IsForeignKey=true)]
+		public room room
+		{
+			get
+			{
+				return this._room.Entity;
+			}
+			set
+			{
+				room previousValue = this._room.Entity;
+				if (((previousValue != value) 
+							|| (this._room.HasLoadedOrAssignedValue == false)))
+				{
+					this.SendPropertyChanging();
+					if ((previousValue != null))
+					{
+						this._room.Entity = null;
+						previousValue.customers.Remove(this);
+					}
+					this._room.Entity = value;
+					if ((value != null))
+					{
+						value.customers.Add(this);
+						this._roomid = value.roomid;
+					}
+					else
+					{
+						this._roomid = default(int);
+					}
+					this.SendPropertyChanged("room");
 				}
 			}
 		}

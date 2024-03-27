@@ -21,7 +21,7 @@ namespace GUI.All_User_Control
             InitializeComponent();
         }
 
-        private void UC_CheckOut_Load(object sender, EventArgs e)
+        public void UC_CheckOut_Load(object sender, EventArgs e)
         {
             guna2DataGridView1.DataSource = bLL_Customer.LoadCustomer();
         }
@@ -34,12 +34,14 @@ namespace GUI.All_User_Control
         int id;
         private void guna2DataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (guna2DataGridView1.Rows[e.RowIndex].Cells[e.RowIndex].Value != null)
-            {
-                id = int.Parse(guna2DataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString());
-                txt_name.Text = guna2DataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString();
-                txt_room_no.Text = guna2DataGridView1.Rows[e.RowIndex].Cells[9].Value.ToString();
-            }
+            //txt_Xoa.Text = rowchon.ToString();
+            int rowchon = e.RowIndex;
+            if (rowchon == -1) return;
+
+            id = int.Parse(guna2DataGridView1.Rows[rowchon].Cells[0].Value.ToString());
+            txt_name.Text = guna2DataGridView1.Rows[rowchon].Cells[1].Value.ToString();
+            txt_room_no.Text = guna2DataGridView1.Rows[rowchon].Cells[9].Value.ToString();
+            
         }
 
         private void btn_checkout_Click(object sender, EventArgs e)

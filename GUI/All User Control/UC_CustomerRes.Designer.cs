@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txt_name = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2ContextMenuStrip1 = new Guna.UI2.WinForms.Guna2ContextMenuStrip();
@@ -57,17 +56,8 @@
             this.label13 = new System.Windows.Forms.Label();
             this.btn_add_customer = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.label14 = new System.Windows.Forms.Label();
             this.SuspendLayout();
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(18, 25);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(254, 28);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Đăng Kí Khách Hàng";
             // 
             // label2
             // 
@@ -465,10 +455,22 @@
             this.guna2Elipse1.BorderRadius = 30;
             this.guna2Elipse1.TargetControl = this;
             // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label14.ForeColor = System.Drawing.Color.Red;
+            this.label14.Location = new System.Drawing.Point(737, 19);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(391, 37);
+            this.label14.TabIndex = 19;
+            this.label14.Text = "ĐĂNG KÍ KHÁCH HÀNG";
+            // 
             // UC_CustomerRes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.label14);
             this.Controls.Add(this.btn_add_customer);
             this.Controls.Add(this.txt_price);
             this.Controls.Add(this.label13);
@@ -494,7 +496,6 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txt_name);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
             this.Name = "UC_CustomerRes";
             this.Size = new System.Drawing.Size(1882, 852);
             this.ResumeLayout(false);
@@ -503,8 +504,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private Guna.UI2.WinForms.Guna2TextBox txt_name;
         private Guna.UI2.WinForms.Guna2ContextMenuStrip guna2ContextMenuStrip1;
@@ -532,5 +531,6 @@
         private System.Windows.Forms.Label label13;
         private Guna.UI2.WinForms.Guna2Button btn_add_customer;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
+        private System.Windows.Forms.Label label14;
     }
 }

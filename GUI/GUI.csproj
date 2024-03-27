@@ -79,11 +79,23 @@
     <Compile Include="All User Control\UC_CheckOut.Designer.cs">
       <DependentUpon>UC_CheckOut.cs</DependentUpon>
     </Compile>
+    <Compile Include="All User Control\UC_CustomerDetail.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="All User Control\UC_CustomerDetail.Designer.cs">
+      <DependentUpon>UC_CustomerDetail.cs</DependentUpon>
+    </Compile>
     <Compile Include="All User Control\UC_CustomerRes.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="All User Control\UC_CustomerRes.Designer.cs">
       <DependentUpon>UC_CustomerRes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="All User Control\UC_EmployeeDetail.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="All User Control\UC_EmployeeDetail.Designer.cs">
+      <DependentUpon>UC_EmployeeDetail.cs</DependentUpon>
     </Compile>
     <Compile Include="DashBoard.cs">
       <SubType>Form</SubType>
@@ -110,14 +122,35 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>QuanLyKhachSanDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="QuanLyKhachSanDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QuanLyKhachSanDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QuanLyKhachSanDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QuanLyKhachSanDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QuanLyKhachSanDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QuanLyKhachSanDataSet3.xsd</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="All User Control\UC_AddRoom.resx">
       <DependentUpon>UC_AddRoom.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="All User Control\UC_CheckOut.resx">
       <DependentUpon>UC_CheckOut.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="All User Control\UC_CustomerDetail.resx">
+      <DependentUpon>UC_CustomerDetail.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="All User Control\UC_CustomerRes.resx">
       <DependentUpon>UC_CustomerRes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="All User Control\UC_EmployeeDetail.resx">
+      <DependentUpon>UC_EmployeeDetail.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DashBoard.resx">
       <DependentUpon>DashBoard.cs</DependentUpon>
@@ -157,6 +190,39 @@
     </None>
     <None Include="QuanLyKhachSanDataSet.xss">
       <DependentUpon>QuanLyKhachSanDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="QuanLyKhachSanDataSet1.xsc">
+      <DependentUpon>QuanLyKhachSanDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="QuanLyKhachSanDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QuanLyKhachSanDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QuanLyKhachSanDataSet1.xss">
+      <DependentUpon>QuanLyKhachSanDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="QuanLyKhachSanDataSet2.xsc">
+      <DependentUpon>QuanLyKhachSanDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="QuanLyKhachSanDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QuanLyKhachSanDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QuanLyKhachSanDataSet2.xss">
+      <DependentUpon>QuanLyKhachSanDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="QuanLyKhachSanDataSet3.xsc">
+      <DependentUpon>QuanLyKhachSanDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="QuanLyKhachSanDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QuanLyKhachSanDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QuanLyKhachSanDataSet3.xss">
+      <DependentUpon>QuanLyKhachSanDataSet3.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>

@@ -21,15 +21,6 @@ namespace GUI
         {
             label_username.Text = receivedData;
         }
-        private void guna2Button4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void guna2Button5_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void btnExit_Click(object sender, EventArgs e)
         {
@@ -48,8 +39,8 @@ namespace GUI
         private void btnAddroom_Click(object sender, EventArgs e)
         {
             MovingPanel.Left = btnAddroom.Left - 25;
-            uC_AddRoom1.Visible = true;
             uC_AddRoom1.UC_AddRoom_Load(sender,e);
+            uC_AddRoom1.Visible = true;
             uC_AddRoom1.BringToFront();
         }
 
@@ -69,16 +60,36 @@ namespace GUI
         private void btnCheckout_Click(object sender, EventArgs e)
         {
             MovingPanel.Left = btnCheckout.Left - 25;
+            uC_CheckOut1.UC_CheckOut_Load(sender,e);
             uC_CheckOut1.Visible = true;
             uC_CheckOut1.BringToFront();
         }
 
         private void logout_label_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            this.Close();
-            Login login = new Login();
-            MessageBox.Show("Đăng Xuất Thành Công", "Đăng xuất");
-            login.ShowDialog();
+            if (MessageBox.Show("Bạn có chắc chắn muốn đăng xuất!", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question,
+            MessageBoxDefaultButton.Button2) == DialogResult.Yes)
+            {
+                this.Close();
+                Login login = new Login();
+                login.ShowDialog();
+            }
+        }
+
+        private void btnCustomerDetail_Click(object sender, EventArgs e)
+        {
+            MovingPanel.Left = btnCustomerDetail.Left - 25;
+            //uC_CustomerDetail1.(sender, e);
+            uC_CustomerDetail1.Visible = true;
+            uC_CustomerDetail1.BringToFront();
+        }
+
+        private void btnEmployee_Click(object sender, EventArgs e)
+        {
+            MovingPanel.Left = btnEmployee.Left - 25;
+            //uC_EmployeeDetail1.(sender, e);
+            uC_EmployeeDetail1.Visible = true;
+            uC_EmployeeDetail1.BringToFront();
         }
     }
 }

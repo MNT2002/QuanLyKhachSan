@@ -24,7 +24,7 @@ namespace GUI
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            txtUsername.Focus();
         }
 
         private void guna2HtmlLabel1_Click(object sender, EventArgs e)

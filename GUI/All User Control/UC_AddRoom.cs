@@ -126,11 +126,6 @@ namespace BLL.All_User_Control
             currentRoom = dgv_rooms.Rows[rowchon].Cells[1].Value.ToString();
         }
 
-        private void dgv_rooms_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
         private void label2_Click_1(object sender, EventArgs e)
         {
 
