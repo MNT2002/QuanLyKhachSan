@@ -80,5 +80,10 @@ namespace GUI.All_User_Control
         {
 
         }
+
+        private void guna2HtmlLabel1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

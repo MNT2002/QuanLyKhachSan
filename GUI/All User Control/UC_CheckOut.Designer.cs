@@ -90,6 +90,7 @@
             this.guna2HtmlLabel1.Size = new System.Drawing.Size(64, 22);
             this.guna2HtmlLabel1.TabIndex = 3;
             this.guna2HtmlLabel1.Text = "Tìm kiếm";
+            this.guna2HtmlLabel1.Click += new System.EventHandler(this.guna2HtmlLabel1_Click);
             // 
             // guna2DataGridView1
             // 

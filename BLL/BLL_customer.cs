@@ -42,6 +42,14 @@ namespace BLL
         {
             return DB.customers.Where(cus => cus.cname.Contains(CName) && cus.chekout == "NO").ToList();
         }
+        public customer GetCustomerByID(int ID)
+        {
+            return DB.customers.Where(cus => cus.cid == ID).FirstOrDefault();
+        }  
+        public customer GetCustomerByIDProof(string IDProof)
+        {
+            return DB.customers.Where(cus => cus.idproof == IDProof).FirstOrDefault();
+        }
 
         public void AddCustomer(string Name, int PhoneNumber, string Nationality, string Gender, string Dob, string Id, string Address, string Checkin, int RoomId)
         {
@@ -73,6 +81,80 @@ namespace BLL
             customer cus = DB.customers.Where(r => r.cid == id).FirstOrDefault();
             cus.chekout = "YES";
             cus.checkout = cdate;
+            DB.SubmitChanges();
+        }
+
+        public object getAllCustomer()
+        {
+            var query = from customer in DB.customers
+                        join room in DB.rooms
+                        on customer.roomid equals room.roomid
+
+                        select new
+
+                        {
+                            cid = customer.cid,
+                            cname = customer.cname,
+                            mobile = customer.mobile,
+                            nationality = customer.nationality,
+                            gender = customer.gender,
+                            dob = customer.dob,
+                            idproof = customer.idproof,
+                            address = customer.address,
+                            checkin = customer.checkin,
+                            roomNo = room.roomNo,
+                            roomType = room.roomType,
+                            bed = room.bed,
+                            price = room.price
+                        };
+
+            return query.ToList();
+        }
+        public object getCustomerCheckout()
+        {
+            var query = from customer in DB.customers
+                        join room in DB.rooms
+                        on customer.roomid equals room.roomid
+                        where customer.chekout == "YES"
+                        select new
+
+                        {
+                            cid = customer.cid,
+                            cname = customer.cname,
+                            mobile = customer.mobile,
+                            nationality = customer.nationality,
+                            gender = customer.gender,
+                            dob = customer.dob,
+                            idproof = customer.idproof,
+                            address = customer.address,
+                            checkin = customer.checkin,
+                            roomNo = room.roomNo,
+                            roomType = room.roomType,
+                            bed = room.bed,
+                            price = room.price,
+                            checkout = customer.checkout,
+                        };
+
+            return query.ToList();
+        }
+        public void DeleteCustomer(int cusID)
+        {
+            customer cus = GetCustomerByID(cusID);
+            DB.customers.DeleteOnSubmit(cus);
+            DB.SubmitChanges();
+
+        }
+        public void UpdateCustomer(int cusID, string Name, int Mobile, string Nationality, string Gender, string Dob, string Idproof, string Address, int Roomid)
+        {
+            customer cus = GetCustomerByID(cusID);
+            cus.cname = Name;
+            cus.mobile = Mobile;
+            cus.nationality = Nationality;
+            cus.gender = Gender;
+            cus.dob = Dob;
+            cus.idproof = Idproof;
+            cus.address = Address;
+            cus.roomid = Roomid;
             DB.SubmitChanges();
         }
     }

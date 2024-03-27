@@ -31,11 +31,6 @@ namespace GUI.All_User_Control
                     combo.Items.Add(listroom[i].roomNo.ToString());
                 }
             }
-            if (listroom.Count == 0)
-            {
-                combo.Items.Add("Không có phòng phù hợp").ToString();
-                
-            }
         }
         private void label5_Click(object sender, EventArgs e)
         {

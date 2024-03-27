@@ -152,7 +152,7 @@ namespace BLL.All_User_Control
             }
             else
             {
-                MessageBox.Show("Không có phòng trên", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Không có phòng trên", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
         }

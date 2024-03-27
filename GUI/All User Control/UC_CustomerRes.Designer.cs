@@ -352,7 +352,7 @@
             this.txt_room_type.ItemHeight = 30;
             this.txt_room_type.Items.AddRange(new object[] {
             "Ac",
-            "None-Ac"});
+            "Non Ac"});
             this.txt_room_type.Location = new System.Drawing.Point(1228, 261);
             this.txt_room_type.Name = "txt_room_type";
             this.txt_room_type.Size = new System.Drawing.Size(458, 36);
