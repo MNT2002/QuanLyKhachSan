@@ -159,7 +159,7 @@ namespace GUI.All_User_Control
             string role = txt_nv_role.Text;
 
             bLL_Employee.UpdateGetEmployee(nvid,username, password,role, email, fullname, dob, address);
-            MessageBox.Show("Sửa thông tin phòng thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show("Sửa thông tin nhân viên", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             txt_username.Clear();
             txt_password.Clear();
             txt_email.Clear();
@@ -168,6 +168,7 @@ namespace GUI.All_User_Control
             txt_dob.Clear();
             txt_address.Clear();
             txt_nvid.Clear();
+            txt_Xoa.Clear();
 
             //Load lại dagtagridview NhanVien
             dgv_employee.DataSource = bLL_Employee.LoadEmployee();
@@ -175,6 +176,41 @@ namespace GUI.All_User_Control
 
             SelectNewlyAddedRow(dgv_employee);
 
+        }
+
+        private void btn_Xoa_Click(object sender, EventArgs e)
+        {
+            employee empcanxoa = bLL_Employee.GetEmployeeByID(int.Parse(txt_Xoa.Text));
+            if (empcanxoa != null)
+            {
+                if (MessageBox.Show("Bạn có muốn xóa Nhân viên  " + empcanxoa.fullname, "Thông báo", MessageBoxButtons.YesNo,
+                 MessageBoxIcon.Question, MessageBoxDefaultButton.Button2) == DialogResult.Yes)
+                {
+                    bLL_Employee.DeleteEmployee(Convert.ToInt32(txt_Xoa.Text));
+                    MessageBox.Show("Xóa Thành Công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    dgv_employee.DataSource = bLL_Employee.LoadEmployee();
+                    txt_nvid.Text = "";
+                    txt_username.Clear();
+                    txt_password.Clear();
+                    txt_email.Clear();
+                    txt_nv_role.SelectedIndex = -1;
+                    txt_fullname.Clear();
+                    txt_dob.Clear();
+                    txt_address.Clear();
+                    txt_Xoa.Clear();
+
+                }
+                else
+                {
+                    MessageBox.Show("Xóa không thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+            }
+            else
+            {
+                MessageBox.Show("Không có Nhân viên trên", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
         }
     }
 }

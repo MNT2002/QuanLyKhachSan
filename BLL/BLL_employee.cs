@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace BLL
 {
@@ -61,6 +62,14 @@ namespace BLL
         public employee GetemployeebyID(int ID)
         {
             return DB.employees.Where(r => r.nvid == ID).FirstOrDefault();
+        }
+        public void DeleteEmployee(int emID)
+        {
+            employee employee = GetEmployeeByID(emID);
+            DB.employees.DeleteOnSubmit(employee);
+            DB.SubmitChanges();
+            
+
         }
         //public void AddCustomer(string Name, int PhoneNumber, string Nationality, string Gender, string Dob, string Id, string Address, string Checkin, int RoomId)
         //{

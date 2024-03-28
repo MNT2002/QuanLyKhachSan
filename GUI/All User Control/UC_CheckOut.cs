@@ -16,6 +16,7 @@ namespace GUI.All_User_Control
 
         BLL_customer bLL_Customer = new BLL_customer();
         BLL_Room bll_room = new BLL_Room();
+        BLL_booked_history bll_booked_history =new BLL_booked_history();
         public UC_CheckOut()
         {
             InitializeComponent();
@@ -53,9 +54,12 @@ namespace GUI.All_User_Control
                 {
                     String cdate = txt_checkout_date.Text;
                     bLL_Customer.UpdateCustomerCheckout(id, cdate);
+                    var a = bLL_Customer.GetCustomerByID(id);
+                    bll_booked_history.AddCusHis(a.cid, a.cname,a.mobile.ToString(), a.nationality, a.gender, a.dob, a.idproof, a.address, a.checkin, a.chekout, a.chekout, a.roomid);
                     bll_room.SetRoomState(txt_room_no.Text);
                     MessageBox.Show("Thanh toán thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     UC_CheckOut_Load(this, null);
+                    bLL_Customer.DeleteCustomer(id);
                     clearAll();
                 }
             } else

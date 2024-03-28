@@ -504,6 +504,10 @@
             // 
             // dgv_rooms
             // 
+            this.dgv_rooms.AllowUserToAddRows = false;
+            this.dgv_rooms.AllowUserToDeleteRows = false;
+            this.dgv_rooms.AllowUserToResizeColumns = false;
+            this.dgv_rooms.AllowUserToResizeRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
             this.dgv_rooms.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgv_rooms.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(190)))), ((int)(((byte)(245)))));
