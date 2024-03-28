@@ -35,5 +35,10 @@ namespace BLL
             {
             }
         }
+        
+        public List<booked_history> LoadBookedHistories()
+        {
+            return DB.booked_histories.ToList();
+        }
     }
 }

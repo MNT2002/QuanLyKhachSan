@@ -79,7 +79,7 @@ namespace GUI
         private void btnCustomerDetail_Click(object sender, EventArgs e)
         {
             MovingPanel.Left = btnCustomerDetail.Left - 25;
-            //uC_CustomerDetail1.(sender, e);
+            uC_CustomerDetail1.UC_CustomerDetail_Load(sender, e);
             uC_CustomerDetail1.Visible = true;
             uC_CustomerDetail1.BringToFront();
         }
@@ -87,9 +87,10 @@ namespace GUI
         private void btnEmployee_Click(object sender, EventArgs e)
         {
             MovingPanel.Left = btnEmployee.Left - 25;
-            //uC_EmployeeDetail1.(sender, e);
+            uC_EmployeeDetail1.UC_Employee_Load(sender, e);
             uC_EmployeeDetail1.Visible = true;
             uC_EmployeeDetail1.BringToFront();
         }
+
     }
 }

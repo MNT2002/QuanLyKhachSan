@@ -14,7 +14,7 @@ namespace BLL.All_User_Control
 {
     public partial class UC_AddRoom : UserControl
     {
-        BLL_Room room = new BLL_Room();
+        BLL_Room bLL_Room = new BLL_Room();
         string currentRoom = "";
         public UC_AddRoom()
         {
@@ -25,6 +25,8 @@ namespace BLL.All_User_Control
         {
             BLL_Room room = new BLL_Room();
             dgv_rooms.DataSource = room.LoadRoom();
+            cb_group_by.SelectedItem = "All";
+            cb_filter.SelectedItem = "All";
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -38,7 +40,7 @@ namespace BLL.All_User_Control
             // Ensure there is at least one row in the DataGridView
             if (dataGridView.Rows.Count > 0)
             {
-                // Select the last row, assuming it's the newly added row
+                // Select the last row, assuming its the newly added row
                 dataGridView.CurrentCell = dataGridView.Rows[dataGridView.Rows.Count - 1].Cells[0];
             }
         }
@@ -51,7 +53,7 @@ namespace BLL.All_User_Control
                 MessageBox.Show("Thiếu thông tin", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
-            if (room.GetRoomByRoomNo(txt_room_no.Text) != null)
+            if (bLL_Room.GetRoomByRoomNo(txt_room_no.Text) != null)
             {
                 MessageBox.Show("Số phòng đã tồn tại", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 txt_room_no.Focus();
@@ -64,7 +66,7 @@ namespace BLL.All_User_Control
             string bed = txt_bed.Text;
             Int64 price = Convert.ToInt64(txt_price.Text);
 
-            room.AddRoom(roomNo, roomType, bed, price);
+            bLL_Room.AddRoom(roomNo, roomType, bed, price);
             MessageBox.Show("Thêm phòng mới thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             txt_room_no.Clear();
             txt_price.Clear();
@@ -77,7 +79,7 @@ namespace BLL.All_User_Control
             txt_bed_Sua.SelectedIndex = -1;
             txt_room_type_Sua.SelectedIndex = -1;
             //Load lại dagtagridview NhanVien
-            dgv_rooms.DataSource = room.LoadRoom();
+            dgv_rooms.DataSource = bLL_Room.LoadRoom();
             /*DeselectAllRows(dgv_rooms);*/
 
             SelectNewlyAddedRow(dgv_rooms);
@@ -129,15 +131,17 @@ namespace BLL.All_User_Control
 
         private void btn_Xoa_Click(object sender, EventArgs e)
         {
-            room roomcanxoa = room.GetRoomByRoomID(int.Parse(txt_Xoa.Text));
+            room roomcanxoa = bLL_Room.GetRoomByRoomID(int.Parse(txt_Xoa.Text));
             if (roomcanxoa != null)
             {
                 if (MessageBox.Show("Bạn có muốn xóa Phòng " + roomcanxoa.roomNo.ToString(), "Thông báo", MessageBoxButtons.YesNo,
                  MessageBoxIcon.Question, MessageBoxDefaultButton.Button2) == DialogResult.Yes)
                 {
-                    room.DeleteRoom(int.Parse(txt_Xoa.Text));
+                    bLL_Room.DeleteRoom(int.Parse(txt_Xoa.Text));
                     MessageBox.Show("Xóa Thành Công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    dgv_rooms.DataSource = room.LoadRoom();
+                    dgv_rooms.DataSource = bLL_Room.LoadRoom();
+                    cb_group_by.SelectedItem = "All";
+                    cb_filter.SelectedItem = "All";
                     clear();
                 }
                 else
@@ -172,7 +176,7 @@ namespace BLL.All_User_Control
             {
                 foreach (DataGridViewRow dr in dgv_rooms.Rows)
                 {
-                    if (room.GetRoomByRoomNo(txt_roomno_Sua.Text) != null)
+                    if (bLL_Room.GetRoomByRoomNo(txt_roomno_Sua.Text) != null)
                     {
                         MessageBox.Show("Số phòng đã tồn tại!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                         txt_room_no.Focus();
@@ -189,33 +193,63 @@ namespace BLL.All_User_Control
                 string LoaiPhong = txt_room_type_Sua.Text;
                 string LoaiGiuong = txt_bed_Sua.Text;
                 string Price = txt_price_Sua.Text;
-                room.UpdateRoom(RoomId,RoomNo, LoaiPhong,LoaiGiuong, int.Parse(Price));
+                bLL_Room.UpdateRoom(RoomId,RoomNo, LoaiPhong,LoaiGiuong, int.Parse(Price));
                 MessageBox.Show("Sửa Phòng thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 //Load lại dagtagridview NhanVien
-                dgv_rooms.DataSource = room.LoadRoom();
+                cb_group_by.SelectedItem = "All";
+                cb_filter.SelectedItem = "All";
+                dgv_rooms.DataSource = bLL_Room.LoadRoom();
                 clear();
             }
         }
 
-        private void label6_Click(object sender, EventArgs e)
+        private void txt_search_room_TextChanged(object sender, EventArgs e)
         {
-
+            cb_group_by.SelectedItem = "All";
+            cb_filter.SelectedItem = "All";
+            dgv_rooms.DataSource = bLL_Room.GetAllRoomSearch(txt_search_room.Text);
+        }
+        private void cb_group_by_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            cb_filter_SelectedIndexChanged(sender, e);
         }
 
-        private void guna2ComboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        private void cb_filter_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            string GroupBy = cb_group_by.Text;
+            if (cb_filter.SelectedItem == "All")
+            {
+                dgv_rooms.DataSource = bLL_Room.GetAllRoomfilter("All", GroupBy);
+            }
+            else if (cb_filter.SelectedItem == "Room Type: Ac")
+            {
+                dgv_rooms.DataSource = bLL_Room.GetAllRoomfilter("Room Type: Ac", GroupBy);
+            }
+            else if (cb_filter.SelectedItem == "Room Type: Non Ac")
+            {
+                dgv_rooms.DataSource = bLL_Room.GetAllRoomfilter("Room Type: Non Ac", GroupBy);
+            }
+            else if (cb_filter.SelectedItem == "Bed Type: Don")
+            {
+                dgv_rooms.DataSource = bLL_Room.GetAllRoomfilter("Bed Type: Don", GroupBy);
+            }
+            else if (cb_filter.SelectedItem == "Bed Type: Doi")
+            {
+                dgv_rooms.DataSource = bLL_Room.GetAllRoomfilter("Bed Type: Doi", GroupBy);
+            }
+            else if (cb_filter.SelectedItem == "Bed Type: Queen")
+            {
+                dgv_rooms.DataSource = bLL_Room.GetAllRoomfilter("Bed Type: Queen", GroupBy);
+            }
+            else if (cb_filter.SelectedItem == "State: Booked")
+            {
+                dgv_rooms.DataSource = bLL_Room.GetAllRoomfilter("State: Booked", GroupBy);
+            }
+            else if (cb_filter.SelectedItem == "State: Empty")
+            {
+                dgv_rooms.DataSource = bLL_Room.GetAllRoomfilter("State: Empty", GroupBy);
+            }
+            
         }
-
-        private void txt_roomno_Sua_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void groupBox3_Enter(object sender, EventArgs e)
-        {
-
-        }
-
     }
 }

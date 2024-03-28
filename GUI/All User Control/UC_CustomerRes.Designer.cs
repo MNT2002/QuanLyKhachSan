@@ -307,7 +307,7 @@
             this.txt_checkin.Name = "txt_checkin";
             this.txt_checkin.Size = new System.Drawing.Size(458, 64);
             this.txt_checkin.TabIndex = 9;
-            this.txt_checkin.Value = new System.DateTime(2024, 3, 19, 22, 4, 34, 249);
+            this.txt_checkin.Value = new System.DateTime(2024, 3, 21, 0, 0, 0, 0);
             // 
             // txt_bed_type
             // 
@@ -405,6 +405,7 @@
             this.txt_price.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.txt_price.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txt_price.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_price.Enabled = false;
             this.txt_price.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_price.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txt_price.ForeColor = System.Drawing.Color.Black;
@@ -499,6 +500,7 @@
             this.Controls.Add(this.label2);
             this.Name = "UC_CustomerRes";
             this.Size = new System.Drawing.Size(1882, 852);
+            this.Load += new System.EventHandler(this.UC_CustomerRes_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

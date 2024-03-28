@@ -26,6 +26,7 @@ namespace GUI.All_User_Control
         {
             BLL_customer bLL_Customer = new BLL_customer();
             guna2DataGridView1.DataSource = bLL_Customer.LoadCustomer();
+            txt_checkout_date.Value = DateTime.Today;
         }
 
         private void txt_search_name_TextChanged(object sender, EventArgs e)
@@ -43,7 +44,8 @@ namespace GUI.All_User_Control
             id = int.Parse(guna2DataGridView1.Rows[rowchon].Cells[0].Value.ToString());
             txt_name.Text = guna2DataGridView1.Rows[rowchon].Cells[1].Value.ToString();
             txt_room_no.Text = guna2DataGridView1.Rows[rowchon].Cells[9].Value.ToString();
-            
+
+            txt_checkout_date.Value = DateTime.Today;
         }
 
         private void btn_checkout_Click(object sender, EventArgs e)
@@ -55,7 +57,7 @@ namespace GUI.All_User_Control
                     String cdate = txt_checkout_date.Text;
                     bLL_Customer.UpdateCustomerCheckout(id, cdate);
                     var a = bLL_Customer.GetCustomerByID(id);
-                    bll_booked_history.AddCusHis(a.cid, a.cname,a.mobile.ToString(), a.nationality, a.gender, a.dob, a.idproof, a.address, a.checkin, a.chekout, a.chekout, a.roomid);
+                    bll_booked_history.AddCusHis(a.cid, a.cname,a.mobile.ToString(), a.nationality, a.gender, a.dob, a.idproof, a.address, a.checkin, a.checkout, a.chekout, a.roomid);
                     bll_room.SetRoomState(txt_room_no.Text);
                     MessageBox.Show("Thanh toán thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     UC_CheckOut_Load(this, null);

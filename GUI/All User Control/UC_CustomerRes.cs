@@ -100,7 +100,7 @@ namespace GUI.All_User_Control
             txt_nationality.Clear();
             txt_phone_number.Clear();
             txt_id.Clear();
-            txt_gender.SelectedItem = -1;
+            txt_gender.SelectedIndex = -1;
             txt_dob.ResetText();
             txt_address.Clear();
             txt_checkin.ResetText();
@@ -108,6 +108,12 @@ namespace GUI.All_User_Control
             txt_room_type.SelectedIndex = -1;
             txt_room_no.Items.Clear();
             txt_price.Clear();
+        }
+
+        private void UC_CustomerRes_Load(object sender, EventArgs e)
+        {
+            txt_dob.Value = DateTime.Today;
+            txt_checkin.Value = DateTime.Today;
         }
     }
 }

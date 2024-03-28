@@ -64,8 +64,8 @@
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
     <Compile Include="QuanLyKhachSan.designer.cs">
-      <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
       <DependentUpon>QuanLyKhachSan.dbml</DependentUpon>
     </Compile>
   </ItemGroup>

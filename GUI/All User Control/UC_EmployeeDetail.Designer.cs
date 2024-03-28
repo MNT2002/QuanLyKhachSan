@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.customerBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.quanLyKhachSanDataSet1 = new GUI.QuanLyKhachSanDataSet1();
             this.customerTableAdapter = new GUI.QuanLyKhachSanDataSet1TableAdapters.customerTableAdapter();
@@ -52,11 +52,12 @@
             this.txt_Xoa = new Guna.UI2.WinForms.Guna2TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.txt_dob = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.txt_nvid = new Guna.UI2.WinForms.Guna2TextBox();
             this.txt_password = new Guna.UI2.WinForms.Guna2TextBox();
             this.txt_username = new Guna.UI2.WinForms.Guna2TextBox();
             this.txt_address = new Guna.UI2.WinForms.Guna2TextBox();
             this.label13 = new System.Windows.Forms.Label();
-            this.txt_dob = new Guna.UI2.WinForms.Guna2TextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.txt_fullname = new Guna.UI2.WinForms.Guna2TextBox();
             this.label15 = new System.Windows.Forms.Label();
@@ -69,11 +70,11 @@
             this.label20 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txt_dob_Add = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.txt_password_Add = new Guna.UI2.WinForms.Guna2TextBox();
             this.txt_username_Add = new Guna.UI2.WinForms.Guna2TextBox();
             this.txt_address_Add = new Guna.UI2.WinForms.Guna2TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.txt_dob_Add = new Guna.UI2.WinForms.Guna2TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txt_fullname_Add = new Guna.UI2.WinForms.Guna2TextBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -84,7 +85,6 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.txt_nvid = new Guna.UI2.WinForms.Guna2TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.customerBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.quanLyKhachSanDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.quanLyKhachSanDataSet2)).BeginInit();
@@ -173,31 +173,32 @@
             this.dgv_employee.AllowUserToDeleteRows = false;
             this.dgv_employee.AllowUserToResizeColumns = false;
             this.dgv_employee.AllowUserToResizeRows = false;
-            dataGridViewCellStyle13.BackColor = System.Drawing.Color.White;
-            this.dgv_employee.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle13;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.dgv_employee.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgv_employee.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(190)))), ((int)(((byte)(245)))));
-            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgv_employee.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle14;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(190)))), ((int)(((byte)(245)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv_employee.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgv_employee.ColumnHeadersHeight = 40;
-            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle15.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle15.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgv_employee.DefaultCellStyle = dataGridViewCellStyle15;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgv_employee.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgv_employee.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgv_employee.Location = new System.Drawing.Point(97, 103);
             this.dgv_employee.Name = "dgv_employee";
             this.dgv_employee.ReadOnly = true;
             this.dgv_employee.RowHeadersVisible = false;
+            this.dgv_employee.RowHeadersWidth = 40;
             this.dgv_employee.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dgv_employee.RowTemplate.Height = 32;
             this.dgv_employee.RowTemplate.ReadOnly = true;
@@ -260,6 +261,7 @@
             this.txt_Xoa.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.txt_Xoa.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txt_Xoa.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_Xoa.Enabled = false;
             this.txt_Xoa.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_Xoa.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txt_Xoa.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
@@ -289,12 +291,12 @@
             // groupBox3
             // 
             this.groupBox3.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox3.Controls.Add(this.txt_dob);
             this.groupBox3.Controls.Add(this.txt_nvid);
             this.groupBox3.Controls.Add(this.txt_password);
             this.groupBox3.Controls.Add(this.txt_username);
             this.groupBox3.Controls.Add(this.txt_address);
             this.groupBox3.Controls.Add(this.label13);
-            this.groupBox3.Controls.Add(this.txt_dob);
             this.groupBox3.Controls.Add(this.label14);
             this.groupBox3.Controls.Add(this.txt_fullname);
             this.groupBox3.Controls.Add(this.label15);
@@ -314,6 +316,42 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Sửa";
             // 
+            // txt_dob
+            // 
+            this.txt_dob.Checked = true;
+            this.txt_dob.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(118)))), ((int)(((byte)(221)))));
+            this.txt_dob.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_dob.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.txt_dob.Location = new System.Drawing.Point(138, 282);
+            this.txt_dob.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.txt_dob.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.txt_dob.Name = "txt_dob";
+            this.txt_dob.Size = new System.Drawing.Size(203, 36);
+            this.txt_dob.TabIndex = 46;
+            this.txt_dob.Value = new System.DateTime(2024, 3, 28, 10, 12, 55, 0);
+            this.txt_dob.ValueChanged += new System.EventHandler(this.txt_dob_ValueChanged);
+            // 
+            // txt_nvid
+            // 
+            this.txt_nvid.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_nvid.DefaultText = "";
+            this.txt_nvid.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txt_nvid.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txt_nvid.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_nvid.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_nvid.Enabled = false;
+            this.txt_nvid.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_nvid.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txt_nvid.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_nvid.Location = new System.Drawing.Point(138, 30);
+            this.txt_nvid.Name = "txt_nvid";
+            this.txt_nvid.PasswordChar = '\0';
+            this.txt_nvid.PlaceholderText = "";
+            this.txt_nvid.ReadOnly = true;
+            this.txt_nvid.SelectedText = "";
+            this.txt_nvid.Size = new System.Drawing.Size(203, 36);
+            this.txt_nvid.TabIndex = 38;
+            // 
             // txt_password
             // 
             this.txt_password.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -331,7 +369,7 @@
             this.txt_password.PlaceholderText = "";
             this.txt_password.SelectedText = "";
             this.txt_password.Size = new System.Drawing.Size(203, 36);
-            this.txt_password.TabIndex = 32;
+            this.txt_password.TabIndex = 40;
             // 
             // txt_username
             // 
@@ -350,7 +388,7 @@
             this.txt_username.PlaceholderText = "";
             this.txt_username.SelectedText = "";
             this.txt_username.Size = new System.Drawing.Size(203, 36);
-            this.txt_username.TabIndex = 31;
+            this.txt_username.TabIndex = 39;
             // 
             // txt_address
             // 
@@ -369,7 +407,7 @@
             this.txt_address.PlaceholderText = "";
             this.txt_address.SelectedText = "";
             this.txt_address.Size = new System.Drawing.Size(203, 36);
-            this.txt_address.TabIndex = 28;
+            this.txt_address.TabIndex = 45;
             // 
             // label13
             // 
@@ -380,25 +418,6 @@
             this.label13.Size = new System.Drawing.Size(63, 21);
             this.label13.TabIndex = 27;
             this.label13.Text = "Địa Chỉ:";
-            // 
-            // txt_dob
-            // 
-            this.txt_dob.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_dob.DefaultText = "";
-            this.txt_dob.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txt_dob.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txt_dob.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_dob.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_dob.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_dob.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txt_dob.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_dob.Location = new System.Drawing.Point(138, 282);
-            this.txt_dob.Name = "txt_dob";
-            this.txt_dob.PasswordChar = '\0';
-            this.txt_dob.PlaceholderText = "";
-            this.txt_dob.SelectedText = "";
-            this.txt_dob.Size = new System.Drawing.Size(203, 36);
-            this.txt_dob.TabIndex = 26;
             // 
             // label14
             // 
@@ -427,7 +446,7 @@
             this.txt_fullname.PlaceholderText = "";
             this.txt_fullname.SelectedText = "";
             this.txt_fullname.Size = new System.Drawing.Size(203, 36);
-            this.txt_fullname.TabIndex = 24;
+            this.txt_fullname.TabIndex = 43;
             // 
             // label15
             // 
@@ -475,7 +494,7 @@
             this.txt_nv_role.Location = new System.Drawing.Point(138, 198);
             this.txt_nv_role.Name = "txt_nv_role";
             this.txt_nv_role.Size = new System.Drawing.Size(203, 36);
-            this.txt_nv_role.TabIndex = 18;
+            this.txt_nv_role.TabIndex = 42;
             // 
             // txt_email
             // 
@@ -494,7 +513,7 @@
             this.txt_email.PlaceholderText = "";
             this.txt_email.SelectedText = "";
             this.txt_email.Size = new System.Drawing.Size(203, 36);
-            this.txt_email.TabIndex = 17;
+            this.txt_email.TabIndex = 41;
             // 
             // label18
             // 
@@ -541,11 +560,11 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox1.Controls.Add(this.txt_dob_Add);
             this.groupBox1.Controls.Add(this.txt_password_Add);
             this.groupBox1.Controls.Add(this.txt_username_Add);
             this.groupBox1.Controls.Add(this.txt_address_Add);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.txt_dob_Add);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.txt_fullname_Add);
             this.groupBox1.Controls.Add(this.label3);
@@ -563,6 +582,21 @@
             this.groupBox1.TabIndex = 33;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thêm";
+            // 
+            // txt_dob_Add
+            // 
+            this.txt_dob_Add.Checked = true;
+            this.txt_dob_Add.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(118)))), ((int)(((byte)(221)))));
+            this.txt_dob_Add.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_dob_Add.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.txt_dob_Add.Location = new System.Drawing.Point(138, 249);
+            this.txt_dob_Add.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.txt_dob_Add.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.txt_dob_Add.Name = "txt_dob_Add";
+            this.txt_dob_Add.Size = new System.Drawing.Size(203, 36);
+            this.txt_dob_Add.TabIndex = 46;
+            this.txt_dob_Add.Value = new System.DateTime(2024, 3, 28, 0, 0, 0, 0);
+            this.txt_dob_Add.ValueChanged += new System.EventHandler(this.txt_dob_ValueChanged);
             // 
             // txt_password_Add
             // 
@@ -619,7 +653,7 @@
             this.txt_address_Add.PlaceholderText = "";
             this.txt_address_Add.SelectedText = "";
             this.txt_address_Add.Size = new System.Drawing.Size(203, 36);
-            this.txt_address_Add.TabIndex = 28;
+            this.txt_address_Add.TabIndex = 37;
             // 
             // label1
             // 
@@ -630,25 +664,6 @@
             this.label1.Size = new System.Drawing.Size(63, 21);
             this.label1.TabIndex = 27;
             this.label1.Text = "Địa Chỉ:";
-            // 
-            // txt_dob_Add
-            // 
-            this.txt_dob_Add.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_dob_Add.DefaultText = "";
-            this.txt_dob_Add.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txt_dob_Add.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txt_dob_Add.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_dob_Add.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_dob_Add.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_dob_Add.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txt_dob_Add.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_dob_Add.Location = new System.Drawing.Point(138, 249);
-            this.txt_dob_Add.Name = "txt_dob_Add";
-            this.txt_dob_Add.PasswordChar = '\0';
-            this.txt_dob_Add.PlaceholderText = "";
-            this.txt_dob_Add.SelectedText = "";
-            this.txt_dob_Add.Size = new System.Drawing.Size(203, 36);
-            this.txt_dob_Add.TabIndex = 26;
             // 
             // label2
             // 
@@ -677,7 +692,7 @@
             this.txt_fullname_Add.PlaceholderText = "";
             this.txt_fullname_Add.SelectedText = "";
             this.txt_fullname_Add.Size = new System.Drawing.Size(203, 36);
-            this.txt_fullname_Add.TabIndex = 24;
+            this.txt_fullname_Add.TabIndex = 35;
             // 
             // label3
             // 
@@ -725,7 +740,7 @@
             this.txt_role_Add.Location = new System.Drawing.Point(138, 165);
             this.txt_role_Add.Name = "txt_role_Add";
             this.txt_role_Add.Size = new System.Drawing.Size(203, 36);
-            this.txt_role_Add.TabIndex = 18;
+            this.txt_role_Add.TabIndex = 34;
             // 
             // txt_email_Add
             // 
@@ -744,7 +759,7 @@
             this.txt_email_Add.PlaceholderText = "";
             this.txt_email_Add.SelectedText = "";
             this.txt_email_Add.Size = new System.Drawing.Size(203, 36);
-            this.txt_email_Add.TabIndex = 17;
+            this.txt_email_Add.TabIndex = 33;
             // 
             // label5
             // 
@@ -775,27 +790,6 @@
             this.label8.Size = new System.Drawing.Size(84, 21);
             this.label8.TabIndex = 0;
             this.label8.Text = "Username:";
-            // 
-            // txt_nvid
-            // 
-            this.txt_nvid.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_nvid.DefaultText = "";
-            this.txt_nvid.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txt_nvid.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txt_nvid.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_nvid.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_nvid.Enabled = false;
-            this.txt_nvid.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_nvid.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txt_nvid.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_nvid.Location = new System.Drawing.Point(138, 30);
-            this.txt_nvid.Name = "txt_nvid";
-            this.txt_nvid.PasswordChar = '\0';
-            this.txt_nvid.PlaceholderText = "";
-            this.txt_nvid.ReadOnly = true;
-            this.txt_nvid.SelectedText = "";
-            this.txt_nvid.Size = new System.Drawing.Size(203, 36);
-            this.txt_nvid.TabIndex = 33;
             // 
             // UC_EmployeeDetail
             // 
@@ -850,7 +844,6 @@
         private Guna.UI2.WinForms.Guna2TextBox txt_username;
         private Guna.UI2.WinForms.Guna2TextBox txt_address;
         private System.Windows.Forms.Label label13;
-        private Guna.UI2.WinForms.Guna2TextBox txt_dob;
         private System.Windows.Forms.Label label14;
         private Guna.UI2.WinForms.Guna2TextBox txt_fullname;
         private System.Windows.Forms.Label label15;
@@ -871,7 +864,6 @@
         private Guna.UI2.WinForms.Guna2TextBox txt_username_Add;
         private Guna.UI2.WinForms.Guna2TextBox txt_address_Add;
         private System.Windows.Forms.Label label1;
-        private Guna.UI2.WinForms.Guna2TextBox txt_dob_Add;
         private System.Windows.Forms.Label label2;
         private Guna.UI2.WinForms.Guna2TextBox txt_fullname_Add;
         private System.Windows.Forms.Label label3;
@@ -883,5 +875,7 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private Guna.UI2.WinForms.Guna2TextBox txt_nvid;
+        private Guna.UI2.WinForms.Guna2DateTimePicker txt_dob;
+        private Guna.UI2.WinForms.Guna2DateTimePicker txt_dob_Add;
     }
 }

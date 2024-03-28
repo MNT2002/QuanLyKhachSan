@@ -23,6 +23,7 @@ namespace GUI.All_User_Control
         {
             BLL_employee employeedetail = new BLL_employee();
             dgv_employee.DataSource = employeedetail.LoadEmployee();
+            txt_dob_Add.Value = DateTime.Today;
         }
         private void label1_Click(object sender, EventArgs e)
         {
@@ -122,7 +123,7 @@ namespace GUI.All_User_Control
             txt_email_Add.Clear ();
             txt_role_Add.SelectedIndex = -1;
             txt_fullname_Add.Clear();
-            txt_dob_Add.Clear();
+            txt_dob_Add.ResetText();
             txt_address_Add.Clear();
             
             //Load lại dagtagridview NhanVien
@@ -165,7 +166,7 @@ namespace GUI.All_User_Control
             txt_email.Clear();
             txt_nv_role.SelectedIndex = -1;
             txt_fullname.Clear();
-            txt_dob.Clear();
+            txt_dob.ResetText();
             txt_address.Clear();
             txt_nvid.Clear();
             txt_Xoa.Clear();
@@ -195,7 +196,7 @@ namespace GUI.All_User_Control
                     txt_email.Clear();
                     txt_nv_role.SelectedIndex = -1;
                     txt_fullname.Clear();
-                    txt_dob.Clear();
+                    txt_dob.ResetText();
                     txt_address.Clear();
                     txt_Xoa.Clear();
 
@@ -211,6 +212,11 @@ namespace GUI.All_User_Control
                 MessageBox.Show("Không có Nhân viên trên", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
+        }
+
+        private void txt_dob_ValueChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

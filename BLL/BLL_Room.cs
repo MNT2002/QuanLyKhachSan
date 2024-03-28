@@ -39,6 +39,67 @@ namespace BLL
             var room = DB.rooms.Where(r => r.roomType == RoomType && r.bed == RoomBed && r.booked == "NO").ToList();
             return room;
         }
+        public List<room> GetAllRoomSearch(string RoomNo)
+        {
+            return DB.rooms.Where(r => r.roomNo.Contains(RoomNo)).ToList();
+        }
+        public List<room> GetAllRoomfilter(string Filter, string GroupBy)
+        {
+            switch (Filter)
+            {
+                case "All":
+                    if (GroupBy == "Room Type") return DB.rooms.OrderBy(r => r.roomType).ToList();
+                    else if (GroupBy == "Bed Type") return DB.rooms.OrderBy(r => r.bed).ToList();
+                    else if (GroupBy == "State") return DB.rooms.OrderBy(r => r.booked).ToList();
+                    return DB.rooms.ToList();
+
+                case "Room Type: Ac":
+                    if (GroupBy == "Room Type") return DB.rooms.Where(r => r.roomType == "Ac").OrderBy(r => r.roomType).ToList();
+                    else if (GroupBy == "Bed Type") return DB.rooms.Where(r => r.roomType == "Ac").OrderBy(r => r.bed).ToList();
+                    else if (GroupBy == "State") return DB.rooms.Where(r => r.roomType == "Ac").OrderBy(r => r.booked).ToList();
+                    return DB.rooms.Where(r => r.roomType == "Ac").ToList();
+
+                case "Room Type: Non Ac":
+                    if (GroupBy == "Room Type") return DB.rooms.Where(r => r.roomType == "Non Ac").OrderBy(r => r.roomType).ToList();
+                    else if (GroupBy == "Bed Type") return DB.rooms.Where(r => r.roomType == "Non Ac").OrderBy(r => r.bed).ToList();
+                    else if (GroupBy == "State") return DB.rooms.Where(r => r.roomType == "Non Ac").OrderBy(r => r.booked).ToList();
+                    return DB.rooms.Where(r => r.roomType == "Non Ac").ToList();
+
+                case "Bed Type: Don":
+                    if (GroupBy == "Room Type") return DB.rooms.Where(r => r.bed == "Don").OrderBy(r => r.roomType).ToList();
+                    else if (GroupBy == "Bed Type") return DB.rooms.Where(r => r.bed == "Don").OrderBy(r => r.bed).ToList();
+                    else if (GroupBy == "State") return DB.rooms.Where(r => r.bed == "Don").OrderBy(r => r.booked).ToList();
+                    return DB.rooms.Where(r => r.bed == "Don").ToList();
+
+                case "Bed Type: Doi":
+                    if (GroupBy == "Room Type") return DB.rooms.Where(r => r.bed == "Doi").OrderBy(r => r.roomType).ToList();
+                    else if (GroupBy == "Bed Type") return DB.rooms.Where(r => r.bed == "Doi").OrderBy(r => r.bed).ToList();
+                    else if (GroupBy == "State") return DB.rooms.Where(r => r.bed == "Doi").OrderBy(r => r.booked).ToList();
+                    return DB.rooms.Where(r => r.bed == "Doi").ToList();
+
+                case "Bed Type: Queen":
+                    if (GroupBy == "Room Type") return DB.rooms.Where(r => r.bed == "Queen").OrderBy(r => r.roomType).ToList();
+                    else if (GroupBy == "Bed Type") return DB.rooms.Where(r => r.bed == "Queen").OrderBy(r => r.bed).ToList();
+                    else if (GroupBy == "State") return DB.rooms.Where(r => r.bed == "Queen").OrderBy(r => r.booked).ToList();
+                    return DB.rooms.Where(r => r.bed == "Queen").ToList();
+
+                case "State: Booked":
+                    if (GroupBy == "Room Type") return DB.rooms.Where(r => r.booked == "YES").OrderBy(r => r.roomType).ToList();
+                    else if (GroupBy == "Bed Type") return DB.rooms.Where(r => r.booked == "YES").OrderBy(r => r.bed).ToList();
+                    else if (GroupBy == "State") return DB.rooms.Where(r => r.booked == "YES").OrderBy(r => r.booked).ToList();
+                    return DB.rooms.Where(r => r.booked == "YES").ToList();
+
+                case "State: Empty":
+                    if (GroupBy == "Room Type") return DB.rooms.Where(r => r.booked == "NO").OrderBy(r => r.roomType).ToList();
+                    else if (GroupBy == "Bed Type") return DB.rooms.Where(r => r.booked == "NO").OrderBy(r => r.bed).ToList();
+                    else if (GroupBy == "State") return DB.rooms.Where(r => r.booked == "NO").OrderBy(r => r.booked).ToList();
+                    return DB.rooms.Where(r => r.booked == "NO").ToList();
+
+                default:
+                    return DB.rooms.ToList();
+            }
+            
+        }
         public room GetRoomByRoomNo(string RoomNo)
         {
             return DB.rooms.Where(r => r.roomNo == RoomNo).FirstOrDefault();

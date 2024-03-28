@@ -16,55 +16,45 @@ namespace GUI.All_User_Control
     {
         BLL_customer bLL_Customer = new BLL_customer();
         BLL_Room bll_room = new BLL_Room();
+        BLL_booked_history bLL_Booked_History = new BLL_booked_history();
         public UC_CustomerDetail()
         {
             InitializeComponent();
         }
-
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void groupBox2_Enter(object sender, EventArgs e)
-        {
-
-        }
-
         private void cb_search_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (cb_search.SelectedIndex == 0) //get all Customer
+            txt_search_name.Text = "";
+            if (cb_search.SelectedIndex == 0) //get Customer in hotel
             {
-                dgv_customer.DataSource = bLL_Customer.getAllCustomer();
-            }
-            else if (cb_search.SelectedIndex == 1) //get Customer in hotel
-            {
+                gb_edit_customer.Visible = true;
+                gb_delete_customer.Visible = true;
+                dgv_customer.Height = 241;
                 dgv_customer.DataSource = bLL_Customer.LoadCustomer();
             }
-            else if (cb_search.SelectedIndex == 2) //get Customer checkout
+            else if (cb_search.SelectedIndex == 1) //get Customer checkout
             {
-                dgv_customer.DataSource = bLL_Customer.getCustomerCheckout();
+                gb_edit_customer.Visible = false;
+                gb_delete_customer.Visible = false;
+                dgv_customer.Height = 510;
+                dgv_customer.DataSource = bLL_Booked_History.LoadBookedHistories();
             }
         }
 
-        private void UC_CustomerDetail_Load(object sender, EventArgs e)
+        public void UC_CustomerDetail_Load(object sender, EventArgs e)
         {
             cb_search.SelectedIndex = 0;
+            cb_search_SelectedIndexChanged(sender, e);
         }
         public void setCombobox(String roomType, string bedType, ComboBox combo)
         {
             var listroom = bll_room.GetListRoom(roomType, bedType);
             if (listroom != null)
             {
-                combo.Enabled = true;
                 for (int i = 0; i < listroom.Count; i++)
                 {
                     combo.Items.Add(listroom[i].roomNo.ToString());
                 }
-            } else
-            {
-                combo.Items.Add("1");
-            }
+            } 
         }
         string currentIdProof;
         string currentRoomNo;
@@ -199,6 +189,18 @@ namespace GUI.All_User_Control
             {
                 MessageBox.Show("Khách hàng không tồn tại trong hệ thống!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
+            }
+        }
+
+        private void txt_search_name_TextChanged(object sender, EventArgs e)
+        {
+            if (cb_search.SelectedIndex == 0) //get Customer in hotel
+            {
+                dgv_customer.DataSource = bLL_Customer.GetAllCustomerByName(txt_search_name.Text, "staying_in_hotel");
+            }
+            else if (cb_search.SelectedIndex == 1) //get Customer checkout
+            {
+                dgv_customer.DataSource = bLL_Customer.GetAllCustomerByName(txt_search_name.Text, "");
             }
         }
     }

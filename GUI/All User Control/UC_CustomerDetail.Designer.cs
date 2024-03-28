@@ -35,7 +35,7 @@
             this.customerBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.quanLyKhachSanDataSet1 = new GUI.QuanLyKhachSanDataSet1();
             this.customerTableAdapter = new GUI.QuanLyKhachSanDataSet1TableAdapters.customerTableAdapter();
-            this.groupBox = new System.Windows.Forms.GroupBox();
+            this.gb_edit_customer = new System.Windows.Forms.GroupBox();
             this.txt_room_no_edit = new Guna.UI2.WinForms.Guna2ComboBox();
             this.txt_room_type_edit = new Guna.UI2.WinForms.Guna2ComboBox();
             this.txt_bed_type_edit = new Guna.UI2.WinForms.Guna2ComboBox();
@@ -59,7 +59,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.btn_delete_customer = new System.Windows.Forms.GroupBox();
+            this.gb_delete_customer = new System.Windows.Forms.GroupBox();
             this.txt_id_delete = new Guna.UI2.WinForms.Guna2TextBox();
             this.btn_Xoa = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
@@ -68,10 +68,12 @@
             this.label12 = new System.Windows.Forms.Label();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.cb_search = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.txt_search_name = new Guna.UI2.WinForms.Guna2TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.customerBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.quanLyKhachSanDataSet1)).BeginInit();
-            this.groupBox.SuspendLayout();
-            this.btn_delete_customer.SuspendLayout();
+            this.gb_edit_customer.SuspendLayout();
+            this.gb_delete_customer.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_customer)).BeginInit();
             this.SuspendLayout();
             // 
@@ -89,39 +91,39 @@
             // 
             this.customerTableAdapter.ClearBeforeFill = true;
             // 
-            // groupBox
+            // gb_edit_customer
             // 
-            this.groupBox.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox.Controls.Add(this.txt_room_no_edit);
-            this.groupBox.Controls.Add(this.txt_room_type_edit);
-            this.groupBox.Controls.Add(this.txt_bed_type_edit);
-            this.groupBox.Controls.Add(this.txt_mobile_edit);
-            this.groupBox.Controls.Add(this.txt_name_edit);
-            this.groupBox.Controls.Add(this.label21);
-            this.groupBox.Controls.Add(this.label20);
-            this.groupBox.Controls.Add(this.label11);
-            this.groupBox.Controls.Add(this.txt_address_edit);
-            this.groupBox.Controls.Add(this.label10);
-            this.groupBox.Controls.Add(this.txt_idproof_edit);
-            this.groupBox.Controls.Add(this.label9);
-            this.groupBox.Controls.Add(this.txt_dob_edit);
-            this.groupBox.Controls.Add(this.label7);
-            this.groupBox.Controls.Add(this.label8);
-            this.groupBox.Controls.Add(this.btn_edit_customer);
-            this.groupBox.Controls.Add(this.txt_gender_edit);
-            this.groupBox.Controls.Add(this.txt_nationality_edit);
-            this.groupBox.Controls.Add(this.txt_id_edit);
-            this.groupBox.Controls.Add(this.label2);
-            this.groupBox.Controls.Add(this.label3);
-            this.groupBox.Controls.Add(this.label4);
-            this.groupBox.Controls.Add(this.label5);
-            this.groupBox.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.groupBox.Location = new System.Drawing.Point(291, 370);
-            this.groupBox.Name = "groupBox";
-            this.groupBox.Size = new System.Drawing.Size(813, 479);
-            this.groupBox.TabIndex = 13;
-            this.groupBox.TabStop = false;
-            this.groupBox.Text = "Sửa";
+            this.gb_edit_customer.BackColor = System.Drawing.Color.Transparent;
+            this.gb_edit_customer.Controls.Add(this.txt_room_no_edit);
+            this.gb_edit_customer.Controls.Add(this.txt_room_type_edit);
+            this.gb_edit_customer.Controls.Add(this.txt_bed_type_edit);
+            this.gb_edit_customer.Controls.Add(this.txt_mobile_edit);
+            this.gb_edit_customer.Controls.Add(this.txt_name_edit);
+            this.gb_edit_customer.Controls.Add(this.label21);
+            this.gb_edit_customer.Controls.Add(this.label20);
+            this.gb_edit_customer.Controls.Add(this.label11);
+            this.gb_edit_customer.Controls.Add(this.txt_address_edit);
+            this.gb_edit_customer.Controls.Add(this.label10);
+            this.gb_edit_customer.Controls.Add(this.txt_idproof_edit);
+            this.gb_edit_customer.Controls.Add(this.label9);
+            this.gb_edit_customer.Controls.Add(this.txt_dob_edit);
+            this.gb_edit_customer.Controls.Add(this.label7);
+            this.gb_edit_customer.Controls.Add(this.label8);
+            this.gb_edit_customer.Controls.Add(this.btn_edit_customer);
+            this.gb_edit_customer.Controls.Add(this.txt_gender_edit);
+            this.gb_edit_customer.Controls.Add(this.txt_nationality_edit);
+            this.gb_edit_customer.Controls.Add(this.txt_id_edit);
+            this.gb_edit_customer.Controls.Add(this.label2);
+            this.gb_edit_customer.Controls.Add(this.label3);
+            this.gb_edit_customer.Controls.Add(this.label4);
+            this.gb_edit_customer.Controls.Add(this.label5);
+            this.gb_edit_customer.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.gb_edit_customer.Location = new System.Drawing.Point(291, 370);
+            this.gb_edit_customer.Name = "gb_edit_customer";
+            this.gb_edit_customer.Size = new System.Drawing.Size(813, 479);
+            this.gb_edit_customer.TabIndex = 13;
+            this.gb_edit_customer.TabStop = false;
+            this.gb_edit_customer.Text = "Sửa";
             // 
             // txt_room_no_edit
             // 
@@ -368,7 +370,8 @@
             this.txt_gender_edit.ItemHeight = 30;
             this.txt_gender_edit.Items.AddRange(new object[] {
             "Male",
-            "Female"});
+            "Female",
+            "Other"});
             this.txt_gender_edit.Location = new System.Drawing.Point(138, 196);
             this.txt_gender_edit.Name = "txt_gender_edit";
             this.txt_gender_edit.Size = new System.Drawing.Size(203, 36);
@@ -454,20 +457,19 @@
             this.label5.TabIndex = 0;
             this.label5.Text = "MãKH:";
             // 
-            // btn_delete_customer
+            // gb_delete_customer
             // 
-            this.btn_delete_customer.BackColor = System.Drawing.Color.Transparent;
-            this.btn_delete_customer.Controls.Add(this.txt_id_delete);
-            this.btn_delete_customer.Controls.Add(this.btn_Xoa);
-            this.btn_delete_customer.Controls.Add(this.label6);
-            this.btn_delete_customer.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btn_delete_customer.Location = new System.Drawing.Point(1216, 370);
-            this.btn_delete_customer.Name = "btn_delete_customer";
-            this.btn_delete_customer.Size = new System.Drawing.Size(393, 479);
-            this.btn_delete_customer.TabIndex = 15;
-            this.btn_delete_customer.TabStop = false;
-            this.btn_delete_customer.Text = "Xóa";
-            this.btn_delete_customer.Enter += new System.EventHandler(this.groupBox2_Enter);
+            this.gb_delete_customer.BackColor = System.Drawing.Color.Transparent;
+            this.gb_delete_customer.Controls.Add(this.txt_id_delete);
+            this.gb_delete_customer.Controls.Add(this.btn_Xoa);
+            this.gb_delete_customer.Controls.Add(this.label6);
+            this.gb_delete_customer.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.gb_delete_customer.Location = new System.Drawing.Point(1216, 370);
+            this.gb_delete_customer.Name = "gb_delete_customer";
+            this.gb_delete_customer.Size = new System.Drawing.Size(393, 479);
+            this.gb_delete_customer.TabIndex = 15;
+            this.gb_delete_customer.TabStop = false;
+            this.gb_delete_customer.Text = "Xóa";
             // 
             // txt_id_delete
             // 
@@ -477,6 +479,7 @@
             this.txt_id_delete.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.txt_id_delete.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txt_id_delete.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_id_delete.Enabled = false;
             this.txt_id_delete.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_id_delete.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txt_id_delete.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
@@ -520,7 +523,7 @@
             this.dgv_customer.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(190)))), ((int)(((byte)(245)))));
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(190)))), ((int)(((byte)(245)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -536,7 +539,7 @@
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgv_customer.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgv_customer.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dgv_customer.Location = new System.Drawing.Point(98, 100);
+            this.dgv_customer.Location = new System.Drawing.Point(98, 96);
             this.dgv_customer.Name = "dgv_customer";
             this.dgv_customer.RowHeadersVisible = false;
             this.dgv_customer.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -587,11 +590,11 @@
             // 
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(1361, 48);
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(1360, 61);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(64, 22);
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(45, 22);
             this.guna2HtmlLabel1.TabIndex = 18;
-            this.guna2HtmlLabel1.Text = "Tìm kiếm";
+            this.guna2HtmlLabel1.Text = "Bộ lọc";
             // 
             // cb_search
             // 
@@ -604,34 +607,68 @@
             this.cb_search.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cb_search.ItemHeight = 30;
             this.cb_search.Items.AddRange(new object[] {
-            "All",
             "Staying In Hotel",
             "Checkout"});
-            this.cb_search.Location = new System.Drawing.Point(1433, 41);
+            this.cb_search.Location = new System.Drawing.Point(1433, 54);
             this.cb_search.Name = "cb_search";
             this.cb_search.Size = new System.Drawing.Size(358, 36);
             this.cb_search.TabIndex = 19;
             this.cb_search.SelectedIndexChanged += new System.EventHandler(this.cb_search_SelectedIndexChanged);
             // 
+            // guna2HtmlLabel2
+            // 
+            this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel2.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel2.Location = new System.Drawing.Point(462, 61);
+            this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
+            this.guna2HtmlLabel2.Size = new System.Drawing.Size(64, 22);
+            this.guna2HtmlLabel2.TabIndex = 21;
+            this.guna2HtmlLabel2.Text = "Tìm kiếm";
+            // 
+            // txt_search_name
+            // 
+            this.txt_search_name.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_search_name.DefaultText = "";
+            this.txt_search_name.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txt_search_name.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txt_search_name.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_search_name.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_search_name.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_search_name.Font = new System.Drawing.Font("Segoe UI", 11.25F);
+            this.txt_search_name.ForeColor = System.Drawing.Color.Black;
+            this.txt_search_name.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_search_name.Location = new System.Drawing.Point(98, 54);
+            this.txt_search_name.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txt_search_name.Name = "txt_search_name";
+            this.txt_search_name.PasswordChar = '\0';
+            this.txt_search_name.PlaceholderText = "Nhập tên khách hàng";
+            this.txt_search_name.SelectedText = "";
+            this.txt_search_name.Size = new System.Drawing.Size(358, 36);
+            this.txt_search_name.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
+            this.txt_search_name.TabIndex = 20;
+            this.txt_search_name.TextChanged += new System.EventHandler(this.txt_search_name_TextChanged);
+            // 
             // UC_CustomerDetail
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.guna2HtmlLabel2);
+            this.Controls.Add(this.txt_search_name);
             this.Controls.Add(this.cb_search);
             this.Controls.Add(this.guna2HtmlLabel1);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.dgv_customer);
-            this.Controls.Add(this.btn_delete_customer);
-            this.Controls.Add(this.groupBox);
+            this.Controls.Add(this.gb_delete_customer);
+            this.Controls.Add(this.gb_edit_customer);
             this.Name = "UC_CustomerDetail";
             this.Size = new System.Drawing.Size(1882, 852);
             this.Load += new System.EventHandler(this.UC_CustomerDetail_Load);
             ((System.ComponentModel.ISupportInitialize)(this.customerBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.quanLyKhachSanDataSet1)).EndInit();
-            this.groupBox.ResumeLayout(false);
-            this.groupBox.PerformLayout();
-            this.btn_delete_customer.ResumeLayout(false);
-            this.btn_delete_customer.PerformLayout();
+            this.gb_edit_customer.ResumeLayout(false);
+            this.gb_edit_customer.PerformLayout();
+            this.gb_delete_customer.ResumeLayout(false);
+            this.gb_delete_customer.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_customer)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -642,7 +679,7 @@
         private System.Windows.Forms.BindingSource customerBindingSource;
         private QuanLyKhachSanDataSet1 quanLyKhachSanDataSet1;
         private QuanLyKhachSanDataSet1TableAdapters.customerTableAdapter customerTableAdapter;
-        private System.Windows.Forms.GroupBox groupBox;
+        private System.Windows.Forms.GroupBox gb_edit_customer;
         private System.Windows.Forms.Button btn_edit_customer;
         private Guna.UI2.WinForms.Guna2ComboBox txt_gender_edit;
         private Guna.UI2.WinForms.Guna2TextBox txt_nationality_edit;
@@ -651,7 +688,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.GroupBox btn_delete_customer;
+        private System.Windows.Forms.GroupBox gb_delete_customer;
         private Guna.UI2.WinForms.Guna2TextBox txt_id_delete;
         private System.Windows.Forms.Button btn_Xoa;
         private System.Windows.Forms.Label label6;
@@ -675,5 +712,7 @@
         private Guna.UI2.WinForms.Guna2ComboBox txt_room_type_edit;
         private Guna.UI2.WinForms.Guna2ComboBox txt_bed_type_edit;
         private System.Windows.Forms.Label label11;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
+        private Guna.UI2.WinForms.Guna2TextBox txt_search_name;
     }
 }

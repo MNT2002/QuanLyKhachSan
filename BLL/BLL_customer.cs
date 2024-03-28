@@ -42,6 +42,16 @@ namespace BLL
         {
             return DB.customers.Where(cus => cus.cname.Contains(CName) && cus.chekout == "NO").ToList();
         }
+        public object GetAllCustomerByName(string CName, string Type)
+        {
+            if (Type == "staying_in_hotel")
+            {
+                return DB.customers.Where(cus => cus.cname.Contains(CName) && cus.checkout == "NO").ToList();
+            } else
+            {
+                return DB.booked_histories.Where(cus => cus.cname.Contains(CName)).ToList();
+            }
+        }
         public customer GetCustomerByID(int ID)
         {
             return DB.customers.Where(cus => cus.cid == ID).FirstOrDefault();
