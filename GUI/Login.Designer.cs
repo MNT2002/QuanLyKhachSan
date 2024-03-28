@@ -63,9 +63,10 @@
             // forgot_pass
             // 
             this.forgot_pass.AutoSize = true;
-            this.forgot_pass.Location = new System.Drawing.Point(824, 443);
+            this.forgot_pass.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.forgot_pass.Location = new System.Drawing.Point(783, 432);
             this.forgot_pass.Name = "forgot_pass";
-            this.forgot_pass.Size = new System.Drawing.Size(89, 13);
+            this.forgot_pass.Size = new System.Drawing.Size(154, 24);
             this.forgot_pass.TabIndex = 8;
             this.forgot_pass.TabStop = true;
             this.forgot_pass.Text = "Quên mật khẩu ?";
