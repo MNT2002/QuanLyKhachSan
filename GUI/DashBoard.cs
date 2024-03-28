@@ -71,7 +71,7 @@ namespace GUI
             MessageBoxDefaultButton.Button2) == DialogResult.Yes)
             {
                 this.Close();
-                Login login = new Login();
+                Login login= new Login();
                 login.ShowDialog();
             }
         }

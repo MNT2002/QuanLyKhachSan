@@ -25,3 +25,10 @@ D:\QuanLyKhachSan\QuanLyKhachSan\DAL\obj\Debug\DAL.csproj.AssemblyReference.cach
 D:\QuanLyKhachSan\QuanLyKhachSan\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
 D:\QuanLyKhachSan\QuanLyKhachSan\DAL\obj\Debug\DAL.dll
 D:\QuanLyKhachSan\QuanLyKhachSan\DAL\obj\Debug\DAL.pdb
+D:\QuanLyKhachSan\DAL\bin\Debug\DAL.dll.config
+D:\QuanLyKhachSan\DAL\bin\Debug\DAL.dll
+D:\QuanLyKhachSan\DAL\bin\Debug\DAL.pdb
+D:\QuanLyKhachSan\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+D:\QuanLyKhachSan\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+D:\QuanLyKhachSan\DAL\obj\Debug\DAL.dll
+D:\QuanLyKhachSan\DAL\obj\Debug\DAL.pdb

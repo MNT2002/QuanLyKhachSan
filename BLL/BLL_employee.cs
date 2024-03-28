@@ -23,7 +23,45 @@ namespace BLL
         {
             return DB.employees.Where(r=>r.username== Username).FirstOrDefault();
         }
+        public List<employee> LoadEmployee()
+        {
+            return DB.employees.ToList();
+        }
+        public void AddEmployee(string username, string password, string email, string fullname, string dob , string address)
+        {
+            employee e=new employee();
+            e.username= username;
+            e.password = password;
+            e.email = email;
+            e.fullname = fullname;
+            e.date_of_birth = dob;
+            e.address= address;
 
+            try
+            {
+                DB.employees.InsertOnSubmit(e);
+                DB.SubmitChanges();
+            }
+            catch
+            {
+            }
+        }
+        public void UpdateGetEmployee(string ID,string username, string password,string role, string email, string fullname, string dob, string address)
+        {
+            employee e = GetemployeebyID(Convert.ToInt32(ID));
+            e.username = username;
+            e.password= password;
+            e.email= email;
+            e.fullname = fullname;
+            e.date_of_birth = dob;
+            e.address = address;
+            e.role = Convert.ToInt32(role);
+            DB.SubmitChanges();
+        }
+        public employee GetemployeebyID(int ID)
+        {
+            return DB.employees.Where(r => r.nvid == ID).FirstOrDefault();
+        }
         //public void AddCustomer(string Name, int PhoneNumber, string Nationality, string Gender, string Dob, string Id, string Address, string Checkin, int RoomId)
         //{
         //    customer cus = new customer();

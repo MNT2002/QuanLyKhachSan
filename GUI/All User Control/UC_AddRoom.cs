@@ -85,13 +85,6 @@ namespace BLL.All_User_Control
            
 
         }
-        private void DeselectAllRows(DataGridView dataGridView)
-        {
-            foreach (DataGridViewRow row in dataGridView.Rows)
-            {
-                row.Selected = false;
-            }
-        }
         private void UC_AddRoom_Leave(object sender, EventArgs e)
         {
             txt_room_no.Clear();
@@ -103,6 +96,8 @@ namespace BLL.All_User_Control
             txt_price.Clear();
             txt_room_type.SelectedIndex = -1;
             txt_bed.SelectedIndex = -1;
+            txt_roomid_Sua.Clear();
+            txt_price_Sua.Clear() ;
         }
 
         private void UC_AddRoom_Enter(object sender, EventArgs e)

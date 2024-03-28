@@ -37,3 +37,13 @@ D:\QuanLyKhachSan\QuanLyKhachSan\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cach
 D:\QuanLyKhachSan\QuanLyKhachSan\BLL\obj\Debug\BLL.csproj.Up2Date
 D:\QuanLyKhachSan\QuanLyKhachSan\BLL\obj\Debug\BLL.dll
 D:\QuanLyKhachSan\QuanLyKhachSan\BLL\obj\Debug\BLL.pdb
+D:\QuanLyKhachSan\BLL\bin\Debug\BLL.dll
+D:\QuanLyKhachSan\BLL\bin\Debug\BLL.pdb
+D:\QuanLyKhachSan\BLL\bin\Debug\DAL.dll
+D:\QuanLyKhachSan\BLL\bin\Debug\DAL.pdb
+D:\QuanLyKhachSan\BLL\bin\Debug\DAL.dll.config
+D:\QuanLyKhachSan\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+D:\QuanLyKhachSan\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+D:\QuanLyKhachSan\BLL\obj\Debug\BLL.csproj.Up2Date
+D:\QuanLyKhachSan\BLL\obj\Debug\BLL.dll
+D:\QuanLyKhachSan\BLL\obj\Debug\BLL.pdb
