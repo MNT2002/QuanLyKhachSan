@@ -516,7 +516,6 @@
             // 
             this.dgv_customer.AllowUserToAddRows = false;
             this.dgv_customer.AllowUserToDeleteRows = false;
-            this.dgv_customer.AllowUserToResizeColumns = false;
             this.dgv_customer.AllowUserToResizeRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
             this.dgv_customer.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
@@ -543,7 +542,7 @@
             this.dgv_customer.Name = "dgv_customer";
             this.dgv_customer.RowHeadersVisible = false;
             this.dgv_customer.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dgv_customer.RowTemplate.Height = 32;
+            this.dgv_customer.RowTemplate.Height = 36;
             this.dgv_customer.RowTemplate.ReadOnly = true;
             this.dgv_customer.Size = new System.Drawing.Size(1693, 241);
             this.dgv_customer.TabIndex = 0;
@@ -565,7 +564,7 @@
             this.dgv_customer.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dgv_customer.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dgv_customer.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.dgv_customer.ThemeStyle.RowsStyle.Height = 32;
+            this.dgv_customer.ThemeStyle.RowsStyle.Height = 36;
             this.dgv_customer.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgv_customer.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.dgv_customer.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_customer_CellClick);
