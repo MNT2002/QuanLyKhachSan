@@ -112,7 +112,7 @@ namespace GUI.All_User_Control
 
         public void clear()
         {
-            txt_id_edit.Clear();
+            txt_id_edit.Text="";
             txt_name_edit.Clear();
             txt_mobile_edit.Clear();
             txt_nationality_edit.Clear();

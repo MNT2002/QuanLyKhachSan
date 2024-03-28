@@ -154,7 +154,7 @@ namespace BLL.All_User_Control
 
         public void clear()
         {
-            txt_roomno_Sua.Clear();
+            txt_roomno_Sua.Text="";
             txt_room_type_Sua.SelectedIndex = -1;
             txt_bed_Sua.SelectedIndex = -1;
             txt_price_Sua.Clear();
