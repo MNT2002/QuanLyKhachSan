@@ -132,23 +132,35 @@ namespace BLL.All_User_Control
 
         private void btn_Xoa_Click(object sender, EventArgs e)
         {
-            room roomcanxoa = bLL_Room.GetRoomByRoomID(int.Parse(txt_Xoa.Text));
+            if (txt_Xoa.Text != "")
+            {
+
+                room roomcanxoa = bLL_Room.GetRoomByRoomID(Convert.ToInt32(txt_Xoa.Text));
             if (roomcanxoa != null)
             {
-                if (MessageBox.Show("Bạn có muốn xóa Phòng " + roomcanxoa.roomNo.ToString(), "Thông báo", MessageBoxButtons.YesNo,
-                 MessageBoxIcon.Question, MessageBoxDefaultButton.Button2) == DialogResult.Yes)
+                if(roomcanxoa.booked=="NO")
                 {
-                    bLL_Room.DeleteRoom(int.Parse(txt_Xoa.Text));
-                    MessageBox.Show("Xóa Thành Công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    dgv_rooms.DataSource = bLL_Room.LoadRoom();
-                    cb_group_by.SelectedItem = "All";
-                    cb_filter.SelectedItem = "All";
-                    clear();
-                }
+
+                    if (MessageBox.Show("Bạn có muốn xóa Phòng " + roomcanxoa.roomNo.ToString(), "Thông báo", MessageBoxButtons.YesNo,
+                    MessageBoxIcon.Question, MessageBoxDefaultButton.Button2) == DialogResult.Yes)
+                    {
+                         bLL_Room.DeleteRoom(Convert.ToInt32(txt_Xoa.Text));
+                         MessageBox.Show("Xóa Thành Công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        dgv_rooms.DataSource = bLL_Room.LoadRoom();
+                        cb_group_by.SelectedItem = "All";
+                        cb_filter.SelectedItem = "All";
+                        clear();
+                    }
+                    else
+                    {
+                    return;
+                    }
+                }    
                 else
                 {
+                    MessageBox.Show("Phòng đang được cho thuê", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
-                }
+                }    
             }
             else
             {
@@ -156,7 +168,13 @@ namespace BLL.All_User_Control
                 return;
             }
         }
+            else
+            {
+                MessageBox.Show("Trường xóa trống", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }    
 
+            }
         public void clear()
         {
             txt_roomno_Sua.Text="";

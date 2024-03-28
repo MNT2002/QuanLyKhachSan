@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Drawing2D;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -76,9 +77,17 @@ namespace GUI.All_User_Control
             txt_bed_type_edit.Text = dgv_customer.Rows[rowchon].Cells[11].Value.ToString();
             txt_room_type_edit.Text = dgv_customer.Rows[rowchon].Cells[10].Value.ToString();
             txt_room_no_edit.Items.Clear();
-            txt_room_no_edit.Items.Add(dgv_customer.Rows[rowchon].Cells[9].Value.ToString());
-            currentRoomNo = dgv_customer.Rows[rowchon].Cells[9].Value.ToString();
             txt_room_no_edit.Text = dgv_customer.Rows[rowchon].Cells[9].Value.ToString();
+            var listroom = bll_room.GetRoomByRoomNoexcept(txt_room_no_edit.Text,txt_room_type_edit.Text,txt_bed_type_edit.Text);
+            if (listroom != null)
+            {
+                for (int i = 0; i < listroom.Count; i++)
+                {
+                    txt_room_no_edit.Items.Add(listroom[i].roomNo.ToString());
+                }
+            }
+            txt_room_no_edit.Text = dgv_customer.Rows[rowchon].Cells[9].Value.ToString();
+            currentRoomNo = dgv_customer.Rows[rowchon].Cells[9].Value.ToString();
 
             txt_id_delete.Text = dgv_customer.Rows[rowchon].Cells[0].Value.ToString();
         }
@@ -178,6 +187,11 @@ namespace GUI.All_User_Control
                     bLL_Customer.DeleteCustomer(int.Parse(txt_id_delete.Text));
                     MessageBox.Show("Xóa Thành Công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     cb_search_SelectedIndexChanged(sender, e);
+                    room getRoomNo = bll_room.GetRoomByRoomNo(txt_room_no_edit.Text);
+                    if (getRoomNo != null )
+                    {
+                        bll_room.SetRoomState(currentRoomNo);
+                    }
                     clear();
                 }
                 else

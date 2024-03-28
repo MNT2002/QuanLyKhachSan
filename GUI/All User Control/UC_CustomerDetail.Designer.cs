@@ -516,10 +516,13 @@
             // 
             this.dgv_customer.AllowUserToAddRows = false;
             this.dgv_customer.AllowUserToDeleteRows = false;
+            this.dgv_customer.AllowUserToResizeColumns = false;
             this.dgv_customer.AllowUserToResizeRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
             this.dgv_customer.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgv_customer.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(190)))), ((int)(((byte)(245)))));
+            this.dgv_customer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.dgv_customer.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Single;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(190)))), ((int)(((byte)(245)))));
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -528,7 +531,7 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgv_customer.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dgv_customer.ColumnHeadersHeight = 40;
+            this.dgv_customer.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -539,8 +542,9 @@
             this.dgv_customer.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgv_customer.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgv_customer.Location = new System.Drawing.Point(98, 96);
+            this.dgv_customer.MultiSelect = false;
             this.dgv_customer.Name = "dgv_customer";
-            this.dgv_customer.RowHeadersVisible = false;
+            this.dgv_customer.ReadOnly = true;
             this.dgv_customer.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dgv_customer.RowTemplate.Height = 36;
             this.dgv_customer.RowTemplate.ReadOnly = true;
@@ -557,9 +561,9 @@
             this.dgv_customer.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.dgv_customer.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dgv_customer.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.dgv_customer.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            this.dgv_customer.ThemeStyle.HeaderStyle.Height = 40;
-            this.dgv_customer.ThemeStyle.ReadOnly = false;
+            this.dgv_customer.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_customer.ThemeStyle.HeaderStyle.Height = 30;
+            this.dgv_customer.ThemeStyle.ReadOnly = true;
             this.dgv_customer.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
             this.dgv_customer.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dgv_customer.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));

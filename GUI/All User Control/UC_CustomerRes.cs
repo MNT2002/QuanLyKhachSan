@@ -28,7 +28,10 @@ namespace GUI.All_User_Control
             {
                 for (int i = 0; i < listroom.Count; i++)
                 {
-                    combo.Items.Add(listroom[i].roomNo.ToString());
+                   /* if (listroom[i].booked != "YES")
+                    { */
+                        combo.Items.Add(listroom[i].roomNo.ToString());
+                    /*}*/
                 }
             }
         }

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 using DAL;
 
 namespace BLL
@@ -110,9 +111,17 @@ namespace BLL
         }
         public void DeleteRoom(int roomID)
         {
+            try
+            {
             room room = DB.rooms.Where(mh => mh.roomid == roomID).FirstOrDefault();
             DB.rooms.DeleteOnSubmit(room);
+
             DB.SubmitChanges();
+            }
+            catch
+            {
+                MessageBox.Show("Không thể xóa phòng!");
+            }
 
         }
         public void UpdateRoom(int roomId, string roomNo, string roomType,string bed, Int64 Price)
@@ -135,6 +144,10 @@ namespace BLL
                 room.booked = "NO";
             }
             DB.SubmitChanges();
+        }
+        public List<room> GetRoomByRoomNoexcept(string RoomNo,string RoomType,String Bed)
+        {
+          return DB.rooms.Where(r=>r.roomNo!=RoomNo&&r.roomType==RoomType&&r.bed==Bed).ToList();
         }
     }
 }
