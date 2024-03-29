@@ -42,6 +42,32 @@ namespace BLL
         {
             return DB.customers.Where(cus => cus.cname.Contains(CName) && cus.chekout == "NO").ToList();
         }
+        public object GetCustomerByRoomNo(string RoomNo)
+        {
+            var query = from customer in DB.customers
+                        join room in DB.rooms
+                        on customer.roomid equals room.roomid
+                        where room.roomNo.Contains(RoomNo)
+                        select new
+
+                        {
+                            cid = customer.cid,
+                            cname = customer.cname,
+                            mobile = customer.mobile,
+                            nationality = customer.nationality,
+                            gender = customer.gender,
+                            dob = customer.dob,
+                            idproof = customer.idproof,
+                            address = customer.address,
+                            checkin = customer.checkin,
+                            roomNo = room.roomNo,
+                            roomType = room.roomType,
+                            bed = room.bed,
+                            price = room.price
+                        };
+
+            return query.ToList();
+        }
         public object GetAllCustomerByName(string CName, string Type)
         {
             if (Type == "staying_in_hotel")

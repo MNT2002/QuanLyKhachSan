@@ -74,7 +74,7 @@
             this.txt_search_name.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txt_search_name.Name = "txt_search_name";
             this.txt_search_name.PasswordChar = '\0';
-            this.txt_search_name.PlaceholderText = "Nhập tên khách hàng";
+            this.txt_search_name.PlaceholderText = "Nhập Room No";
             this.txt_search_name.SelectedText = "";
             this.txt_search_name.Size = new System.Drawing.Size(874, 85);
             this.txt_search_name.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;

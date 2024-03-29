@@ -27,6 +27,7 @@ namespace GUI.All_User_Control
             txt_search_name.Text = "";
             if (cb_search.SelectedIndex == 0) //get Customer in hotel
             {
+                clear();
                 gb_edit_customer.Visible = true;
                 gb_delete_customer.Visible = true;
                 dgv_customer.Height = 241;
@@ -62,6 +63,7 @@ namespace GUI.All_User_Control
         private void dgv_customer_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             int rowchon = e.RowIndex;
+            if (cb_search.SelectedItem == "Checkout") return;
             if (rowchon == -1) return;
 
             txt_id_edit.Text = dgv_customer.Rows[rowchon].Cells[0].Value.ToString();
@@ -77,15 +79,8 @@ namespace GUI.All_User_Control
             txt_bed_type_edit.Text = dgv_customer.Rows[rowchon].Cells[11].Value.ToString();
             txt_room_type_edit.Text = dgv_customer.Rows[rowchon].Cells[10].Value.ToString();
             txt_room_no_edit.Items.Clear();
-            txt_room_no_edit.Text = dgv_customer.Rows[rowchon].Cells[9].Value.ToString();
-            var listroom = bll_room.GetRoomByRoomNoexcept(txt_room_no_edit.Text,txt_room_type_edit.Text,txt_bed_type_edit.Text);
-            if (listroom != null)
-            {
-                for (int i = 0; i < listroom.Count; i++)
-                {
-                    txt_room_no_edit.Items.Add(listroom[i].roomNo.ToString());
-                }
-            }
+            setCombobox(txt_room_type_edit.Text, txt_bed_type_edit.Text, txt_room_no_edit);
+            txt_room_no_edit.Items.Add(dgv_customer.Rows[rowchon].Cells[9].Value.ToString());
             txt_room_no_edit.Text = dgv_customer.Rows[rowchon].Cells[9].Value.ToString();
             currentRoomNo = dgv_customer.Rows[rowchon].Cells[9].Value.ToString();
 

@@ -145,9 +145,5 @@ namespace BLL
             }
             DB.SubmitChanges();
         }
-        public List<room> GetRoomByRoomNoexcept(string RoomNo,string RoomType,String Bed)
-        {
-          return DB.rooms.Where(r=>r.roomNo!=RoomNo&&r.roomType==RoomType&&r.bed==Bed).ToList();
-        }
     }
 }

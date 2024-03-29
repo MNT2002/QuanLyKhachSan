@@ -1,15 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using DAL;
+using System;
 using System.Windows.Forms;
-using BLL;
-using DAL;
-using System.IO;
 
 namespace BLL.All_User_Control
 {
@@ -73,8 +64,8 @@ namespace BLL.All_User_Control
             txt_price.Clear();
             txt_Xoa.Clear();
             txt_roomno_Sua.Clear();
-            txt_room_type.SelectedIndex=-1;
-            txt_bed.SelectedIndex=-1;
+            txt_room_type.SelectedIndex = -1;
+            txt_bed.SelectedIndex = -1;
             txt_price.Clear();
             txt_price_Sua.Clear();
             txt_bed_Sua.SelectedIndex = -1;
@@ -84,8 +75,8 @@ namespace BLL.All_User_Control
             /*DeselectAllRows(dgv_rooms);*/
 
             SelectNewlyAddedRow(dgv_rooms);
-           
-           
+
+
 
         }
         private void UC_AddRoom_Leave(object sender, EventArgs e)
@@ -94,13 +85,13 @@ namespace BLL.All_User_Control
             txt_price.Clear();
             txt_Xoa.Clear();
             txt_roomno_Sua.Clear();
-            txt_bed_Sua.SelectedIndex=-1;
-            txt_room_type_Sua.SelectedIndex=-1;
+            txt_bed_Sua.SelectedIndex = -1;
+            txt_room_type_Sua.SelectedIndex = -1;
             txt_price.Clear();
             txt_room_type.SelectedIndex = -1;
             txt_bed.SelectedIndex = -1;
             txt_roomid_Sua.Clear();
-            txt_price_Sua.Clear() ;
+            txt_price_Sua.Clear();
         }
 
         private void UC_AddRoom_Enter(object sender, EventArgs e)
@@ -136,48 +127,48 @@ namespace BLL.All_User_Control
             {
 
                 room roomcanxoa = bLL_Room.GetRoomByRoomID(Convert.ToInt32(txt_Xoa.Text));
-            if (roomcanxoa != null)
-            {
-                if(roomcanxoa.booked=="NO")
+                if (roomcanxoa != null)
                 {
-
-                    if (MessageBox.Show("Bạn có muốn xóa Phòng " + roomcanxoa.roomNo.ToString(), "Thông báo", MessageBoxButtons.YesNo,
-                    MessageBoxIcon.Question, MessageBoxDefaultButton.Button2) == DialogResult.Yes)
+                    if (roomcanxoa.booked == "NO")
                     {
-                         bLL_Room.DeleteRoom(Convert.ToInt32(txt_Xoa.Text));
-                         MessageBox.Show("Xóa Thành Công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        dgv_rooms.DataSource = bLL_Room.LoadRoom();
-                        cb_group_by.SelectedItem = "All";
-                        cb_filter.SelectedItem = "All";
-                        clear();
+
+                        if (MessageBox.Show("Bạn có muốn xóa Phòng " + roomcanxoa.roomNo.ToString(), "Thông báo", MessageBoxButtons.YesNo,
+                        MessageBoxIcon.Question, MessageBoxDefaultButton.Button2) == DialogResult.Yes)
+                        {
+                            bLL_Room.DeleteRoom(Convert.ToInt32(txt_Xoa.Text));
+                            MessageBox.Show("Xóa Thành Công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            dgv_rooms.DataSource = bLL_Room.LoadRoom();
+                            cb_group_by.SelectedItem = "All";
+                            cb_filter.SelectedItem = "All";
+                            clear();
+                        }
+                        else
+                        {
+                            return;
+                        }
                     }
                     else
                     {
-                    return;
+                        MessageBox.Show("Phòng đang được cho thuê", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        return;
                     }
-                }    
+                }
                 else
                 {
-                    MessageBox.Show("Phòng đang được cho thuê", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Không có phòng trên", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
-                }    
+                }
             }
-            else
-            {
-                MessageBox.Show("Không có phòng trên", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
-        }
             else
             {
                 MessageBox.Show("Trường xóa trống", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
-            }    
-
             }
+
+        }
         public void clear()
         {
-            txt_roomno_Sua.Text="";
+            txt_roomno_Sua.Text = "";
             txt_room_type_Sua.SelectedIndex = -1;
             txt_bed_Sua.SelectedIndex = -1;
             txt_price_Sua.Clear();
@@ -212,7 +203,7 @@ namespace BLL.All_User_Control
                 string LoaiPhong = txt_room_type_Sua.Text;
                 string LoaiGiuong = txt_bed_Sua.Text;
                 string Price = txt_price_Sua.Text;
-                bLL_Room.UpdateRoom(RoomId,RoomNo, LoaiPhong,LoaiGiuong, int.Parse(Price));
+                bLL_Room.UpdateRoom(RoomId, RoomNo, LoaiPhong, LoaiGiuong, int.Parse(Price));
                 MessageBox.Show("Sửa Phòng thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 //Load lại dagtagridview NhanVien
                 cb_group_by.SelectedItem = "All";
@@ -268,7 +259,7 @@ namespace BLL.All_User_Control
             {
                 dgv_rooms.DataSource = bLL_Room.GetAllRoomfilter("State: Empty", GroupBy);
             }
-            
+
         }
     }
 }

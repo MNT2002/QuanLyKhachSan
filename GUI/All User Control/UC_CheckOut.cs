@@ -31,7 +31,7 @@ namespace GUI.All_User_Control
 
         private void txt_search_name_TextChanged(object sender, EventArgs e)
         {
-            guna2DataGridView1.DataSource = bLL_Customer.GetCustomerByName(txt_search_name.Text);
+            guna2DataGridView1.DataSource = bLL_Customer.GetCustomerByRoomNo(txt_search_name.Text);
         }
 
         int id;
