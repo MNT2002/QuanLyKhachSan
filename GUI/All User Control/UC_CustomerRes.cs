@@ -1,14 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using BLL;
+using System;
 using System.Windows.Forms;
-using BLL;
-using DAL;
 
 namespace GUI.All_User_Control
 {
@@ -51,7 +43,7 @@ namespace GUI.All_User_Control
 
         }
         int roomId;
-            
+
 
         private void txt_room_no_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -59,7 +51,8 @@ namespace GUI.All_User_Control
             {
                 txt_price.Text = bll_room.GetRoomByRoomNo(txt_room_no.Text).price.ToString();
                 roomId = bll_room.GetRoomByRoomNo(txt_room_no.Text).roomid;
-            } else
+            }
+            else
             {
                 txt_price.Text = "";
             }
@@ -67,13 +60,17 @@ namespace GUI.All_User_Control
 
         private void btn_add_customer_Click(object sender, EventArgs e)
         {
-            if (txt_name.Text == "" || txt_phone_number.Text == "" || txt_nationality.Text == "" || txt_gender.SelectedItem == null || 
+            if (txt_name.Text == "" || txt_phone_number.Text == "" || txt_nationality.Text == "" || txt_gender.SelectedItem == null ||
                 txt_dob.Text == "" || txt_id.Text == "" || txt_address.Text == "" || txt_checkin.Text == "" || txt_price.Text == "")
             {
                 MessageBox.Show("Vui lòng nhập đầy đủ thông tin!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
-            } else
+            }
+            else
             {
+                BLL_Room bll_room = new BLL_Room();
+                BLL_customer bll_customer = new BLL_customer();
+
                 String name = txt_name.Text;
                 int phoneNumber = Convert.ToInt32(txt_phone_number.Text);
                 String nationality = txt_nationality.Text;
@@ -90,6 +87,7 @@ namespace GUI.All_User_Control
                     bll_room.SetRoomState(txt_room_no.Text);
                 }
                 MessageBox.Show("Đăng kí khách hàng thành công tại số phòng " + txt_room_no.Text, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                txt_price.Text = "";
                 clearAllText();
             }
 
@@ -107,7 +105,7 @@ namespace GUI.All_User_Control
             txt_bed_type.SelectedIndex = -1;
             txt_room_type.SelectedIndex = -1;
             txt_room_no.Items.Clear();
-            txt_price.Clear();
+            txt_price.Text = "";
         }
 
         private void UC_CustomerRes_Load(object sender, EventArgs e)

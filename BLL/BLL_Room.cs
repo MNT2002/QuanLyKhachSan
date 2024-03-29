@@ -1,10 +1,8 @@
-﻿using System;
+﻿using DAL;
+using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using DAL;
 
 namespace BLL
 {
@@ -99,7 +97,7 @@ namespace BLL
                 default:
                     return DB.rooms.ToList();
             }
-            
+
         }
         public room GetRoomByRoomNo(string RoomNo)
         {
@@ -113,10 +111,10 @@ namespace BLL
         {
             try
             {
-            room room = DB.rooms.Where(mh => mh.roomid == roomID).FirstOrDefault();
-            DB.rooms.DeleteOnSubmit(room);
+                room room = DB.rooms.Where(mh => mh.roomid == roomID).FirstOrDefault();
+                DB.rooms.DeleteOnSubmit(room);
 
-            DB.SubmitChanges();
+                DB.SubmitChanges();
             }
             catch
             {
@@ -124,12 +122,12 @@ namespace BLL
             }
 
         }
-        public void UpdateRoom(int roomId, string roomNo, string roomType,string bed, Int64 Price)
+        public void UpdateRoom(int roomId, string roomNo, string roomType, string bed, Int64 Price)
         {
             room room = GetRoomByRoomID(roomId);
-            room.roomNo=roomNo;
-            room.roomType=roomType;
-            room.bed=bed;
+            room.roomNo = roomNo;
+            room.roomType = roomType;
+            room.bed = bed;
             room.price = Price;
             DB.SubmitChanges();
         }
@@ -139,7 +137,8 @@ namespace BLL
             if (room.booked == "NO")
             {
                 room.booked = "YES";
-            } else
+            }
+            else
             {
                 room.booked = "NO";
             }

@@ -1,15 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Drawing.Drawing2D;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using BLL;
+﻿using BLL;
 using DAL;
+using System;
+using System.Windows.Forms;
 
 namespace GUI.All_User_Control
 {
@@ -56,7 +48,7 @@ namespace GUI.All_User_Control
                 {
                     combo.Items.Add(listroom[i].roomNo.ToString());
                 }
-            } 
+            }
         }
         string currentIdProof;
         string currentRoomNo;
@@ -106,7 +98,7 @@ namespace GUI.All_User_Control
 
         public void clear()
         {
-            txt_id_edit.Text="";
+            txt_id_edit.Text = "";
             txt_name_edit.Clear();
             txt_mobile_edit.Clear();
             txt_nationality_edit.Clear();
@@ -118,7 +110,7 @@ namespace GUI.All_User_Control
             txt_room_type_edit.SelectedIndex = -1;
             txt_room_no_edit.SelectedIndex = -1;
 
-            txt_id_delete.Clear();
+            txt_id_delete.Text = "";
             cb_search.SelectedIndex = 0;
         }
         private void btn_edit_customer_Click(object sender, EventArgs e)
@@ -132,6 +124,7 @@ namespace GUI.All_User_Control
             //Kiểm tra trùng idproof
             if (txt_idproof_edit.Text != currentIdProof)
             {
+                BLL_customer bLL_Customer = new BLL_customer();
                 foreach (DataGridViewRow dr in dgv_customer.Rows)
                 {
                     if (bLL_Customer.GetCustomerByIDProof(txt_idproof_edit.Text) != null)
@@ -146,6 +139,8 @@ namespace GUI.All_User_Control
             if (MessageBox.Show("Bạn muốn sửa thông tin khách hàng :  " + txt_name_edit.Text, "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question,
                MessageBoxDefaultButton.Button2) == DialogResult.Yes)
             {
+                BLL_customer bLL_Customer = new BLL_customer();
+                BLL_Room bll_room = new BLL_Room();
                 int CusId = Convert.ToInt32(txt_id_edit.Text);
                 string Name = txt_name_edit.Text;
                 int Mobile = Convert.ToInt32(txt_mobile_edit.Text);
@@ -173,20 +168,23 @@ namespace GUI.All_User_Control
 
         private void btn_Xoa_Click(object sender, EventArgs e)
         {
+            BLL_customer bLL_Customer = new BLL_customer();
+            BLL_Room bll_room = new BLL_Room();
             customer cus = bLL_Customer.GetCustomerByID(int.Parse(txt_id_delete.Text));
             if (cus != null)
             {
-                if (MessageBox.Show("Bạn có muốn xóa Khách hàng " + cus.cname.ToString(), "Thông báo", MessageBoxButtons.YesNo,
+                if (MessageBox.Show("Bạn có muốn xóa khách hàng " + cus.cname.ToString(), "Thông báo", MessageBoxButtons.YesNo,
                  MessageBoxIcon.Question, MessageBoxDefaultButton.Button2) == DialogResult.Yes)
                 {
                     bLL_Customer.DeleteCustomer(int.Parse(txt_id_delete.Text));
                     MessageBox.Show("Xóa Thành Công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    cb_search_SelectedIndexChanged(sender, e);
+
                     room getRoomNo = bll_room.GetRoomByRoomNo(txt_room_no_edit.Text);
-                    if (getRoomNo != null )
+                    if (getRoomNo != null)
                     {
                         bll_room.SetRoomState(currentRoomNo);
                     }
+                    cb_search_SelectedIndexChanged(sender, e);
                     clear();
                 }
                 else

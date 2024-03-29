@@ -39,6 +39,7 @@ namespace BLL.All_User_Control
 
         private void btn_add_room_Click(object sender, EventArgs e)
         {
+            BLL_Room bLL_Room = new BLL_Room();
             if (txt_room_no.Text == "" || txt_room_type.Text == "" || txt_bed.Text == "" || txt_price.Text == "")
             {
                 //Hiển thị bảng: Thiếu thông tin
@@ -125,7 +126,7 @@ namespace BLL.All_User_Control
         {
             if (txt_Xoa.Text != "")
             {
-
+                BLL_Room bLL_Room = new BLL_Room();
                 room roomcanxoa = bLL_Room.GetRoomByRoomID(Convert.ToInt32(txt_Xoa.Text));
                 if (roomcanxoa != null)
                 {
@@ -226,6 +227,7 @@ namespace BLL.All_User_Control
 
         private void cb_filter_SelectedIndexChanged(object sender, EventArgs e)
         {
+            BLL_Room bLL_Room = new BLL_Room();
             string GroupBy = cb_group_by.Text;
             if (cb_filter.SelectedItem == "All")
             {
