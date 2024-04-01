@@ -125,3 +125,18 @@ D:\QuanLyKhachSan\GUI\bin\Debug\System.Buffers.xml
 D:\QuanLyKhachSan\GUI\bin\Debug\System.Memory.xml
 D:\QuanLyKhachSan\GUI\bin\Debug\System.Numerics.Vectors.xml
 D:\QuanLyKhachSan\GUI\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\visual studio\Windows Form\QLKhachSan\QuanLyKhachSan\GUI\bin\Debug\EPPlus.dll
+D:\visual studio\Windows Form\QLKhachSan\QuanLyKhachSan\GUI\bin\Debug\EPPlus.Interfaces.dll
+D:\visual studio\Windows Form\QLKhachSan\QuanLyKhachSan\GUI\bin\Debug\EPPlus.System.Drawing.dll
+D:\visual studio\Windows Form\QLKhachSan\QuanLyKhachSan\GUI\bin\Debug\Microsoft.IO.RecyclableMemoryStream.dll
+D:\visual studio\Windows Form\QLKhachSan\QuanLyKhachSan\GUI\bin\Debug\System.Buffers.dll
+D:\visual studio\Windows Form\QLKhachSan\QuanLyKhachSan\GUI\bin\Debug\System.ComponentModel.Annotations.dll
+D:\visual studio\Windows Form\QLKhachSan\QuanLyKhachSan\GUI\bin\Debug\System.Memory.dll
+D:\visual studio\Windows Form\QLKhachSan\QuanLyKhachSan\GUI\bin\Debug\System.Numerics.Vectors.dll
+D:\visual studio\Windows Form\QLKhachSan\QuanLyKhachSan\GUI\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\visual studio\Windows Form\QLKhachSan\QuanLyKhachSan\GUI\bin\Debug\EPPlus.xml
+D:\visual studio\Windows Form\QLKhachSan\QuanLyKhachSan\GUI\bin\Debug\Microsoft.IO.RecyclableMemoryStream.xml
+D:\visual studio\Windows Form\QLKhachSan\QuanLyKhachSan\GUI\bin\Debug\System.Buffers.xml
+D:\visual studio\Windows Form\QLKhachSan\QuanLyKhachSan\GUI\bin\Debug\System.Memory.xml
+D:\visual studio\Windows Form\QLKhachSan\QuanLyKhachSan\GUI\bin\Debug\System.Numerics.Vectors.xml
+D:\visual studio\Windows Form\QLKhachSan\QuanLyKhachSan\GUI\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml

@@ -1,9 +1,9 @@
 ﻿using BLL;
 using DAL;
+using OfficeOpenXml;
 using System;
 using System.IO;
 using System.Windows.Forms;
-using OfficeOpenXml;
 
 namespace GUI.All_User_Control
 {
@@ -240,8 +240,17 @@ namespace GUI.All_User_Control
 
         private void button1_Click(object sender, EventArgs e)
         {
-            ExportToExcel(dgv_customer, "D:\\QuanLyKhachSan\\GUI\\Excel\\output.xlsx");
-            MessageBox.Show("Đã Lưu File vào D:\\QuanLyKhachSan\\GUI\\Excel");
+            SaveFileDialog saveFileDialog1 = new SaveFileDialog();
+            saveFileDialog1.Filter = "Excel files (*.xlsx)|*.xlsx|All files (*.*)|*.*";
+            saveFileDialog1.FilterIndex = 1;
+            saveFileDialog1.RestoreDirectory = true;
+
+            if (saveFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                string filePath = saveFileDialog1.FileName;
+                ExportToExcel(dgv_customer, filePath);
+                MessageBox.Show("Đã Lưu File vào " + filePath);
+            }
         }
     }
 }

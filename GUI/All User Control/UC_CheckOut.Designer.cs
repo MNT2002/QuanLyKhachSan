@@ -41,10 +41,14 @@
             this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.txt_room_no = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.txt_checkout_date = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.btn_checkout = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.label12 = new System.Windows.Forms.Label();
+            this.txt_price = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txt_rent_days = new Guna.UI2.WinForms.Guna2TextBox();
+            this.label6 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.label8 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.txt_checkout_date = new Guna.UI2.WinForms.Guna2DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -227,19 +231,6 @@
             this.guna2HtmlLabel4.TabIndex = 8;
             this.guna2HtmlLabel4.Text = "Ngày Thanh Toán";
             // 
-            // txt_checkout_date
-            // 
-            this.txt_checkout_date.Checked = true;
-            this.txt_checkout_date.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txt_checkout_date.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.txt_checkout_date.Location = new System.Drawing.Point(1232, 717);
-            this.txt_checkout_date.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.txt_checkout_date.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.txt_checkout_date.Name = "txt_checkout_date";
-            this.txt_checkout_date.Size = new System.Drawing.Size(321, 85);
-            this.txt_checkout_date.TabIndex = 9;
-            this.txt_checkout_date.Value = new System.DateTime(2024, 3, 22, 16, 34, 40, 367);
-            // 
             // btn_checkout
             // 
             this.btn_checkout.BorderRadius = 18;
@@ -279,10 +270,89 @@
             this.label12.TabIndex = 17;
             this.label12.Text = "TRẢ PHÒNG";
             // 
+            // txt_price
+            // 
+            this.txt_price.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_price.DefaultText = "";
+            this.txt_price.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txt_price.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txt_price.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_price.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_price.Enabled = false;
+            this.txt_price.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_price.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txt_price.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_price.Location = new System.Drawing.Point(1623, 164);
+            this.txt_price.Name = "txt_price";
+            this.txt_price.PasswordChar = '\0';
+            this.txt_price.PlaceholderText = "";
+            this.txt_price.SelectedText = "";
+            this.txt_price.Size = new System.Drawing.Size(180, 85);
+            this.txt_price.TabIndex = 18;
+            // 
+            // txt_rent_days
+            // 
+            this.txt_rent_days.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_rent_days.DefaultText = "";
+            this.txt_rent_days.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txt_rent_days.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txt_rent_days.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_rent_days.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_rent_days.Enabled = false;
+            this.txt_rent_days.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_rent_days.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txt_rent_days.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_rent_days.Location = new System.Drawing.Point(1408, 164);
+            this.txt_rent_days.Name = "txt_rent_days";
+            this.txt_rent_days.PasswordChar = '\0';
+            this.txt_rent_days.PlaceholderText = "";
+            this.txt_rent_days.ReadOnly = true;
+            this.txt_rent_days.SelectedText = "";
+            this.txt_rent_days.Size = new System.Drawing.Size(180, 85);
+            this.txt_rent_days.TabIndex = 18;
+            // 
+            // label6
+            // 
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(1408, 125);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(92, 22);
+            this.label6.TabIndex = 19;
+            this.label6.Text = "Số Ngày thuê";
+            // 
+            // label8
+            // 
+            this.label8.BackColor = System.Drawing.Color.Transparent;
+            this.label8.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(1623, 125);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(72, 22);
+            this.label8.TabIndex = 19;
+            this.label8.Text = "Thành tiền";
+            // 
+            // txt_checkout_date
+            // 
+            this.txt_checkout_date.Checked = true;
+            this.txt_checkout_date.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txt_checkout_date.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.txt_checkout_date.Location = new System.Drawing.Point(1232, 717);
+            this.txt_checkout_date.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.txt_checkout_date.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.txt_checkout_date.Name = "txt_checkout_date";
+            this.txt_checkout_date.Size = new System.Drawing.Size(321, 85);
+            this.txt_checkout_date.TabIndex = 9;
+            this.txt_checkout_date.Value = new System.DateTime(2024, 3, 22, 16, 34, 40, 367);
+            this.txt_checkout_date.ValueChanged += new System.EventHandler(this.txt_checkout_date_ValueChanged);
+            // 
             // UC_CheckOut
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.txt_rent_days);
+            this.Controls.Add(this.txt_price);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.btn_checkout);
             this.Controls.Add(this.txt_checkout_date);
@@ -316,9 +386,13 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel3;
         private Guna.UI2.WinForms.Guna2TextBox txt_room_no;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel4;
-        private Guna.UI2.WinForms.Guna2DateTimePicker txt_checkout_date;
         private Guna.UI2.WinForms.Guna2Button btn_checkout;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
         private System.Windows.Forms.Label label12;
+        private Guna.UI2.WinForms.Guna2TextBox txt_rent_days;
+        private Guna.UI2.WinForms.Guna2TextBox txt_price;
+        private Guna.UI2.WinForms.Guna2HtmlLabel label8;
+        private Guna.UI2.WinForms.Guna2HtmlLabel label6;
+        private Guna.UI2.WinForms.Guna2DateTimePicker txt_checkout_date;
     }
 }

@@ -2,8 +2,6 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BLL
 {
@@ -11,7 +9,7 @@ namespace BLL
     {
         QuanLyKhachSanDataContext DB = new QuanLyKhachSanDataContext();
 
-        public void AddCusHis(int CusID, string cusName,string Mobile, string Nationality, string gender, string dob, string idproof, string address, string checkin, string checkout, string checkout_status, int roomID)
+        public void AddCusHis(int CusID, string cusName, string Mobile, string Nationality, string gender, string dob, string idproof, string address, string checkin, string checkout, string checkout_status, int roomID, int CountRentalDays, int RoomRental)
         {
             booked_history e = new booked_history();
             e.cid = CusID;
@@ -26,6 +24,8 @@ namespace BLL
             e.checkout_status = checkout_status;
             e.checkout = checkout;
             e.roomid = roomID;
+            e.count_rental_days = CountRentalDays;
+            e.room_rental = RoomRental;
             try
             {
                 DB.booked_histories.InsertOnSubmit(e);
@@ -35,7 +35,7 @@ namespace BLL
             {
             }
         }
-        
+
         public List<booked_history> LoadBookedHistories()
         {
             return DB.booked_histories.ToList();
