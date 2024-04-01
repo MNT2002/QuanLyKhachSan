@@ -1,7 +1,9 @@
 ﻿using BLL;
 using DAL;
 using System;
+using System.IO;
 using System.Windows.Forms;
+using OfficeOpenXml;
 
 namespace GUI.All_User_Control
 {
@@ -24,6 +26,7 @@ namespace GUI.All_User_Control
                 gb_delete_customer.Visible = true;
                 dgv_customer.Height = 241;
                 dgv_customer.DataSource = bLL_Customer.LoadCustomer();
+                Export_btn.Visible = false;
             }
             else if (cb_search.SelectedIndex == 1) //get Customer checkout
             {
@@ -31,6 +34,7 @@ namespace GUI.All_User_Control
                 gb_delete_customer.Visible = false;
                 dgv_customer.Height = 510;
                 dgv_customer.DataSource = bLL_Booked_History.LoadBookedHistories();
+                Export_btn.Visible = true;
             }
         }
 
@@ -38,6 +42,29 @@ namespace GUI.All_User_Control
         {
             cb_search.SelectedIndex = 0;
             cb_search_SelectedIndexChanged(sender, e);
+        }
+        static void ExportToExcel(DataGridView dgv, string filePath)
+        {
+            ExcelPackage.LicenseContext = LicenseContext.NonCommercial;
+            // Creating Excel package
+            using (ExcelPackage package = new ExcelPackage())
+            {
+                // Adding a new worksheet to the Excel package
+                ExcelWorksheet worksheet = package.Workbook.Worksheets.Add("Sheet1");
+
+                // Fill Excel worksheet with DataGridView data
+                for (int i = 0; i < dgv.Rows.Count; i++)
+                {
+                    for (int j = 0; j < dgv.Columns.Count; j++)
+                    {
+                        worksheet.Cells[i + 1, j + 1].Value = dgv.Rows[i].Cells[j].Value.ToString();
+                    }
+                }
+
+                // Save Excel file
+                FileInfo file = new FileInfo(filePath);
+                package.SaveAs(file);
+            }
         }
         public void setCombobox(String roomType, string bedType, ComboBox combo)
         {
@@ -209,6 +236,12 @@ namespace GUI.All_User_Control
             {
                 dgv_customer.DataSource = bLL_Customer.GetAllCustomerByName(txt_search_name.Text, "");
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            ExportToExcel(dgv_customer, "D:\\QuanLyKhachSan\\GUI\\Excel\\output.xlsx");
+            MessageBox.Show("Đã Lưu File vào D:\\QuanLyKhachSan\\GUI\\Excel");
         }
     }
 }

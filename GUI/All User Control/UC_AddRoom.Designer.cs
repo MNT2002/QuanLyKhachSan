@@ -654,6 +654,7 @@
             this.dgv_rooms.MultiSelect = false;
             this.dgv_rooms.Name = "dgv_rooms";
             this.dgv_rooms.ReadOnly = true;
+            this.dgv_rooms.RowHeadersVisible = false;
             this.dgv_rooms.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dgv_rooms.RowTemplate.Height = 36;
             this.dgv_rooms.RowTemplate.ReadOnly = true;
@@ -687,42 +688,42 @@
             this.roomidDataGridViewTextBoxColumn.DataPropertyName = "roomid";
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.roomidDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle3;
-            this.roomidDataGridViewTextBoxColumn.HeaderText = "roomid";
+            this.roomidDataGridViewTextBoxColumn.HeaderText = "ID Phòng";
             this.roomidDataGridViewTextBoxColumn.Name = "roomidDataGridViewTextBoxColumn";
             this.roomidDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // roomNoDataGridViewTextBoxColumn
             // 
             this.roomNoDataGridViewTextBoxColumn.DataPropertyName = "roomNo";
-            this.roomNoDataGridViewTextBoxColumn.HeaderText = "roomNo";
+            this.roomNoDataGridViewTextBoxColumn.HeaderText = "Số Phòng";
             this.roomNoDataGridViewTextBoxColumn.Name = "roomNoDataGridViewTextBoxColumn";
             this.roomNoDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // roomTypeDataGridViewTextBoxColumn
             // 
             this.roomTypeDataGridViewTextBoxColumn.DataPropertyName = "roomType";
-            this.roomTypeDataGridViewTextBoxColumn.HeaderText = "roomType";
+            this.roomTypeDataGridViewTextBoxColumn.HeaderText = "Loại Phòng";
             this.roomTypeDataGridViewTextBoxColumn.Name = "roomTypeDataGridViewTextBoxColumn";
             this.roomTypeDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // bedDataGridViewTextBoxColumn
             // 
             this.bedDataGridViewTextBoxColumn.DataPropertyName = "bed";
-            this.bedDataGridViewTextBoxColumn.HeaderText = "bed";
+            this.bedDataGridViewTextBoxColumn.HeaderText = "Giường";
             this.bedDataGridViewTextBoxColumn.Name = "bedDataGridViewTextBoxColumn";
             this.bedDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // priceDataGridViewTextBoxColumn
             // 
             this.priceDataGridViewTextBoxColumn.DataPropertyName = "price";
-            this.priceDataGridViewTextBoxColumn.HeaderText = "price";
+            this.priceDataGridViewTextBoxColumn.HeaderText = "Giá";
             this.priceDataGridViewTextBoxColumn.Name = "priceDataGridViewTextBoxColumn";
             this.priceDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // bookedDataGridViewTextBoxColumn
             // 
             this.bookedDataGridViewTextBoxColumn.DataPropertyName = "booked";
-            this.bookedDataGridViewTextBoxColumn.HeaderText = "booked";
+            this.bookedDataGridViewTextBoxColumn.HeaderText = "Trạng Thái";
             this.bookedDataGridViewTextBoxColumn.Name = "bookedDataGridViewTextBoxColumn";
             this.bookedDataGridViewTextBoxColumn.ReadOnly = true;
             // 

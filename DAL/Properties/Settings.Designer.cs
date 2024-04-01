@@ -66,5 +66,16 @@ namespace DAL.Properties {
                 return ((string)(this["QuanLyKhachSanConnectionString2"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=./;Initial Catalog=QuanLyKhachSan;User ID=sa;Password=1;Encrypt=True;" +
+            "TrustServerCertificate=True")]
+        public string QuanLyKhachSanConnectionString3 {
+            get {
+                return ((string)(this["QuanLyKhachSanConnectionString3"]));
+            }
+        }
     }
 }
