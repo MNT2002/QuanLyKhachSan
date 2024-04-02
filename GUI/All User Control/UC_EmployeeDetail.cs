@@ -23,6 +23,15 @@ namespace GUI.All_User_Control
         {
             BLL_employee employeedetail = new BLL_employee();
             dgv_employee.DataSource = employeedetail.LoadEmployee();
+            txt_Xoa.Clear();
+            txt_nvid.Clear();
+            txt_username.Clear();
+            txt_password.Clear();
+            txt_email.Clear();
+            txt_nv_role.SelectedIndex = -1;
+            txt_fullname.Clear();
+            txt_dob.ResetText();
+            txt_address.Clear();
             txt_dob_Add.Value = DateTime.Today;
             txt_dob.Value = DateTime.Today;
         }

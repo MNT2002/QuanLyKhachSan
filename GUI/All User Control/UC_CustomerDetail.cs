@@ -30,6 +30,7 @@ namespace GUI.All_User_Control
             }
             else if (cb_search.SelectedIndex == 1) //get Customer checkout
             {
+                clear();
                 gb_edit_customer.Visible = false;
                 gb_delete_customer.Visible = false;
                 dgv_customer.Height = 510;
