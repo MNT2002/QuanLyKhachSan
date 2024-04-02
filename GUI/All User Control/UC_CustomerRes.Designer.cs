@@ -39,13 +39,11 @@
             this.txt_gender = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.txt_dob = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.txt_address = new Guna.UI2.WinForms.Guna2TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.txt_id = new Guna.UI2.WinForms.Guna2TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.txt_checkin = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.txt_bed_type = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label10 = new System.Windows.Forms.Label();
             this.txt_room_type = new Guna.UI2.WinForms.Guna2ComboBox();
@@ -57,6 +55,8 @@
             this.btn_add_customer = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.label14 = new System.Windows.Forms.Label();
+            this.txt_dob = new System.Windows.Forms.DateTimePicker();
+            this.txt_checkin = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
             // 
             // label2
@@ -180,7 +180,7 @@
             "Male",
             "Female",
             "Other"});
-            this.txt_gender.Location = new System.Drawing.Point(72, 511);
+            this.txt_gender.Location = new System.Drawing.Point(72, 508);
             this.txt_gender.Name = "txt_gender";
             this.txt_gender.Size = new System.Drawing.Size(458, 36);
             this.txt_gender.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
@@ -207,20 +207,6 @@
             this.label6.TabIndex = 1;
             this.label6.Text = "Ngày Sinh";
             this.label6.Click += new System.EventHandler(this.label5_Click);
-            // 
-            // txt_dob
-            // 
-            this.txt_dob.Checked = true;
-            this.txt_dob.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(118)))), ((int)(((byte)(221)))));
-            this.txt_dob.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_dob.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.txt_dob.Location = new System.Drawing.Point(72, 615);
-            this.txt_dob.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.txt_dob.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.txt_dob.Name = "txt_dob";
-            this.txt_dob.Size = new System.Drawing.Size(458, 64);
-            this.txt_dob.TabIndex = 6;
-            this.txt_dob.Value = new System.DateTime(2024, 3, 19, 22, 4, 34, 249);
             // 
             // txt_address
             // 
@@ -294,20 +280,6 @@
             this.label9.TabIndex = 1;
             this.label9.Text = "Ngày Đăng Ký";
             this.label9.Click += new System.EventHandler(this.label5_Click);
-            // 
-            // txt_checkin
-            // 
-            this.txt_checkin.Checked = true;
-            this.txt_checkin.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(118)))), ((int)(((byte)(221)))));
-            this.txt_checkin.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_checkin.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.txt_checkin.Location = new System.Drawing.Point(648, 385);
-            this.txt_checkin.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.txt_checkin.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.txt_checkin.Name = "txt_checkin";
-            this.txt_checkin.Size = new System.Drawing.Size(458, 64);
-            this.txt_checkin.TabIndex = 9;
-            this.txt_checkin.Value = new System.DateTime(2024, 3, 21, 0, 0, 0, 0);
             // 
             // txt_bed_type
             // 
@@ -468,10 +440,33 @@
             this.label14.TabIndex = 19;
             this.label14.Text = "ĐĂNG KÍ KHÁCH HÀNG";
             // 
+            // txt_dob
+            // 
+            this.txt_dob.CalendarFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_dob.CalendarMonthBackground = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(118)))), ((int)(((byte)(221)))));
+            this.txt_dob.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.txt_dob.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_dob.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.txt_dob.Location = new System.Drawing.Point(72, 634);
+            this.txt_dob.Name = "txt_dob";
+            this.txt_dob.Size = new System.Drawing.Size(458, 29);
+            this.txt_dob.TabIndex = 6;
+            // 
+            // txt_checkin
+            // 
+            this.txt_checkin.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_checkin.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.txt_checkin.Location = new System.Drawing.Point(648, 385);
+            this.txt_checkin.Name = "txt_checkin";
+            this.txt_checkin.Size = new System.Drawing.Size(458, 29);
+            this.txt_checkin.TabIndex = 0;
+            // 
             // UC_CustomerRes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.txt_checkin);
+            this.Controls.Add(this.txt_dob);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.btn_add_customer);
             this.Controls.Add(this.txt_price);
@@ -486,8 +481,6 @@
             this.Controls.Add(this.label7);
             this.Controls.Add(this.txt_id);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.txt_checkin);
-            this.Controls.Add(this.txt_dob);
             this.Controls.Add(this.txt_gender);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.txt_nationality);
@@ -517,13 +510,11 @@
         private Guna.UI2.WinForms.Guna2ComboBox txt_gender;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private Guna.UI2.WinForms.Guna2DateTimePicker txt_dob;
         private Guna.UI2.WinForms.Guna2TextBox txt_address;
         private System.Windows.Forms.Label label7;
         private Guna.UI2.WinForms.Guna2TextBox txt_id;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
-        private Guna.UI2.WinForms.Guna2DateTimePicker txt_checkin;
         private Guna.UI2.WinForms.Guna2ComboBox txt_bed_type;
         private System.Windows.Forms.Label label10;
         private Guna.UI2.WinForms.Guna2ComboBox txt_room_type;
@@ -535,5 +526,7 @@
         private Guna.UI2.WinForms.Guna2Button btn_add_customer;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
         private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.DateTimePicker txt_dob;
+        private System.Windows.Forms.DateTimePicker txt_checkin;
     }
 }

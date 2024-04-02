@@ -139,7 +139,6 @@ namespace GUI.All_User_Control
             txt_room_no_edit.SelectedIndex = -1;
 
             txt_id_delete.Text = "";
-            cb_search.SelectedIndex = 0;
         }
         private void btn_edit_customer_Click(object sender, EventArgs e)
         {
