@@ -24,6 +24,7 @@ namespace GUI.All_User_Control
             BLL_employee employeedetail = new BLL_employee();
             dgv_employee.DataSource = employeedetail.LoadEmployee();
             txt_dob_Add.Value = DateTime.Today;
+            txt_dob.Value = DateTime.Today;
         }
         private void label1_Click(object sender, EventArgs e)
         {
@@ -117,7 +118,7 @@ namespace GUI.All_User_Control
             string address = txt_address_Add.Text;
 
             bLL_Employee.AddEmployee(username, password, email, fullname, dob, address);
-            MessageBox.Show("Thêm phòng mới thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show("Thêm nhân viên mới thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             txt_username_Add.Clear();
             txt_password_Add.Clear();
             txt_email_Add.Clear ();

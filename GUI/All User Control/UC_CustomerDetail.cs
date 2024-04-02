@@ -244,7 +244,11 @@ namespace GUI.All_User_Control
             saveFileDialog1.Filter = "Excel files (*.xlsx)|*.xlsx|All files (*.*)|*.*";
             saveFileDialog1.FilterIndex = 1;
             saveFileDialog1.RestoreDirectory = true;
+            DateTime currentTime = DateTime.Now;
 
+            // Chuyển đổi thời gian thành chuỗi
+            string timeString = currentTime.ToString("dd-MMMM-yy HH:mm");
+            saveFileDialog1.FileName = timeString;
             if (saveFileDialog1.ShowDialog() == DialogResult.OK)
             {
                 string filePath = saveFileDialog1.FileName;

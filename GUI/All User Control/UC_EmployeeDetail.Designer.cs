@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.customerBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.quanLyKhachSanDataSet1 = new GUI.QuanLyKhachSanDataSet1();
             this.customerTableAdapter = new GUI.QuanLyKhachSanDataSet1TableAdapters.customerTableAdapter();
@@ -52,7 +52,6 @@
             this.txt_Xoa = new Guna.UI2.WinForms.Guna2TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.txt_dob = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.txt_nvid = new Guna.UI2.WinForms.Guna2TextBox();
             this.txt_password = new Guna.UI2.WinForms.Guna2TextBox();
             this.txt_username = new Guna.UI2.WinForms.Guna2TextBox();
@@ -70,7 +69,6 @@
             this.label20 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.txt_dob_Add = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.txt_password_Add = new Guna.UI2.WinForms.Guna2TextBox();
             this.txt_username_Add = new Guna.UI2.WinForms.Guna2TextBox();
             this.txt_address_Add = new Guna.UI2.WinForms.Guna2TextBox();
@@ -85,6 +83,8 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
+            this.txt_dob_Add = new System.Windows.Forms.DateTimePicker();
+            this.txt_dob = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.customerBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.quanLyKhachSanDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.quanLyKhachSanDataSet2)).BeginInit();
@@ -173,26 +173,26 @@
             this.dgv_employee.AllowUserToDeleteRows = false;
             this.dgv_employee.AllowUserToResizeColumns = false;
             this.dgv_employee.AllowUserToResizeRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.dgv_employee.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            this.dgv_employee.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             this.dgv_employee.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(190)))), ((int)(((byte)(245)))));
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(190)))), ((int)(((byte)(245)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgv_employee.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(190)))), ((int)(((byte)(245)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv_employee.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dgv_employee.ColumnHeadersHeight = 40;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgv_employee.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgv_employee.DefaultCellStyle = dataGridViewCellStyle6;
             this.dgv_employee.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgv_employee.Location = new System.Drawing.Point(97, 103);
             this.dgv_employee.Name = "dgv_employee";
@@ -315,21 +315,6 @@
             this.groupBox3.TabIndex = 21;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Sửa";
-            // 
-            // txt_dob
-            // 
-            this.txt_dob.Checked = true;
-            this.txt_dob.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(118)))), ((int)(((byte)(221)))));
-            this.txt_dob.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_dob.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.txt_dob.Location = new System.Drawing.Point(138, 282);
-            this.txt_dob.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.txt_dob.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.txt_dob.Name = "txt_dob";
-            this.txt_dob.Size = new System.Drawing.Size(203, 36);
-            this.txt_dob.TabIndex = 46;
-            this.txt_dob.Value = new System.DateTime(2024, 3, 28, 10, 12, 55, 0);
-            this.txt_dob.ValueChanged += new System.EventHandler(this.txt_dob_ValueChanged);
             // 
             // txt_nvid
             // 
@@ -583,21 +568,6 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thêm";
             // 
-            // txt_dob_Add
-            // 
-            this.txt_dob_Add.Checked = true;
-            this.txt_dob_Add.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(118)))), ((int)(((byte)(221)))));
-            this.txt_dob_Add.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_dob_Add.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.txt_dob_Add.Location = new System.Drawing.Point(138, 249);
-            this.txt_dob_Add.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.txt_dob_Add.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.txt_dob_Add.Name = "txt_dob_Add";
-            this.txt_dob_Add.Size = new System.Drawing.Size(203, 36);
-            this.txt_dob_Add.TabIndex = 46;
-            this.txt_dob_Add.Value = new System.DateTime(2024, 3, 28, 0, 0, 0, 0);
-            this.txt_dob_Add.ValueChanged += new System.EventHandler(this.txt_dob_ValueChanged);
-            // 
             // txt_password_Add
             // 
             this.txt_password_Add.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -791,6 +761,25 @@
             this.label8.TabIndex = 0;
             this.label8.Text = "Username:";
             // 
+            // txt_dob_Add
+            // 
+            this.txt_dob_Add.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.txt_dob_Add.Location = new System.Drawing.Point(138, 256);
+            this.txt_dob_Add.Name = "txt_dob_Add";
+            this.txt_dob_Add.Size = new System.Drawing.Size(200, 29);
+            this.txt_dob_Add.TabIndex = 38;
+            this.txt_dob_Add.ValueChanged += new System.EventHandler(this.txt_dob_ValueChanged);
+            // 
+            // txt_dob
+            // 
+            this.txt_dob.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.txt_dob.Location = new System.Drawing.Point(138, 285);
+            this.txt_dob.Name = "txt_dob";
+            this.txt_dob.Size = new System.Drawing.Size(200, 29);
+            this.txt_dob.TabIndex = 47;
+            this.txt_dob.Value = new System.DateTime(2024, 4, 8, 0, 0, 0, 0);
+            this.txt_dob.ValueChanged += new System.EventHandler(this.txt_dob_ValueChanged);
+            // 
             // UC_EmployeeDetail
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -875,7 +864,7 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private Guna.UI2.WinForms.Guna2TextBox txt_nvid;
-        private Guna.UI2.WinForms.Guna2DateTimePicker txt_dob;
-        private Guna.UI2.WinForms.Guna2DateTimePicker txt_dob_Add;
+        private System.Windows.Forms.DateTimePicker txt_dob_Add;
+        private System.Windows.Forms.DateTimePicker txt_dob;
     }
 }

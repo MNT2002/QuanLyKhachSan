@@ -17,9 +17,18 @@ namespace GUI
             InitializeComponent();
             
         }
-        public void ReceivedData(string receivedData)
+        public void ReceivedData(string receivedData,int role)
         {
             label_username.Text = receivedData;
+            if (role == 1)
+            {
+                btnCustomerDetail.Enabled = false;
+                btnEmployee.Enabled = false;
+            }
+            else
+            {
+                return;
+            }
         }
 
         private void btnExit_Click(object sender, EventArgs e)
@@ -94,7 +103,7 @@ namespace GUI
 
         private void btnMinimize_Click(object sender, EventArgs e)
         {
-            this.WindowState=FormWindowState.Minimized;
+            this.WindowState=FormWindowState.Normal;
         }
     }
 }

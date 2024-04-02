@@ -3,24 +3,55 @@
   "WorkspaceRootPath": "D:\\QuanLyKhachSan\\GUI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DA68F437-4135-430E-A5D3-391BF087A072}|GUI.csproj|d:\\quanlykhachsan\\gui\\all user control\\uc_customerdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DA68F437-4135-430E-A5D3-391BF087A072}|GUI.csproj|solutionrelative:all user control\\uc_customerdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DA68F437-4135-430E-A5D3-391BF087A072}|GUI.csproj|D:\\QuanLyKhachSan\\GUI\\all user control\\uc_checkout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{DA68F437-4135-430E-A5D3-391BF087A072}|GUI.csproj|solutionrelative:all user control\\uc_checkout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA68F437-4135-430E-A5D3-391BF087A072}|GUI.csproj|d:\\quanlykhachsan\\gui\\all user control\\uc_employeedetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA68F437-4135-430E-A5D3-391BF087A072}|GUI.csproj|solutionrelative:all user control\\uc_employeedetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA68F437-4135-430E-A5D3-391BF087A072}|GUI.csproj|D:\\QuanLyKhachSan\\GUI\\all user control\\uc_employeedetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{DA68F437-4135-430E-A5D3-391BF087A072}|GUI.csproj|solutionrelative:all user control\\uc_employeedetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DA68F437-4135-430E-A5D3-391BF087A072}|GUI.csproj|D:\\QuanLyKhachSan\\GUI\\all user control\\uc_customerdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{DA68F437-4135-430E-A5D3-391BF087A072}|GUI.csproj|solutionrelative:all user control\\uc_customerdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DA68F437-4135-430E-A5D3-391BF087A072}|GUI.csproj|D:\\QuanLyKhachSan\\GUI\\all user control\\uc_customerres.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{DA68F437-4135-430E-A5D3-391BF087A072}|GUI.csproj|solutionrelative:all user control\\uc_customerres.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{DA68F437-4135-430E-A5D3-391BF087A072}|GUI.csproj|d:\\quanlykhachsan\\gui\\forgot password.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA68F437-4135-430E-A5D3-391BF087A072}|GUI.csproj|solutionrelative:forgot password.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA68F437-4135-430E-A5D3-391BF087A072}|GUI.csproj|D:\\QuanLyKhachSan\\GUI\\forgot password.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{DA68F437-4135-430E-A5D3-391BF087A072}|GUI.csproj|solutionrelative:forgot password.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA68F437-4135-430E-A5D3-391BF087A072}|GUI.csproj|d:\\quanlykhachsan\\gui\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{DA68F437-4135-430E-A5D3-391BF087A072}|GUI.csproj|solutionrelative:login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA68F437-4135-430E-A5D3-391BF087A072}|GUI.csproj|d:\\quanlykhachsan\\gui\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA68F437-4135-430E-A5D3-391BF087A072}|GUI.csproj|solutionrelative:login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA68F437-4135-430E-A5D3-391BF087A072}|GUI.csproj|D:\\QuanLyKhachSan\\GUI\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA68F437-4135-430E-A5D3-391BF087A072}|GUI.csproj|solutionrelative:dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DA68F437-4135-430E-A5D3-391BF087A072}|GUI.csproj|D:\\QuanLyKhachSan\\GUI\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{DA68F437-4135-430E-A5D3-391BF087A072}|GUI.csproj|solutionrelative:dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DA68F437-4135-430E-A5D3-391BF087A072}|GUI.csproj|D:\\QuanLyKhachSan\\GUI\\all user control\\uc_checkout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{DA68F437-4135-430E-A5D3-391BF087A072}|GUI.csproj|solutionrelative:all user control\\uc_checkout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{DA68F437-4135-430E-A5D3-391BF087A072}|GUI.csproj|D:\\QuanLyKhachSan\\GUI\\all user control\\uc_customerdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA68F437-4135-430E-A5D3-391BF087A072}|GUI.csproj|solutionrelative:all user control\\uc_customerdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E454CDE-456B-474C-A583-985CF5CF2E86}|..\\DAL\\DAL.csproj|d:\\quanlykhachsan\\dal\\quanlykhachsan.dbml||{B465B5AD-8799-4507-B90A-EE29ACF36AF9}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA68F437-4135-430E-A5D3-391BF087A072}|GUI.csproj|D:\\QuanLyKhachSan\\GUI\\all user control\\uc_customerres.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{DA68F437-4135-430E-A5D3-391BF087A072}|GUI.csproj|solutionrelative:all user control\\uc_customerres.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DA68F437-4135-430E-A5D3-391BF087A072}|GUI.csproj|D:\\QuanLyKhachSan\\GUI\\all user control\\uc_addroom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -29,14 +60,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{DA68F437-4135-430E-A5D3-391BF087A072}|GUI.csproj|D:\\QuanLyKhachSan\\GUI\\all user control\\uc_checkout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DA68F437-4135-430E-A5D3-391BF087A072}|GUI.csproj|solutionrelative:all user control\\uc_checkout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DA68F437-4135-430E-A5D3-391BF087A072}|GUI.csproj|D:\\QuanLyKhachSan\\GUI\\forgot password.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{DA68F437-4135-430E-A5D3-391BF087A072}|GUI.csproj|solutionrelative:forgot password.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DA68F437-4135-430E-A5D3-391BF087A072}|GUI.csproj|D:\\QuanLyKhachSan\\GUI\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DA68F437-4135-430E-A5D3-391BF087A072}|GUI.csproj|solutionrelative:dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3BC5D0F6-5406-452D-8CFA-802226BFBF08}|..\\BLL\\BLL.csproj|d:\\quanlykhachsan\\bll\\bll_customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -51,10 +74,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{DA68F437-4135-430E-A5D3-391BF087A072}|GUI.csproj|D:\\QuanLyKhachSan\\GUI\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
       "RelativeMoniker": "D:0:0:{DA68F437-4135-430E-A5D3-391BF087A072}|GUI.csproj|solutionrelative:app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DA68F437-4135-430E-A5D3-391BF087A072}|GUI.csproj|D:\\QuanLyKhachSan\\GUI\\all user control\\uc_employeedetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{DA68F437-4135-430E-A5D3-391BF087A072}|GUI.csproj|solutionrelative:all user control\\uc_employeedetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -64,48 +83,51 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 10,
               "Title": "UC_CustomerDetail.cs",
               "DocumentMoniker": "D:\\QuanLyKhachSan\\GUI\\All User Control\\UC_CustomerDetail.cs",
               "RelativeDocumentMoniker": "All User Control\\UC_CustomerDetail.cs",
               "ToolTip": "D:\\QuanLyKhachSan\\GUI\\All User Control\\UC_CustomerDetail.cs",
               "RelativeToolTip": "All User Control\\UC_CustomerDetail.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAiwCQAAAApAAAA",
+              "ViewState": "AQIAAOEAAAAAAAAAAAAkwOwAAABLAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-01T07:12:50.898Z",
+              "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "DashBoard.cs [Design]",
-              "DocumentMoniker": "D:\\QuanLyKhachSan\\GUI\\DashBoard.cs",
-              "RelativeDocumentMoniker": "DashBoard.cs",
-              "ToolTip": "D:\\QuanLyKhachSan\\GUI\\DashBoard.cs [Design]",
-              "RelativeToolTip": "DashBoard.cs [Design]",
+              "DocumentIndex": 1,
+              "Title": "UC_EmployeeDetail.cs",
+              "DocumentMoniker": "D:\\QuanLyKhachSan\\GUI\\All User Control\\UC_EmployeeDetail.cs",
+              "RelativeDocumentMoniker": "All User Control\\UC_EmployeeDetail.cs",
+              "ToolTip": "D:\\QuanLyKhachSan\\GUI\\All User Control\\UC_EmployeeDetail.cs",
+              "RelativeToolTip": "All User Control\\UC_EmployeeDetail.cs",
+              "ViewState": "AQIAAIcAAAAAAAAAAAAmwFIAAABOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-28T14:45:39.624Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "UC_CustomerRes.cs [Design]",
-              "DocumentMoniker": "D:\\QuanLyKhachSan\\GUI\\All User Control\\UC_CustomerRes.cs",
-              "RelativeDocumentMoniker": "All User Control\\UC_CustomerRes.cs",
-              "ToolTip": "D:\\QuanLyKhachSan\\GUI\\All User Control\\UC_CustomerRes.cs [Design]",
-              "RelativeToolTip": "All User Control\\UC_CustomerRes.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-26T14:12:57.285Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-04-02T03:06:12.1Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "Forgot Password.cs",
+              "DocumentMoniker": "D:\\QuanLyKhachSan\\GUI\\Forgot Password.cs",
+              "RelativeDocumentMoniker": "Forgot Password.cs",
+              "ToolTip": "D:\\QuanLyKhachSan\\GUI\\Forgot Password.cs",
+              "RelativeToolTip": "Forgot Password.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAjwB0AAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-02T02:37:45.299Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "UC_CheckOut.cs [Design]",
               "DocumentMoniker": "D:\\QuanLyKhachSan\\GUI\\All User Control\\UC_CheckOut.cs",
               "RelativeDocumentMoniker": "All User Control\\UC_CheckOut.cs",
@@ -117,7 +139,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "UC_CustomerDetail.cs [Design]",
               "DocumentMoniker": "D:\\QuanLyKhachSan\\GUI\\All User Control\\UC_CustomerDetail.cs",
               "RelativeDocumentMoniker": "All User Control\\UC_CustomerDetail.cs",
@@ -129,7 +151,104 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UC_EmployeeDetail.cs [Design]",
+              "DocumentMoniker": "D:\\QuanLyKhachSan\\GUI\\All User Control\\UC_EmployeeDetail.cs",
+              "RelativeDocumentMoniker": "All User Control\\UC_EmployeeDetail.cs",
+              "ToolTip": "D:\\QuanLyKhachSan\\GUI\\All User Control\\UC_EmployeeDetail.cs [Design]",
+              "RelativeToolTip": "All User Control\\UC_EmployeeDetail.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-28T02:19:02.012Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "UC_CustomerRes.cs [Design]",
+              "DocumentMoniker": "D:\\QuanLyKhachSan\\GUI\\All User Control\\UC_CustomerRes.cs",
+              "RelativeDocumentMoniker": "All User Control\\UC_CustomerRes.cs",
+              "ToolTip": "D:\\QuanLyKhachSan\\GUI\\All User Control\\UC_CustomerRes.cs [Design]",
+              "RelativeToolTip": "All User Control\\UC_CustomerRes.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-26T14:12:57.285Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "DashBoard.cs [Design]",
+              "DocumentMoniker": "D:\\QuanLyKhachSan\\GUI\\DashBoard.cs",
+              "RelativeDocumentMoniker": "DashBoard.cs",
+              "ToolTip": "D:\\QuanLyKhachSan\\GUI\\DashBoard.cs [Design]",
+              "RelativeToolTip": "DashBoard.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-28T14:45:39.624Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 5,
+              "Title": "Forgot Password.cs [Design]",
+              "DocumentMoniker": "D:\\QuanLyKhachSan\\GUI\\Forgot Password.cs",
+              "RelativeDocumentMoniker": "Forgot Password.cs",
+              "ToolTip": "D:\\QuanLyKhachSan\\GUI\\Forgot Password.cs [Design]",
+              "RelativeToolTip": "Forgot Password.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-01T06:50:25.916Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Login.cs",
+              "DocumentMoniker": "D:\\QuanLyKhachSan\\GUI\\Login.cs",
+              "RelativeDocumentMoniker": "Login.cs",
+              "ToolTip": "D:\\QuanLyKhachSan\\GUI\\Login.cs",
+              "RelativeToolTip": "Login.cs",
+              "ViewState": "AQIAAB8AAAAAAAAAAAArwC4AAABAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-02T02:31:03.653Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Login.cs [Design]",
+              "DocumentMoniker": "D:\\QuanLyKhachSan\\GUI\\Login.cs",
+              "RelativeDocumentMoniker": "Login.cs",
+              "ToolTip": "D:\\QuanLyKhachSan\\GUI\\Login.cs [Design]",
+              "RelativeToolTip": "Login.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-02T02:37:34.519Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "DashBoard.cs",
+              "DocumentMoniker": "D:\\QuanLyKhachSan\\GUI\\DashBoard.cs",
+              "RelativeDocumentMoniker": "DashBoard.cs",
+              "ToolTip": "D:\\QuanLyKhachSan\\GUI\\DashBoard.cs",
+              "RelativeToolTip": "DashBoard.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAowB0AAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-28T14:45:43.485Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "QuanLyKhachSan.dbml",
+              "DocumentMoniker": "D:\\QuanLyKhachSan\\DAL\\QuanLyKhachSan.dbml",
+              "RelativeDocumentMoniker": "..\\DAL\\QuanLyKhachSan.dbml",
+              "ToolTip": "D:\\QuanLyKhachSan\\DAL\\QuanLyKhachSan.dbml",
+              "RelativeToolTip": "..\\DAL\\QuanLyKhachSan.dbml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001722|",
+              "WhenOpened": "2024-04-02T02:03:19.315Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "UC_AddRoom.cs [Design]",
               "DocumentMoniker": "D:\\QuanLyKhachSan\\GUI\\All User Control\\UC_AddRoom.cs",
               "RelativeDocumentMoniker": "All User Control\\UC_AddRoom.cs",
@@ -140,7 +259,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 14,
               "Title": "UC_CheckOut.cs",
               "DocumentMoniker": "D:\\QuanLyKhachSan\\GUI\\All User Control\\UC_CheckOut.cs",
               "RelativeDocumentMoniker": "All User Control\\UC_CheckOut.cs",
@@ -153,31 +272,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "DashBoard.cs",
-              "DocumentMoniker": "D:\\QuanLyKhachSan\\GUI\\DashBoard.cs",
-              "RelativeDocumentMoniker": "DashBoard.cs",
-              "ToolTip": "D:\\QuanLyKhachSan\\GUI\\DashBoard.cs",
-              "RelativeToolTip": "DashBoard.cs",
-              "ViewState": "AQIAAEwAAAAAAAAAAAAwwGAAAAAdAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-28T14:45:43.485Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Forgot Password.cs [Design]",
-              "DocumentMoniker": "D:\\QuanLyKhachSan\\GUI\\Forgot Password.cs",
-              "RelativeDocumentMoniker": "Forgot Password.cs",
-              "ToolTip": "D:\\QuanLyKhachSan\\GUI\\Forgot Password.cs [Design]",
-              "RelativeToolTip": "Forgot Password.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-01T06:50:25.916Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 15,
               "Title": "BLL_customer.cs",
               "DocumentMoniker": "D:\\QuanLyKhachSan\\BLL\\BLL_customer.cs",
               "RelativeDocumentMoniker": "..\\BLL\\BLL_customer.cs",
@@ -189,7 +284,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 16,
               "Title": "UC_CustomerRes.cs",
               "DocumentMoniker": "D:\\QuanLyKhachSan\\GUI\\All User Control\\UC_CustomerRes.cs",
               "RelativeDocumentMoniker": "All User Control\\UC_CustomerRes.cs",
@@ -197,12 +292,11 @@
               "RelativeToolTip": "All User Control\\UC_CustomerRes.cs",
               "ViewState": "AQIAAB4AAAAAAAAAAAAowB8AAAAYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-28T14:54:28.696Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-28T14:54:28.696Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 17,
               "Title": "BLL_employee.cs",
               "DocumentMoniker": "D:\\QuanLyKhachSan\\BLL\\BLL_employee.cs",
               "RelativeDocumentMoniker": "..\\BLL\\BLL_employee.cs",
@@ -214,7 +308,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 18,
               "Title": "App.config",
               "DocumentMoniker": "D:\\QuanLyKhachSan\\GUI\\App.config",
               "RelativeDocumentMoniker": "App.config",
@@ -224,17 +318,6 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
               "WhenOpened": "2024-03-28T14:30:24.008Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "UC_EmployeeDetail.cs [Design]",
-              "DocumentMoniker": "D:\\QuanLyKhachSan\\GUI\\All User Control\\UC_EmployeeDetail.cs",
-              "RelativeDocumentMoniker": "All User Control\\UC_EmployeeDetail.cs",
-              "ToolTip": "D:\\QuanLyKhachSan\\GUI\\All User Control\\UC_EmployeeDetail.cs [Design]",
-              "RelativeToolTip": "All User Control\\UC_EmployeeDetail.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-28T02:19:02.012Z"
             }
           ]
         }

@@ -27,13 +27,14 @@ namespace GUI
         private void btnforgot_password_submit_Click(object sender, EventArgs e)
         {
             string from, to, pass, content;
-            from = "tueminhlengoc@gmail.com".Trim();
+            from = "delluna1sthotel@gmail.com".Trim();
             to = txt_forgot_mail.Text;
-            pass = "cmfc cnqt mmpo mdki".Trim();
+            pass = "rhfw loaq xvrf swdu".Trim();
+            string mailname = "Khách Sạn Del Luna";
             content = "Test email function";
             MailMessage mail = new MailMessage();
             mail.To.Add(to);
-            mail.From = new MailAddress(from);
+            mail.From = new MailAddress(from,mailname);
             mail.Subject = "Your password";
             mail.Body = content;
             SmtpClient smtp = new SmtpClient("smtp.gmail.com");

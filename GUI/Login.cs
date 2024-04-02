@@ -44,7 +44,7 @@ namespace GUI
                     DashBoard ds = new DashBoard();
                     
                     this.Hide();
-                    ds.ReceivedData(txtUsername.Text);
+                    ds.ReceivedData(txtUsername.Text,employ.role);
                     ds.Show();
                     
                 }
