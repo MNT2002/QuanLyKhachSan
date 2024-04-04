@@ -66,5 +66,12 @@ namespace GUI
                 return;
             }
         }
+
+        private void btn_return_login_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Login login = new Login();
+            this.Close();
+            login.ShowDialog();
+        }
     }
 }

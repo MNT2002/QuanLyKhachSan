@@ -88,6 +88,7 @@
             this.btn_return_login.TabIndex = 4;
             this.btn_return_login.TabStop = true;
             this.btn_return_login.Text = "ĐĂNG NHẬP";
+            this.btn_return_login.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.btn_return_login_LinkClicked);
             // 
             // guna2PictureBox1
             // 
